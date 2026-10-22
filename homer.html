@@ -45,7 +45,10 @@ h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;col
 /* the reading: the theme of the line, what it says to you, and where it stands in Homer */
 .papyrus .read{margin-top:14px;padding-top:12px;border-top:1px solid rgba(110,80,30,.35)}
 .papyrus .theme{font:700 clamp(18px,2.2vw,22px) Cinzel,Georgia,serif;color:#5a3a0e;letter-spacing:.03em;margin:0 0 6px}
-.papyrus .reading{font:400 16.5px/1.6 Georgia,serif;margin:0 0 10px}
+.papyrus .msg{font:italic 600 clamp(17px,2vw,19px)/1.5 Georgia,serif;color:#4a2e08;margin:0 0 12px;padding-left:12px;border-left:3px solid #9a7638}
+.papyrus .reading{font:400 16.5px/1.65 Georgia,serif;margin:0 0 10px}
+.papyrus .reflect{font:600 15.5px/1.5 Georgia,serif;color:#4a2e08;margin:0 0 10px}
+.papyrus .reflect b{font:700 12px system-ui;letter-spacing:.14em;text-transform:uppercase;color:#7a5a28;display:block}
 .papyrus .ctx{font-size:14.5px;line-height:1.5;color:#5b4320;margin:0 0 10px}
 .papyrus .ctx b,.papyrus .asp-h{font:700 12px system-ui;letter-spacing:.14em;text-transform:uppercase;color:#7a5a28}
 .papyrus .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
@@ -207,7 +210,9 @@ h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;col
   const ASPECTS = [["love", "Love"], ["work", "Work"], ["home", "Home"], ["health", "Health"], ["journeys", "Journeys"]];
   function readingHTML(e) {
     if (!e.reading) return "";
-    return `<div class="read"><h2 class="theme">${esc(e.theme)}</h2><p class="reading">${esc(e.reading)}</p>${e.context ? `<p class="ctx"><b>In Homer</b><br>${esc(e.context)}</p>` : ""}
+    const paras = String(e.reading).split(/\n\s*\n/).map(t => `<p class="reading">${esc(t)}</p>`).join("");
+    return `<div class="read"><h2 class="theme">${esc(e.theme)}</h2>${e.message ? `<p class="msg">${esc(e.message)}</p>` : ""}${paras}
+      ${e.context ? `<p class="ctx"><b>In Homer</b><br>${esc(e.context)}</p>` : ""}${e.reflect ? `<p class="reflect"><b>Reflect</b>${esc(e.reflect)}</p>` : ""}
       ${e.aspects ? `<div class="asp-h">For your question about…</div><div class="chips" role="group" aria-label="Area of life">${ASPECTS.map(([k, t]) => `<button type="button" data-asp="${k}" aria-pressed="false">${t}</button>`).join("")}</div><p class="asp" aria-live="polite"></p>` : ""}</div>`;
   }
   function wireAspects(root, e) {
