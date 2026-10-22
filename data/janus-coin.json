@@ -1,0 +1,53 @@
+{
+ "oracle": "The coin of Janus: a New Year coin oracle at the gateway of Janus in the Forum (our own reconstruction)",
+ "prayer_latin": "Iane pater, te hac strue commovenda bonas preces precor, uti sies volens propitius mihi liberisque meis domo familiaeque meae.",
+ "prayer_english": "Father Janus, as I offer you this cake, I pray you good prayers: be willing and kind to me, to my children, to my house and to my household.",
+ "prayer_source": "Cato, On Farming 134: the prayer to Janus, said first, before the prayers to Jupiter and Juno, at the sacrifice before the harvest. Latin from Cato; English our own.",
+ "gifts": [
+  {"k": "honey", "name": "Honey", "why": "so that the year may be sweet"},
+  {"k": "dates", "name": "Dates", "why": "the sweet fruit Romans gave at New Year"},
+  {"k": "figs", "name": "Dried figs", "why": "a sweet gift for a sweet year"},
+  {"k": "coin", "name": "A bronze coin", "why": "Ovid says New Year gifts of coins were the most welcome of all"}
+ ],
+ "sides": {"capita": "Janus: a door opens", "navia": "Saturn's ship: a voyage, out of your hands, or not yet"},
+ "answers": {
+  "CCC": {"verdict": "Yes", "mood": "yes", "title": "The Doors Stand Open",
+   "message": "Every door you knock on opens. Go through.",
+   "reading": "Three times the god of doors turned his faces up to you. Janus keeps every beginning: the gate of the year, the threshold of the house, the first word of every prayer. What you ask about is favoured from its first step to its last.\n\nDo not wait for a fourth sign; three is the god's whole answer. Begin, and begin with something small and real. The first stone of a long road is still a stone, and a door is only open to someone who walks through it.",
+   "reflect": "What would you begin today if you trusted the yes?"},
+  "CCN": {"verdict": "Yes, then let it go", "mood": "yes", "title": "Yes, Then the Sea",
+   "message": "It begins well and holds well. The ending is not yours to steer.",
+   "reading": "Two faces of Janus, then the ship. Your matter will open as you hope and grow as you hope, but at the end it sails out of your hands: into other people's choices, into time, into the wide sea Saturn crossed.\n\nThis is still a yes. Do your part fully and well, then launch it and let the wind take it. Gripping the outcome will only make the voyage harder. A ship is built to leave the harbour.",
+   "reflect": "Which part of this is truly yours to finish?"},
+  "CNC": {"verdict": "Yes, after a rough passage", "mood": "yes", "title": "A Storm Mid-Voyage",
+   "message": "A hard stretch in the middle. You will come through to the far door.",
+   "reading": "Janus at the beginning and Janus at the end, the ship between them. The middle of your matter is open water: expect a delay, a doubt or a squall halfway, and do not take it as a sign to turn back.\n\nJanus looks both ways at once. The door you set out from and the door you will arrive at are watched by the same god. Hold your course through the middle passage, and the far threshold will be waiting.",
+   "reflect": "What will you hold on to when the middle gets rough?"},
+  "NCC": {"verdict": "Yes, but not yet", "mood": "wait", "title": "After the Ship Comes In",
+   "message": "The answer is yes, once the ship has landed.",
+   "reading": "The ship comes first. Something must arrive, finish or be travelled before the door opens: a letter, a season, a payment, a journey, a change of heart. Then Janus turns up twice: once it lands, the way is clear.\n\nRemember the story on the coin. Saturn came to Italy by ship, and only when he landed did Janus welcome him, and the golden age began. Patience first, then welcome.",
+   "reflect": "What must arrive before you can begin?"},
+  "CNN": {"verdict": "Begin, but not for the harbour", "mood": "wait", "title": "A Door, Then Open Water",
+   "message": "You may begin, but you will not arrive where you planned.",
+   "reading": "Janus opens a door, then two ships carry you off. The start is allowed, but the road will turn: what you set out for is not what you will find.\n\nIf you go, go for the voyage, not for the harbour you imagine. Travel light, learn the winds, and let the destination reveal itself. If only that one harbour will do, then wait; this is not its year.",
+   "reflect": "Would you still go if the journey were the whole reward?"},
+  "NCN": {"verdict": "Not now, one narrow chance", "mood": "wait", "title": "One Door in the Fog",
+   "message": "There is one opening, small and in the middle. Watch for it.",
+   "reading": "Ships on either side, and Janus between them. Most of this lies with other people and with time; the beginning is not yours, and neither is the end. But in the middle there is a door.\n\nThe answer is not now, and not easily. Yet a moment will come, partway through, when a single choice of yours matters more than all the rest. Be ready to notice it when it opens.",
+   "reflect": "Where is the one door you can still open?"},
+  "NNC": {"verdict": "No for now, yes at the end", "mood": "wait", "title": "Late Harbour",
+   "message": "Long sailing first. The door is at the end of it.",
+   "reading": "Two ships, then the face of Janus. Much must pass before this turns your way: long waiting, other people's voyages, seasons you cannot hurry. But the last face is the god of doors, and the end is open.\n\nDo not force it now. Plant the wish and let it go to sea. It may come back to you in another form, at an hour you did not expect, and find the door already unbarred.",
+   "reflect": "Can you let this go to sea and trust it to return?"},
+  "NNN": {"verdict": "No", "mood": "no", "title": "The Ship Sails On",
+   "message": "Not this, not now. The year's doors open elsewhere.",
+   "reading": "Three ships, and no face of Janus: no door opens here. This is not a judgement on you, but on this moment, or this road.\n\nSaturn's ship carried him away from one kingdom, and that voyage brought him to Italy and a golden age. A closed door can be the start of a better voyage. Let this question rest, and ask the one that lies beneath it.",
+   "reflect": "If this door stays shut, which door do you really want to try?"}
+ },
+ "sources": [
+  "Ovid, Fasti 1.63-288: Janus speaks, on the Kalends of January: he is named first in prayers because he keeps the doors to the gods (1.171-174); New Year gifts of honey, dates and figs so the year may be sweet, and of coins (1.185-226); why the old bronze coin shows a ship and a two-faced head (1.229-240).",
+  "Macrobius, Saturnalia 1.7.19-22: Saturn arrives by ship and Janus welcomes him; Janus first casts bronze coins, with his head and a ship; children call 'capita aut navia'.",
+  "Cato, On Farming 134: the prayer to Janus.",
+  "The aes grave as, cast c. 225-217 BC: Janus with the mark I; a prow with I and ROMA."
+ ]
+}

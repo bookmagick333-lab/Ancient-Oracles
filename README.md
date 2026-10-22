@@ -12,6 +12,7 @@ Each oracle is a self-contained page, so it can also go into a themed school kit
 | **The Homer oracle** (*Homeromanteion*) | Greek text on papyrus, Roman Egypt, 3rd century AD | 1 die thrown 3 times: 216 lines of Homer | **playable**: `homer.html` (204 lines in Greek and English; 12 lost or scraps) |
 | The knucklebone oracle of the marketplace | Greek cities of Roman Asia Minor (Kibyra, Kremna, Termessos, Adada), 2nd century AD | 5 knucklebones: 56 answers, each with a god | **playable**: `kibyra.html` (the Kibyra stone: 45 answers; 11 lost or broken) |
 | **The palm-leaf oracle** of Hermes and Isis | Greek papyrus from Oxyrhynchus, 3rd century AD (P.Oxy. 886 = PGM XXIVa) | 29 palm leaves, lifted two by two | **playable**: `palm.html` (the 29 gods and answers are our reconstruction) |
+| **The coin of Janus** | Rome: the bronze *as* (c. 225-217 BC), Ovid's *Fasti*, Cato's prayer to Janus | 1 coin tossed 3 times: 8 answers | **playable**: `janus.html` (the oracle itself is our reconstruction) |
 | The Egyptian 20-sided die | Ptolemaic and Roman Egypt | 1 icosahedron with gods' names or letters | planned |
 | The lots of Fortuna at Praeneste | Rome's own oracle | lots drawn by a boy | planned |
 
@@ -37,6 +38,12 @@ keep it non-commercial, and share changes under the same licence.
 `data/palm-oracle.json`: the papyrus in Greek (Grenfell and Hunt 1908) with our English, and 29 gods of Roman Egypt, each
 with a Greek name for the leaf, a `mood` (`yes`, `wait`, `no`), a `message`, a `reading` and a `reflect` question. The
 papyrus does not name the gods: the list and the answers are our own reconstruction, and the page says so.
+
+## The coin of Janus data
+
+`data/janus-coin.json`: Cato's prayer to Janus (Latin, with our English), the New Year gifts, and eight answers keyed by
+the three tosses (`C` = Janus, `N` = the ship), each with a title, verdict, mood, message, reading and reflection. The coin
+and its toss come from `coin.js`, the same file as in Roman Games (keep the copies identical).
 
 ## Sources (in the Workbench library, collection history/religion/oracles)
 
