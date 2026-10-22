@@ -4,8 +4,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=GFS+Didot&family=Source+Sans+3:wght@400;600;700&display=swap">
 <style>
 /* The Homer oracle (Homeromanteion): think of a question, throw one die three times, and the three numbers name one of 216 lines
-   of Homer, from a magical papyrus of the 3rd century AD (P.Lond. 121 = PGM VII). Greek from public-domain editions of Homer;
-   the English is our own translation. 25 lines are lost where the papyrus is damaged. */
+   of Homer, from a magical papyrus of Roman Egypt (P.Lond. 121 = PGM VII). The list follows Maltomini's edition (ZPE 106, 1995):
+   204 lines known, 12 lost or only scraps. Greek from public-domain editions of Homer; the English is our own translation. */
 :root{--ink:#eef0f6;--muted:#a9b2c8;--gold:#e0b45a;--line:#3a4466;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:radial-gradient(ellipse at 50% -10%,#2a3458,#0d1020 70%);color:var(--ink);font:16px/1.5 "Source Sans 3",system-ui,sans-serif;min-height:100vh}
@@ -40,6 +40,7 @@ h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;col
 .papyrus .greek{font:400 clamp(20px,2.6vw,26px)/1.4 "GFS Didot",Georgia,serif;margin:8px 0 6px;color:#2a1a08}
 .papyrus .eng{font:600 clamp(17px,2vw,20px)/1.45 Georgia,serif;margin:0}
 .papyrus .ref{margin-top:10px;font-size:13.5px;color:#6b4e22}
+.papyrus .note{margin-top:6px;font-size:13px;color:#7a5a28;font-style:italic}
 .papyrus .wait{color:#6b4e22;font-style:italic}
 .papyrus.reveal{animation:unroll .7s ease-out both}
 @keyframes unroll{from{clip-path:inset(0 50% 0 50%);opacity:.3}to{clip-path:inset(0 0 0 0);opacity:1}}
@@ -65,18 +66,18 @@ h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;col
   </div>
   <aside class="side">
    <div class="card"><h3>How to consult</h3>
-    <ol><li>Think of one clear question, and keep it in mind.</li><li>Throw the die three times. Each throw gives a number from 1 to 6.</li>
+    <ol><li>The ancient instructions say: first call on <b>Apollo</b>, god of prophecy, and pray for what you want.</li><li>Think of one clear question, and keep it in mind.</li><li>Throw the die three times. Each throw gives a number from 1 to 6.</li>
      <li>The three numbers, in order, name one of 216 lines of Homer (6 × 6 × 6).</li><li>Read the line as the answer to your question. Its meaning is for you to work out, as it was for the ancients.</li></ol></div>
    <div class="card"><h3>Your answers</h3><ul class="past" id="past"></ul><button class="btn alt" type="button" id="clear" style="margin-top:8px">Clear</button></div>
    <div class="card"><details><summary>How do we know?</summary>
     <ul>
-     <li class="known">✔ <b>A real oracle.</b> The list survives on a papyrus roll from Roman Egypt, written in the 3rd century AD and now in the British Museum (Papyrus 121). It begins with 216 single lines from the Iliad and Odyssey, each numbered by three throws of a die. Two other copies survive, from Oxyrhynchus and Bologna.</li>
-     <li class="known">✔ <b>Three throws of one die.</b> The instructions survive in the Oxyrhynchus copy. The papyrus calls itself <i>Homeromanteion</i>, "Homer oracle".</li>
+     <li class="known">✔ <b>A real oracle.</b> The list survives on a papyrus roll from Roman Egypt, now in the British Library (Papyrus 121, about the 4th century AD). It begins with 216 single lines from the Iliad and Odyssey, each numbered by three throws of a die. Two more copies survive in part, from Oxyrhynchus and Bologna, and they agree with it.</li>
+     <li class="known">✔ <b>How to use it.</b> The Oxyrhynchus copy gives the instructions: know the days when the oracle may be used, call on Apollo and pray for what you want, then throw the die three times and find the line. The papyrus calls itself <i>Homeromanteion</i>, "Homer oracle".</li>
      <li class="known">✔ <b>Homer as scripture.</b> Greeks treated Homer's poems as a source of wisdom, and lines picked at random could be read as messages from the gods.</li>
-     <li class="known">✔ <b>Lost lines.</b> The beginning of the roll is damaged, so 25 of the 216 lines are missing. If you throw one, the oracle is silent.</li>
+     <li class="known">✔ <b>Pieced together.</b> The start of the London roll is torn into fragments. In 1995 Franco Maltomini fitted them back together, checked them on the original, and used the two other copies to fill gaps. Today 204 lines are known; 8 are lost completely and 4 survive only as scraps. If you throw one of those, the oracle is silent.</li>
      <li class="guess">? <b>The ritual around it</b> (prayers, purification, which god was asked) is only partly known. Here you simply think of your question.</li>
     </ul>
-    <p style="font-size:12.5px;color:var(--muted);margin:8px 0 0">Papyrus: F. G. Kenyon, <i>Greek Papyri in the British Museum</i> I (1893), papyrus CXXI. Greek of Homer: Monro and Allen (Iliad), Murray 1919 (Odyssey), via the Perseus Digital Library. English: our own translation. Dice faces: a Roman bone die. Sounds: Kenney (CC0).</p>
+    <p style="font-size:12.5px;color:var(--muted);margin:8px 0 0">Papyrus: F. G. Kenyon, <i>Greek Papyri in the British Museum</i> I (1893), papyrus CXXI; the list of lines follows F. Maltomini, "P. Lond. 121 (= PGM VII), 1–221: Homeromanteion", <i>ZPE</i> 106 (1995) 107–122. Greek of Homer: Monro and Allen (Iliad), Murray 1919 (Odyssey), via the Perseus Digital Library. English: our own translation. Dice faces: a Roman bone die. Sounds: Kenney (CC0).</p>
    </details></div>
   </aside>
  </div>
@@ -144,10 +145,10 @@ h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;col
     const key = nums.join("-"), e = DATA.entries.find(x => x.roll === key), q = $("q").value.trim();
     const a = $("answer"); void a.offsetWidth; a.classList.add("reveal");
     if (!e || e.lost) {
-      a.innerHTML = `<div class="roll">Throw ${key}</div><p class="eng" style="margin-top:8px">This line is lost: the papyrus is torn here.</p><p class="ref">The gods are silent. Think of your question again, and throw again.</p>`;
+      a.innerHTML = `<div class="roll">Throw ${key}</div><p class="eng" style="margin-top:8px">This line is lost: the papyrus is torn here.</p>${e && e.note ? `<div class="note">${esc(e.note)}</div>` : ""}<p class="ref">The gods are silent. Think of your question again, and throw again.</p>`;
     } else {
       a.innerHTML = `<div class="roll">Throw ${key}${q ? " · " + esc(q) : ""}</div><div class="greek" lang="grc">${esc(e.greek)}</div>
-        <p class="eng">“${esc(e.english)}”</p><div class="ref">Homer, <i>${e.work}</i> book ${e.book}, line ${e.line}</div>`;
+        <p class="eng">“${esc(e.english)}”</p><div class="ref">Homer, <i>${e.work}</i> book ${e.book}, line ${e.line}</div>${e.note ? `<div class="note">${esc(e.note)}</div>` : ""}`;
     }
     const past = store.get("ao.homer.past", []);
     past.unshift({key, q, line: e && !e.lost ? e.english : null, when: Date.now()});
