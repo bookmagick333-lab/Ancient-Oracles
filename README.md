@@ -11,6 +11,7 @@ Each oracle is a self-contained page, so it can also go into a themed school kit
 |---|---|---|---|
 | **The Homer oracle** (*Homeromanteion*) | Greek text on papyrus, Roman Egypt, 3rd century AD | 1 die thrown 3 times: 216 lines of Homer | **playable**: `homer.html` (204 lines in Greek and English; 12 lost or scraps) |
 | The knucklebone oracle of the marketplace | Greek cities of Roman Asia Minor (Kibyra, Kremna, Termessos, Adada), 2nd century AD | 5 knucklebones: 56 answers, each with a god | **playable**: `kibyra.html` (the Kibyra stone: 45 answers; 11 lost or broken) |
+| **The palm-leaf oracle** of Hermes and Isis | Greek papyrus from Oxyrhynchus, 3rd century AD (P.Oxy. 886 = PGM XXIVa) | 29 palm leaves, lifted two by two | **playable**: `palm.html` (the 29 gods and answers are our reconstruction) |
 | The Egyptian 20-sided die | Ptolemaic and Roman Egypt | 1 icosahedron with gods' names or letters | planned |
 | The lots of Fortuna at Praeneste | Rome's own oracle | lots drawn by a boy | planned |
 
@@ -31,8 +32,15 @@ English), the line describing the throw, the god's answer in Greek, our English,
 by `oracle-work/kibyra/build.py` (outside this repo). The Greek and our English are CC BY-NC-SA 4.0: credit the authors,
 keep it non-commercial, and share changes under the same licence.
 
+## The palm-leaf oracle data
+
+`data/palm-oracle.json`: the papyrus in Greek (Grenfell and Hunt 1908) with our English, and 29 gods of Roman Egypt, each
+with a Greek name for the leaf, a `mood` (`yes`, `wait`, `no`), a `message`, a `reading` and a `reflect` question. The
+papyrus does not name the gods: the list and the answers are our own reconstruction, and the page says so.
+
 ## Sources (in the Workbench library, collection history/religion/oracles)
 
+- B. P. Grenfell and A. S. Hunt, *The Oxyrhynchus Papyri* VI (1908), no. 886: public domain.
 - F. G. Kenyon, *Greek Papyri in the British Museum*, vol. 1 (1893), papyrus CXXI (PGM VII): public domain.
 - F. Maltomini, "P. Lond. 121 (= PGM VII), 1-221: Homeromanteion", *ZPE* 106 (1995) 107-122: the line list (facts, credited).
 - Ş. Kileci, N. Tüner Önen, Ş. Özüdoğru, "A New Astragalos Oracle Text from Kibyra", *Gephyra* 31 (2026), 257-294:

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Palm-Leaf Oracle | Ancient Oracles</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=GFS+Didot&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* The palm-leaf oracle of Hermes and Isis (P.Oxy. 886 = PGM XXIVa): 29 palm leaves, each with a god's name, are lifted two by two
+   and the last one left is your answer. The papyrus does not name the 29 gods: our list and the answers are a reconstruction. */
+:root{--ink:#eef0f6;--muted:#a9b2c8;--gold:#e0b45a;--line:#3a4466;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 50% -10%,#2a3458,#0d1020 70%);color:var(--ink);font:16px/1.5 "Source Sans 3",system-ui,sans-serif;min-height:100vh}
+.wrap{max-width:1080px;margin:0 auto;padding:calc(12px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(28px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+a.back{font:700 13px Cinzel,Georgia,serif;letter-spacing:.16em;color:var(--gold);text-transform:uppercase;text-decoration:none}
+h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;color:#f4e3b8;letter-spacing:.04em}
+.lede{color:var(--muted);margin:0 0 16px;max-width:44em}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:20px;align-items:start}
+@media (max-width:880px){.layout{grid-template-columns:1fr}}
+.ask{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.ask input{flex:1;min-width:220px;font:inherit;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:#141a30;color:var(--ink)}
+.btn{font:700 15px "Source Sans 3",system-ui;border-radius:10px;padding:10px 18px;cursor:pointer;border:2px solid var(--gold);background:linear-gradient(#3b4a86,#1f2852);color:#f6ecd2;box-shadow:0 3px 0 #0b0f22}
+.btn:disabled{filter:saturate(.4) brightness(.7);cursor:default}
+.btn.alt{background:#141a30;border:1px solid var(--gold);box-shadow:none;padding:7px 12px;font-size:14px}
+.step{font-size:14.5px;color:#d6dbea;margin:0 0 10px;min-height:1.5em}
+.step b{color:var(--gold)}
+/* the reed mat where the leaves are laid out */
+.mat{position:relative;border-radius:16px;padding:18px 12px;border:1px solid #6d5a33;
+ background:repeating-linear-gradient(90deg,rgba(0,0,0,.08) 0 3px,transparent 3px 11px),linear-gradient(#b8975a,#9c7c43);box-shadow:inset 0 0 40px rgba(60,40,10,.55),0 10px 26px rgba(0,0,0,.5)}
+.leaves{display:grid;grid-template-columns:repeat(auto-fill,minmax(54px,1fr));gap:10px 6px;justify-items:center}
+.leaf{width:30px;height:96px;border:0;padding:0;cursor:pointer;position:relative;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;
+ background:linear-gradient(90deg,#4f6b2a,#7c9a45 45%,#5c7a31 55%,#3f5a22);box-shadow:0 4px 6px rgba(40,25,5,.45);
+ transform:rotate(var(--r));transition:transform .5s cubic-bezier(.3,.7,.3,1),opacity .5s}
+.leaf::after{content:"";position:absolute;left:50%;top:6%;bottom:4%;width:2px;margin-left:-1px;background:rgba(230,240,190,.55)}
+.leaf:hover:not(:disabled),.leaf:focus-visible{transform:rotate(var(--r)) translateY(-4px);outline:2px solid #f4e3b8;outline-offset:3px}
+.leaf.held{transform:rotate(0) translateY(-10px) scale(1.08);outline:2px solid #f4e3b8;outline-offset:3px}
+.leaf.gone{opacity:0;transform:rotate(var(--r)) translateY(-60px) scale(.6);pointer-events:none}
+.leaf.last{width:46px;height:150px;background:linear-gradient(90deg,#6f8a3c,#a9c06a 45%,#86a24c 55%,#5d7a2e);transform:none;cursor:default}
+.leaf.last span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;writing-mode:vertical-rl;font:700 18px "GFS Didot",Georgia,serif;color:#1d1608;z-index:1}
+.leaves.done{display:flex;justify-content:center;padding:6px 0}.leaves.done .gone{display:none}
+.count{position:absolute;right:12px;bottom:6px;font:700 13px Cinzel,Georgia,serif;color:#2c210c}
+/* the answer */
+.card{margin-top:16px;border-radius:8px;padding:20px 24px;color:#2b230f;min-height:120px;
+ background:repeating-linear-gradient(90deg,rgba(120,90,40,.06) 0 3px,transparent 3px 9px),linear-gradient(135deg,#ecdcae,#dcc690 55%,#e8d6a6);box-shadow:0 10px 24px rgba(0,0,0,.45),inset 0 0 30px rgba(120,80,30,.3)}
+.card .wait{color:#6b4e22;font-style:italic}
+.card .kicker{font:700 13px system-ui;letter-spacing:.14em;text-transform:uppercase;color:#7a5a28}
+.card .gk{font:400 clamp(30px,4vw,40px)/1.15 "GFS Didot",Georgia,serif;color:#1f1a10;margin:6px 0 0}
+.card h2{font:700 clamp(19px,2.4vw,24px) Cinzel,Georgia,serif;color:#5a3a0e;margin:2px 0 2px}
+.card .eg{font:italic 15px Georgia,serif;color:#6b4e22;margin:0}
+.card .msg{font:italic 600 clamp(17px,2vw,19px)/1.5 Georgia,serif;color:#4a2e08;margin:14px 0 12px;padding-left:12px;border-left:3px solid #9a7638}
+.card .reading{font:400 16.5px/1.65 Georgia,serif;margin:0 0 10px}
+.card .reflect{font:600 15.5px/1.5 Georgia,serif;color:#4a2e08;margin:0}
+.card .reflect b{font:700 12px system-ui;letter-spacing:.14em;text-transform:uppercase;color:#7a5a28;display:block}
+.card .ours{margin:12px 0 0;font-size:13px;color:#7a5a28;font-style:italic}
+.mood{display:inline-block;margin-top:8px;font:700 12.5px system-ui;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:999px;color:#fff}
+.mood.yes{background:#3f6d3a}.mood.wait{background:#8a6a1c}.mood.no{background:#8a2f25}
+.card.reveal{animation:unroll .7s ease-out both}
+@keyframes unroll{from{clip-path:inset(0 50% 0 50%);opacity:.3}to{clip-path:inset(0 0 0 0);opacity:1}}
+.side .box{background:linear-gradient(#1f2742,#151a2e);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.side h3{font:700 15px Cinzel,Georgia,serif;letter-spacing:.08em;color:var(--gold);margin:0 0 6px}
+.side ol,.side ul{padding-left:20px;margin:6px 0 0}.side li{margin:3px 0;font-size:14.5px;color:#d6dbea}
+.side details summary{cursor:pointer;font-weight:700}
+.side .pap{font:400 15px/1.5 "GFS Didot",Georgia,serif;color:#f4e3b8;margin:8px 0}
+.side .papen{font:italic 14.5px/1.5 Georgia,serif;color:#d6dbea;margin:0 0 6px}
+.gods{columns:2;column-gap:14px;list-style:none;padding:0!important;font-size:13.5px}
+.gods li{break-inside:avoid;color:#d6dbea}.gods i{color:var(--muted)}
+.past{list-style:none;padding:0!important;margin:6px 0 0;font-size:14px;color:var(--muted);max-height:220px;overflow:auto}
+.past li{border-top:1px solid var(--line);padding:6px 0}.past li b{color:#d6dbea}
+.known{color:#9fe0a5}.guess{color:#ffd27a}
+@media (prefers-reduced-motion:reduce){.leaf,.card.reveal{transition:none;animation:none}}
+</style>
+</head>
+<body><div class="wrap">
+ <a class="back" href="./index.html">← Ancient Oracles</a>
+ <h1>The Palm-Leaf Oracle</h1>
+ <p class="lede">"A copy of a holy book found in the treasuries of Hermes." Write the names of 29 gods on palm leaves, lift them away two by two, and read the one that is left: that god holds your answer. From a papyrus of Roman Egypt, about 1,750 years old.</p>
+ <div class="layout">
+  <div>
+   <div class="ask"><input id="q" type="text" maxlength="140" placeholder="Your question (it stays on this device)" aria-label="Your question"><button class="btn" type="button" id="begin">🌿 Lay out the leaves</button></div>
+   <p class="step" id="step">First, call on the <b>Sun</b> and all the <b>gods of the deep</b> about the thing you want an omen for. Then lay out the leaves.</p>
+   <div class="mat"><div class="leaves" id="leaves" aria-label="Palm leaves"></div><div class="count" id="count"></div></div>
+   <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn alt" type="button" id="auto" disabled>Lift them for me</button></div>
+   <div class="card" id="answer"><p class="wait">The leaves wait, face down, on the mat.</p></div>
+  </div>
+  <aside class="side">
+   <div class="box"><h3>How to consult</h3>
+    <ol><li>Think of what you want an omen about, and call on the Sun and the gods of the deep.</li>
+     <li>Lay out the 29 leaves. Each has a god's name on its hidden side.</li>
+     <li>Lift the leaves away two at a time: tap two leaves, then two more, fourteen times.</li>
+     <li>One leaf will be left. Read it: that god gives your answer.</li></ol></div>
+   <div class="box"><h3>Your answers</h3><ul class="past" id="past"></ul><button class="btn alt" type="button" id="clear" style="margin-top:8px">Clear</button></div>
+   <div class="box"><details><summary>How do we know?</summary>
+    <ul>
+     <li class="known">✔ <b>A real papyrus.</b> A sheet from Oxyrhynchus in Egypt, 3rd century AD, published in 1908 (P.Oxy. 886). It is short, and its scribe could barely spell.</li>
+     <li class="known">✔ <b>The method.</b> 29 palm leaves, each with "the names of the gods"; a prayer to the Sun and the gods of the deep; lift them two by two; read the last.</li>
+     <li class="known">✔ <b>The story.</b> The papyrus says Hermes and Isis used it when Isis was searching for her husband Osiris, whom Seth had killed and scattered.</li>
+     <li class="guess">? <b>Which 29 gods?</b> The papyrus never lists them, nor says what each means. Our list and answers are a modern reconstruction: gods worshipped in Roman Egypt, with the papyrus's own Hermes, Isis, Osiris, the Sun and "the Deep".</li>
+     <li class="guess">? <b>Why 29?</b> The papyrus speaks of "the 29 letters", which no one has explained. An odd number is needed so that one leaf is left after lifting pairs. 29 is also about the length of a moon's month.</li>
+    </ul>
+    <div id="papyrus"></div>
+    <details style="margin-top:8px"><summary style="font-size:14px">Our 29 gods</summary><ul class="gods" id="gods"></ul></details>
+    <p style="font-size:12.5px;color:var(--muted);margin:8px 0 0">Papyrus: B. P. Grenfell and A. S. Hunt, <i>The Oxyrhynchus Papyri</i> VI (1908) no. 886. English and the 29 answers: our own. Sounds: none.</p>
+   </details></div>
+  </aside>
+ </div>
+</div>
+<script>
+(function () {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  let DATA = null, order = [], left = [], held = null, lifted = 0, running = false;
+  const store = {get(k, d) { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (_) { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (_) { /* private mode */ } }};
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+  const calm = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const MOOD = {yes: "A good omen", wait: "Wait and watch", no: "A warning"};
+
+  fetch("./data/palm-oracle.json").then(r => r.json()).then(d => {
+    DATA = d;
+    $("papyrus").innerHTML = `<p class="pap" lang="grc">${esc(d.papyrus_greek)}</p><p class="papen">${esc(d.papyrus_english)}</p>`;
+    $("gods").innerHTML = d.gods.map(g => `<li><b>${esc(g.name)}</b> <i lang="grc">${esc(g.greek)}</i></li>`).join("");
+  }).catch(() => { $("answer").innerHTML = '<p class="wait">The leaves could not be found. Try reloading the page.</p>'; });
+
+  // lay out 29 leaves in a random order, face down
+  function layOut() {
+    if (!DATA || running) return;
+    order = DATA.gods.map(g => g.n).sort(() => Math.random() - 0.5);
+    left = order.slice(); held = null; lifted = 0; $("leaves").classList.remove("done");
+    $("leaves").innerHTML = order.map((n, i) => `<button type="button" class="leaf" data-i="${i}" style="--r:${Math.round(Math.random() * 16 - 8)}deg" aria-label="Palm leaf ${i + 1}"></button>`).join("");
+    $("leaves").querySelectorAll(".leaf").forEach(b => b.onclick = () => lift(b));
+    $("auto").disabled = false; paintCount();
+    $("step").innerHTML = "Lift the leaves away <b>two by two</b>: tap two leaves, then two more, until only one is left.";
+    $("answer").classList.remove("reveal"); $("answer").innerHTML = '<p class="wait">The leaves wait, face down, on the mat.</p>';
+  }
+  function paintCount() { $("count").textContent = left.length ? `${left.length} leaves` : ""; }
+  function lift(b) {
+    const i = +b.dataset.i, n = order[i];
+    if (!left.includes(n) || left.length === 1) return;
+    if (held === null) { held = b; b.classList.add("held"); return; }
+    if (held === b) { held = null; b.classList.remove("held"); return; }
+    [held, b].forEach(x => { x.classList.remove("held"); x.classList.add("gone"); x.disabled = true; left = left.filter(m => m !== order[+x.dataset.i]); });
+    held = null; lifted++; paintCount();
+    $("step").innerHTML = left.length > 1 ? `Pair ${lifted} lifted away. <b>${left.length}</b> leaves remain.` : "One leaf is left. Read it.";
+    if (left.length === 1) setTimeout(reveal, calm() ? 50 : 500);
+  }
+  async function auto() {
+    if (running || left.length <= 1) return;
+    running = true; $("auto").disabled = true;
+    while (left.length > 1) {
+      const btns = [...$("leaves").querySelectorAll(".leaf:not(.gone)")].filter(x => x !== held);
+      if (held === null) { const a = btns.splice(Math.floor(Math.random() * btns.length), 1)[0]; lift(a); }
+      const rest = [...$("leaves").querySelectorAll(".leaf:not(.gone)")].filter(x => x !== held);
+      lift(rest[Math.floor(Math.random() * rest.length)]);
+      await new Promise(r => setTimeout(r, calm() ? 20 : 220));
+    }
+    running = false;
+  }
+  function reveal() {
+    const n = left[0], g = DATA.gods.find(x => x.n === n), q = $("q").value.trim();
+    const b = $("leaves").querySelector(`.leaf[data-i="${order.indexOf(n)}"]`);
+    $("leaves").classList.add("done"); b.classList.add("last"); b.disabled = true; b.innerHTML = `<span lang="grc">${esc(g.greek)}</span>`; b.setAttribute("aria-label", `The last leaf: ${g.name}`);
+    $("auto").disabled = true; $("count").textContent = "";
+    const a = $("answer"); void a.offsetWidth; a.classList.add("reveal");
+    a.innerHTML = `<div class="kicker">The last leaf${q ? " · " + esc(q) : ""}</div><div class="gk" lang="grc">${esc(g.greek)}</div><h2>${esc(g.name)}</h2>
+      <p class="eg">${esc(g.egypt)}: ${esc(g.gift)}</p><span class="mood ${g.mood}">${MOOD[g.mood]}</span>
+      <p class="msg">${esc(g.message)}</p><p class="reading">${esc(g.reading)}</p><p class="reflect"><b>Reflect</b>${esc(g.reflect)}</p>
+      <p class="ours">The papyrus does not say which gods were written on the leaves: this god and answer are our modern reconstruction.</p>`;
+    const past = store.get("ao.palm.past", []);
+    past.unshift({god: g.name, greek: g.greek, q, msg: g.message, when: Date.now()});
+    store.set("ao.palm.past", past.slice(0, 20)); paintPast();
+    $("step").innerHTML = `The god of your leaf is <b>${esc(g.name)}</b>. Lay out the leaves again to ask another question.`;
+  }
+  function paintPast() {
+    const past = store.get("ao.palm.past", []);
+    $("past").innerHTML = past.length ? past.map(p => `<li><b>${esc(p.god)}</b> <span lang="grc">${esc(p.greek)}</span>${p.q ? "<br>" + esc(p.q) : ""}<br>“${esc(p.msg)}”</li>`).join("") : "<li>None yet.</li>";
+  }
+  $("begin").onclick = layOut;
+  $("auto").onclick = auto;
+  $("q").addEventListener("keydown", e => { if (e.key === "Enter") layOut(); });
+  $("clear").onclick = () => { store.set("ao.palm.past", []); paintPast(); };
+  window.__palm = {layOut, auto, data: () => DATA, left: () => left.slice()};
+  paintPast();
+})();
+</script>
+</body></html>
