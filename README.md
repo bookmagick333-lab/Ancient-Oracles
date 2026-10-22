@@ -18,7 +18,9 @@ Each oracle is a self-contained page, so it can also go into a themed school kit
 
 `data/homer-oracle.json`: one entry per throw (`1-1-1` to `6-6-6`): the work (Iliad or Odyssey), book and line, the Greek,
 and our English translation; `"lost": true` for the 8 unknown lines and 4 scraps; `"note"` where the identification is
-uncertain or the papyrus has its own wording. The list follows Maltomini's 1995 edition, which corrects the older
+uncertain or the papyrus has its own wording. Each known line also has a modern reading written for the app: `theme` (a card title),
+`reading` (what the line says to the asker), `context` (the scene in Homer, checked against the Greek) and `aspects`
+(love, work, home, health, journeys): a start on a possible booklet with one page per line. The list follows Maltomini's 1995 edition, which corrects the older
 numbering of the damaged first columns (42 entries moved, 19 restored).
 
 ## The marketplace oracle data

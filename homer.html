@@ -42,6 +42,16 @@ h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;col
 .papyrus .ref{margin-top:10px;font-size:13.5px;color:#6b4e22}
 .papyrus .note{margin-top:6px;font-size:13px;color:#7a5a28;font-style:italic}
 .papyrus .wait{color:#6b4e22;font-style:italic}
+/* the reading: the theme of the line, what it says to you, and where it stands in Homer */
+.papyrus .read{margin-top:14px;padding-top:12px;border-top:1px solid rgba(110,80,30,.35)}
+.papyrus .theme{font:700 clamp(18px,2.2vw,22px) Cinzel,Georgia,serif;color:#5a3a0e;letter-spacing:.03em;margin:0 0 6px}
+.papyrus .reading{font:400 16.5px/1.6 Georgia,serif;margin:0 0 10px}
+.papyrus .ctx{font-size:14.5px;line-height:1.5;color:#5b4320;margin:0 0 10px}
+.papyrus .ctx b,.papyrus .asp-h{font:700 12px system-ui;letter-spacing:.14em;text-transform:uppercase;color:#7a5a28}
+.papyrus .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.papyrus .chips button{font:600 13px "Source Sans 3",system-ui;padding:4px 11px;border-radius:999px;border:1px solid #9a7638;background:transparent;color:#5a3a0e;cursor:pointer}
+.papyrus .chips button[aria-pressed="true"]{background:#7a5a28;color:#f6ecd2;border-color:#7a5a28}
+.papyrus .asp{font:italic 16px/1.55 Georgia,serif;margin:0;min-height:3em}
 .papyrus.reveal{animation:unroll .7s ease-out both}
 @keyframes unroll{from{clip-path:inset(0 50% 0 50%);opacity:.3}to{clip-path:inset(0 0 0 0);opacity:1}}
 .side .card{background:linear-gradient(#1f2742,#151a2e);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px}
@@ -111,6 +121,7 @@ h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;col
      <li class="known">✔ <b>A hidden word.</b> The first letters of the first five lines (throws 1-1-1 to 1-1-5) spell <span lang="grc">ΑΘΗΝΑ</span>, Athena: <span lang="grc">Ἄνδρ’, Θαρσῶν, Ἦ ῥα, Νίκην, Ἀλλ’</span>. This acrostic shows that the order Maltomini worked out for the torn first column is right.</li>
      <li class="known">✔ <b>Another name.</b> The Oxyrhynchus copy says the oracle could also be called "the Scimitar" (a curved sword). No one is sure why; it may echo a spell called "the Sword of Dardanos".</li>
      <li class="known">✔ <b>Good days and bad days.</b> The London papyrus says on which days of the month, and at which hours, the oracle may be used. See "Is today a good day?" above.</li>
+     <li class="guess">? <b>The readings are ours.</b> The papyrus gives only the line. The theme, the reading, the scene in Homer and the five areas of life are a modern guide written for this app, to help you think about what the line might mean for you.</li>
      <li class="guess">? <b>The ritual around it</b> beyond the prayer to Apollo (purification, offerings) is not known. Here you say the prayer, think of your question and throw.</li>
     </ul>
     <p style="font-size:12.5px;color:var(--muted);margin:8px 0 0">Papyrus: F. G. Kenyon, <i>Greek Papyri in the British Museum</i> I (1893), papyrus CXXI; the list of lines follows F. Maltomini, "P. Lond. 121 (= PGM VII), 1–221: Homeromanteion", <i>ZPE</i> 106 (1995) 107–122. Greek of Homer: Monro and Allen (Iliad), Murray 1919 (Odyssey), via the Perseus Digital Library. English: our own translation. Die: the "Zeus die", drawn for this app. Sounds: Kenney (CC0).</p>
@@ -184,12 +195,27 @@ h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;col
       a.innerHTML = `<div class="roll">Throw ${key}</div><p class="eng" style="margin-top:8px">This line is lost: the papyrus is torn here.</p>${e && e.note ? `<div class="note">${esc(e.note)}</div>` : ""}<p class="ref">The gods are silent. Think of your question again, and throw again.</p>`;
     } else {
       a.innerHTML = `<div class="roll">Throw ${key}${q ? " · " + esc(q) : ""}</div><div class="greek" lang="grc">${esc(e.greek)}</div>
-        <p class="eng">“${esc(e.english)}”</p><div class="ref">Homer, <i>${e.work}</i> book ${e.book}, line ${e.line}</div>${e.note ? `<div class="note">${esc(e.note)}</div>` : ""}`;
+        <p class="eng">“${esc(e.english)}”</p><div class="ref">Homer, <i>${e.work}</i> book ${e.book}, line ${e.line}</div>${e.note ? `<div class="note">${esc(e.note)}</div>` : ""}${readingHTML(e)}`;
+      wireAspects(a, e);
     }
     const past = store.get("ao.homer.past", []);
     past.unshift({key, q, line: e && !e.lost ? e.english : null, when: Date.now()});
     store.set("ao.homer.past", past.slice(0, 20)); paintPast();
     busy = false; $("throw").disabled = false;
+  }
+  // the reading, as on a card of an oracle deck: the theme, what the line says to you, the scene in Homer, and five areas of life
+  const ASPECTS = [["love", "Love"], ["work", "Work"], ["home", "Home"], ["health", "Health"], ["journeys", "Journeys"]];
+  function readingHTML(e) {
+    if (!e.reading) return "";
+    return `<div class="read"><h2 class="theme">${esc(e.theme)}</h2><p class="reading">${esc(e.reading)}</p>${e.context ? `<p class="ctx"><b>In Homer</b><br>${esc(e.context)}</p>` : ""}
+      ${e.aspects ? `<div class="asp-h">For your question about…</div><div class="chips" role="group" aria-label="Area of life">${ASPECTS.map(([k, t]) => `<button type="button" data-asp="${k}" aria-pressed="false">${t}</button>`).join("")}</div><p class="asp" aria-live="polite"></p>` : ""}</div>`;
+  }
+  function wireAspects(root, e) {
+    if (!e.aspects) return;
+    const btns = root.querySelectorAll(".chips button"), out = root.querySelector(".asp");
+    const show = k => { btns.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.asp === k))); out.textContent = e.aspects[k] || ""; store.set("ao.homer.asp", k); };
+    btns.forEach(b => b.onclick = () => show(b.dataset.asp));
+    show(store.get("ao.homer.asp", "love"));
   }
   function paintPast() {
     const past = store.get("ao.homer.past", []);
