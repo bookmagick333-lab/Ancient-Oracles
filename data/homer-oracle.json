@@ -1,0 +1,1450 @@
+{
+ "oracle": "The Homer oracle (Homeromanteion)",
+ "how": "Throw one six-sided die three times (or three dice in order); the three numbers name one of 216 lines of Homer.",
+ "sources": [
+  "Papyrus London 121 (PGM VII 1-148), 3rd century AD, ed. F. G. Kenyon, Greek Papyri in the British Museum vol. 1 (1893), public domain",
+  "Roll-to-line references as listed in Wikipedia, 'Sortes Homericae' (after the Oxford and Betz editions); the line references are ancient facts",
+  "Cross-checked: 'kenyon': true where Kenyon's 1893 text gives the same reference (OCR, so a false is not necessarily a disagreement)",
+  "Five references garbled in the Wikipedia table (3-5-3, 3-5-6, 4-2-1, 5-4-5, 6-4-3) corrected from Kenyon's text: all Iliad"
+ ],
+ "lost_rolls_note": "Lines lost where the papyrus is damaged; two other copies (P.Oxy. 3831, P.Bon. 3) may fill some.",
+ "entries": [
+  {
+   "roll": "1-1-1",
+   "work": "Odyssey",
+   "book": 15,
+   "line": 344,
+   "kenyon": false
+  },
+  {
+   "roll": "1-1-2",
+   "work": "Odyssey",
+   "book": 9,
+   "line": 137,
+   "kenyon": false
+  },
+  {
+   "roll": "1-1-3",
+   "work": "Iliad",
+   "book": 21,
+   "line": 21,
+   "kenyon": false
+  },
+  {
+   "roll": "1-1-4",
+   "lost": true
+  },
+  {
+   "roll": "1-1-5",
+   "work": "Iliad",
+   "book": 2,
+   "line": 101,
+   "kenyon": false
+  },
+  {
+   "roll": "1-1-6",
+   "lost": true
+  },
+  {
+   "roll": "1-2-1",
+   "work": "Iliad",
+   "book": 9,
+   "line": 120,
+   "kenyon": true
+  },
+  {
+   "roll": "1-2-2",
+   "work": "Iliad",
+   "book": 7,
+   "line": 360,
+   "kenyon": true
+  },
+  {
+   "roll": "1-2-3",
+   "lost": true
+  },
+  {
+   "roll": "1-2-4",
+   "lost": true
+  },
+  {
+   "roll": "1-2-5",
+   "work": "Odyssey",
+   "book": 15,
+   "line": 128,
+   "kenyon": false
+  },
+  {
+   "roll": "1-2-6",
+   "lost": true
+  },
+  {
+   "roll": "1-3-1",
+   "lost": true
+  },
+  {
+   "roll": "1-3-2",
+   "lost": true
+  },
+  {
+   "roll": "1-3-3",
+   "work": "Iliad",
+   "book": 18,
+   "line": 328,
+   "kenyon": true
+  },
+  {
+   "roll": "1-3-4",
+   "work": "Iliad",
+   "book": 3,
+   "line": 41,
+   "kenyon": false
+  },
+  {
+   "roll": "1-3-5",
+   "work": "Odyssey",
+   "book": 17,
+   "line": 244,
+   "kenyon": false
+  },
+  {
+   "roll": "1-3-6",
+   "work": "Iliad",
+   "book": 6,
+   "line": 441,
+   "kenyon": false
+  },
+  {
+   "roll": "1-4-1",
+   "lost": true
+  },
+  {
+   "roll": "1-4-2",
+   "work": "Odyssey",
+   "book": 17,
+   "line": 66,
+   "kenyon": false
+  },
+  {
+   "roll": "1-4-3",
+   "work": "Iliad",
+   "book": 3,
+   "line": 65,
+   "kenyon": false
+  },
+  {
+   "roll": "1-4-4",
+   "lost": true
+  },
+  {
+   "roll": "1-4-5",
+   "lost": true
+  },
+  {
+   "roll": "1-4-6",
+   "work": "Iliad",
+   "book": 21,
+   "line": 223,
+   "kenyon": false
+  },
+  {
+   "roll": "1-5-1",
+   "work": "Iliad",
+   "book": 3,
+   "line": 51,
+   "kenyon": false
+  },
+  {
+   "roll": "1-5-2",
+   "work": "Odyssey",
+   "book": 14,
+   "line": 161,
+   "kenyon": false
+  },
+  {
+   "roll": "1-5-3",
+   "work": "Iliad",
+   "book": 22,
+   "line": 513,
+   "kenyon": false
+  },
+  {
+   "roll": "1-5-4",
+   "work": "Iliad",
+   "book": 3,
+   "line": 255,
+   "kenyon": false
+  },
+  {
+   "roll": "1-5-5",
+   "work": "Iliad",
+   "book": 2,
+   "line": 204,
+   "kenyon": false
+  },
+  {
+   "roll": "1-5-6",
+   "work": "Odyssey",
+   "book": 20,
+   "line": 355,
+   "kenyon": false
+  },
+  {
+   "roll": "1-6-1",
+   "work": "Iliad",
+   "book": 22,
+   "line": 393,
+   "kenyon": false
+  },
+  {
+   "roll": "1-6-2",
+   "work": "Iliad",
+   "book": 10,
+   "line": 303,
+   "kenyon": false
+  },
+  {
+   "roll": "1-6-3",
+   "work": "Iliad",
+   "book": 9,
+   "line": 385,
+   "kenyon": false
+  },
+  {
+   "roll": "1-6-4",
+   "lost": true
+  },
+  {
+   "roll": "1-6-5",
+   "lost": true
+  },
+  {
+   "roll": "1-6-6",
+   "lost": true
+  },
+  {
+   "roll": "2-1-1",
+   "work": "Odyssey",
+   "book": 4,
+   "line": 607,
+   "kenyon": false
+  },
+  {
+   "roll": "2-1-2",
+   "work": "Odyssey",
+   "book": 4,
+   "line": 688,
+   "kenyon": false
+  },
+  {
+   "roll": "2-1-3",
+   "lost": true
+  },
+  {
+   "roll": "2-1-4",
+   "lost": true
+  },
+  {
+   "roll": "2-1-5",
+   "lost": true
+  },
+  {
+   "roll": "2-1-6",
+   "work": "Iliad",
+   "book": 9,
+   "line": 378,
+   "kenyon": false
+  },
+  {
+   "roll": "2-2-1",
+   "work": "Iliad",
+   "book": 9,
+   "line": 482,
+   "kenyon": false
+  },
+  {
+   "roll": "2-2-2",
+   "lost": true
+  },
+  {
+   "roll": "2-2-3",
+   "lost": true
+  },
+  {
+   "roll": "2-2-4",
+   "lost": true
+  },
+  {
+   "roll": "2-2-5",
+   "work": "Odyssey",
+   "book": 24,
+   "line": 19,
+   "kenyon": false
+  },
+  {
+   "roll": "2-2-6",
+   "work": "Odyssey",
+   "book": 11,
+   "line": 366,
+   "kenyon": false
+  },
+  {
+   "roll": "2-3-1",
+   "work": "Odyssey",
+   "book": 1,
+   "line": 302,
+   "kenyon": false
+  },
+  {
+   "roll": "2-3-2",
+   "work": "Iliad",
+   "book": 11,
+   "line": 171,
+   "kenyon": false
+  },
+  {
+   "roll": "2-3-3",
+   "work": "Iliad",
+   "book": 9,
+   "line": 43,
+   "kenyon": false
+  },
+  {
+   "roll": "2-3-4",
+   "work": "Iliad",
+   "book": 19,
+   "line": 107,
+   "kenyon": false
+  },
+  {
+   "roll": "2-3-5",
+   "work": "Iliad",
+   "book": 22,
+   "line": 79,
+   "kenyon": false
+  },
+  {
+   "roll": "2-3-6",
+   "work": "Odyssey",
+   "book": 3,
+   "line": 115,
+   "kenyon": false
+  },
+  {
+   "roll": "2-4-1",
+   "work": "Iliad",
+   "book": 5,
+   "line": 899,
+   "kenyon": false
+  },
+  {
+   "roll": "2-4-2",
+   "work": "Odyssey",
+   "book": 11,
+   "line": 80,
+   "kenyon": false
+  },
+  {
+   "roll": "2-4-3",
+   "work": "Iliad",
+   "book": 4,
+   "line": 26,
+   "kenyon": false
+  },
+  {
+   "roll": "2-4-4",
+   "work": "Iliad",
+   "book": 2,
+   "line": 325,
+   "kenyon": false
+  },
+  {
+   "roll": "2-4-5",
+   "work": "Odyssey",
+   "book": 3,
+   "line": 117,
+   "kenyon": false
+  },
+  {
+   "roll": "2-4-6",
+   "work": "Odyssey",
+   "book": 2,
+   "line": 329,
+   "kenyon": false
+  },
+  {
+   "roll": "2-5-1",
+   "work": "Iliad",
+   "book": 24,
+   "line": 725,
+   "kenyon": false
+  },
+  {
+   "roll": "2-5-2",
+   "work": "Iliad",
+   "book": 9,
+   "line": 310,
+   "kenyon": false
+  },
+  {
+   "roll": "2-5-3",
+   "work": "Iliad",
+   "book": 6,
+   "line": 264,
+   "kenyon": false
+  },
+  {
+   "roll": "2-5-4",
+   "lost": true
+  },
+  {
+   "roll": "2-5-5",
+   "lost": true
+  },
+  {
+   "roll": "2-5-6",
+   "work": "Iliad",
+   "book": 6,
+   "line": 432,
+   "kenyon": false
+  },
+  {
+   "roll": "1-6-1",
+   "work": "Odyssey",
+   "book": 4,
+   "line": 685,
+   "kenyon": true
+  },
+  {
+   "roll": "2-6-2",
+   "work": "Iliad",
+   "book": 2,
+   "line": 24,
+   "kenyon": true
+  },
+  {
+   "roll": "2-6-3",
+   "work": "Iliad",
+   "book": 6,
+   "line": 326,
+   "kenyon": false
+  },
+  {
+   "roll": "2-6-4",
+   "work": "Odyssey",
+   "book": 3,
+   "line": 216,
+   "kenyon": false
+  },
+  {
+   "roll": "2-6-5",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 214,
+   "kenyon": true
+  },
+  {
+   "roll": "2-6-6",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 180,
+   "kenyon": true
+  },
+  {
+   "roll": "3-1-1",
+   "work": "Iliad",
+   "book": 14,
+   "line": 80,
+   "kenyon": true
+  },
+  {
+   "roll": "3-1-2",
+   "work": "Iliad",
+   "book": 22,
+   "line": 268,
+   "kenyon": false
+  },
+  {
+   "roll": "3-1-3",
+   "work": "Iliad",
+   "book": 22,
+   "line": 484,
+   "kenyon": false
+  },
+  {
+   "roll": "3-1-4",
+   "work": "Iliad",
+   "book": 18,
+   "line": 134,
+   "kenyon": false
+  },
+  {
+   "roll": "3-1-5",
+   "work": "Odyssey",
+   "book": 19,
+   "line": 360,
+   "kenyon": false
+  },
+  {
+   "roll": "3-1-6",
+   "lost": true
+  },
+  {
+   "roll": "3-2-1",
+   "lost": true
+  },
+  {
+   "roll": "3-2-2",
+   "work": "Odyssey",
+   "book": 6,
+   "line": 201,
+   "kenyon": true
+  },
+  {
+   "roll": "3-2-3",
+   "work": "Iliad",
+   "book": 18,
+   "line": 128,
+   "kenyon": true
+  },
+  {
+   "roll": "3-2-4",
+   "work": "Iliad",
+   "book": 22,
+   "line": 219,
+   "kenyon": false
+  },
+  {
+   "roll": "3-2-5",
+   "work": "Iliad",
+   "book": 22,
+   "line": 50,
+   "kenyon": true
+  },
+  {
+   "roll": "3-2-6",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 310,
+   "kenyon": true
+  },
+  {
+   "roll": "3-1-1",
+   "work": "Iliad",
+   "book": 8,
+   "line": 94,
+   "kenyon": true
+  },
+  {
+   "roll": "3-3-2",
+   "work": "Odyssey",
+   "book": 6,
+   "line": 244,
+   "kenyon": true
+  },
+  {
+   "roll": "3-3-3",
+   "work": "Iliad",
+   "book": 4,
+   "line": 443,
+   "kenyon": false
+  },
+  {
+   "roll": "3-4-4",
+   "work": "Iliad",
+   "book": 18,
+   "line": 328,
+   "kenyon": true
+  },
+  {
+   "roll": "3-3-5",
+   "work": "Iliad",
+   "book": 8,
+   "line": 246,
+   "kenyon": true
+  },
+  {
+   "roll": "3-3-6",
+   "work": "Iliad",
+   "book": 9,
+   "line": 698,
+   "kenyon": false
+  },
+  {
+   "roll": "3-4-1",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 293,
+   "kenyon": true
+  },
+  {
+   "roll": "3-4-2",
+   "work": "Iliad",
+   "book": 22,
+   "line": 185,
+   "kenyon": true
+  },
+  {
+   "roll": "3-4-3",
+   "work": "Iliad",
+   "book": 18,
+   "line": 329,
+   "kenyon": true
+  },
+  {
+   "roll": "3-4-4",
+   "work": "Iliad",
+   "book": 8,
+   "line": 282,
+   "kenyon": true
+  },
+  {
+   "roll": "3-4-5",
+   "work": "Iliad",
+   "book": 22,
+   "line": 348,
+   "kenyon": true
+  },
+  {
+   "roll": "3-4-6",
+   "work": "Iliad",
+   "book": 22,
+   "line": 13,
+   "kenyon": true
+  },
+  {
+   "roll": "3-5-1",
+   "work": "Odyssey",
+   "book": 5,
+   "line": 208,
+   "kenyon": true
+  },
+  {
+   "roll": "3-5-2",
+   "work": "Odyssey",
+   "book": 18,
+   "line": 10,
+   "kenyon": true
+  },
+  {
+   "roll": "3-5-3",
+   "work": "Iliad",
+   "book": 14,
+   "line": 81,
+   "kenyon": true
+  },
+  {
+   "roll": "3-5-4",
+   "work": "Odyssey",
+   "book": 13,
+   "line": 308,
+   "kenyon": true
+  },
+  {
+   "roll": "3-5-5",
+   "work": "Iliad",
+   "book": 11,
+   "line": 69,
+   "kenyon": true
+  },
+  {
+   "roll": "3-5-6",
+   "work": "Iliad",
+   "book": 20,
+   "line": 250,
+   "kenyon": true
+  },
+  {
+   "roll": "3-6-1",
+   "work": "Iliad",
+   "book": 11,
+   "line": 125,
+   "kenyon": false
+  },
+  {
+   "roll": "3-6-2",
+   "work": "Iliad",
+   "book": 15,
+   "line": 203,
+   "kenyon": true
+  },
+  {
+   "roll": "3-6-3",
+   "work": "Odyssey",
+   "book": 13,
+   "line": 339,
+   "kenyon": false
+  },
+  {
+   "roll": "3-6-4",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 257,
+   "kenyon": true
+  },
+  {
+   "roll": "3-6-5",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 288,
+   "kenyon": true
+  },
+  {
+   "roll": "3-6-6",
+   "work": "Iliad",
+   "book": 16,
+   "line": 250,
+   "kenyon": true
+  },
+  {
+   "roll": "4-1-1",
+   "work": "Odyssey",
+   "book": 1,
+   "line": 356,
+   "kenyon": false
+  },
+  {
+   "roll": "4-1-2",
+   "work": "Odyssey",
+   "book": 11,
+   "line": 224,
+   "kenyon": true
+  },
+  {
+   "roll": "4-1-3",
+   "work": "Iliad",
+   "book": 3,
+   "line": 57,
+   "kenyon": false
+  },
+  {
+   "roll": "4-1-4",
+   "work": "Odyssey",
+   "book": 18,
+   "line": 176,
+   "kenyon": false
+  },
+  {
+   "roll": "4-1-5",
+   "work": "Iliad",
+   "book": 4,
+   "line": 101,
+   "kenyon": false
+  },
+  {
+   "roll": "4-1-6",
+   "work": "Iliad",
+   "book": 22,
+   "line": 263,
+   "kenyon": true
+  },
+  {
+   "roll": "4-2-1",
+   "work": "Iliad",
+   "book": 4,
+   "line": 62,
+   "kenyon": true
+  },
+  {
+   "roll": "4-2-2",
+   "work": "Iliad",
+   "book": 18,
+   "line": 535,
+   "kenyon": true
+  },
+  {
+   "roll": "4-2-3",
+   "lost": true
+  },
+  {
+   "roll": "4-2-4",
+   "work": "Iliad",
+   "book": 4,
+   "line": 264,
+   "kenyon": true
+  },
+  {
+   "roll": "4-2-5",
+   "lost": true
+  },
+  {
+   "roll": "4-2-6",
+   "work": "Iliad",
+   "book": 21,
+   "line": 474,
+   "kenyon": true
+  },
+  {
+   "roll": "4-3-1",
+   "work": "Iliad",
+   "book": 24,
+   "line": 602,
+   "kenyon": true
+  },
+  {
+   "roll": "4-3-2",
+   "work": "Odyssey",
+   "book": 5,
+   "line": 38,
+   "kenyon": true
+  },
+  {
+   "roll": "4-3-3",
+   "work": "Odyssey",
+   "book": 2,
+   "line": 273,
+   "kenyon": true
+  },
+  {
+   "roll": "4-3-4",
+   "work": "Iliad",
+   "book": 12,
+   "line": 243,
+   "kenyon": true
+  },
+  {
+   "roll": "4-3-5",
+   "work": "Iliad",
+   "book": 10,
+   "line": 294,
+   "kenyon": false
+  },
+  {
+   "roll": "4-3-6",
+   "work": "Iliad",
+   "book": 4,
+   "line": 95,
+   "kenyon": false
+  },
+  {
+   "roll": "4-4-1",
+   "work": "Odyssey",
+   "book": 11,
+   "line": 456,
+   "kenyon": true
+  },
+  {
+   "roll": "4-4-2",
+   "work": "Iliad",
+   "book": 14,
+   "line": 212,
+   "kenyon": false
+  },
+  {
+   "roll": "4-4-3",
+   "work": "Iliad",
+   "book": 15,
+   "line": 52,
+   "kenyon": true
+  },
+  {
+   "roll": "4-4-4",
+   "work": "Iliad",
+   "book": 11,
+   "line": 7,
+   "kenyon": false
+  },
+  {
+   "roll": "4-4-5",
+   "work": "Iliad",
+   "book": 5,
+   "line": 654,
+   "kenyon": true
+  },
+  {
+   "roll": "4-4-6",
+   "work": "Iliad",
+   "book": 9,
+   "line": 137,
+   "kenyon": false
+  },
+  {
+   "roll": "4-5-1",
+   "work": "Odyssey",
+   "book": 11,
+   "line": 443,
+   "kenyon": true
+  },
+  {
+   "roll": "4-5-2",
+   "work": "Iliad",
+   "book": 10,
+   "line": 71,
+   "kenyon": false
+  },
+  {
+   "roll": "4-5-3",
+   "work": "Odyssey",
+   "book": 10,
+   "line": 495,
+   "kenyon": true
+  },
+  {
+   "roll": "4-5-4",
+   "work": "Iliad",
+   "book": 9,
+   "line": 598,
+   "kenyon": true
+  },
+  {
+   "roll": "4-5-5",
+   "work": "Iliad",
+   "book": 19,
+   "line": 185,
+   "kenyon": false
+  },
+  {
+   "roll": "4-5-6",
+   "work": "Iliad",
+   "book": 20,
+   "line": 242,
+   "kenyon": true
+  },
+  {
+   "roll": "4-6-1",
+   "work": "Iliad",
+   "book": 11,
+   "line": 654,
+   "kenyon": true
+  },
+  {
+   "roll": "4-6-2",
+   "work": "Iliad",
+   "book": 2,
+   "line": 66,
+   "kenyon": false
+  },
+  {
+   "roll": "4-6-3",
+   "work": "Odyssey",
+   "book": 20,
+   "line": 18,
+   "kenyon": true
+  },
+  {
+   "roll": "4-6-4",
+   "work": "Iliad",
+   "book": 2,
+   "line": 200,
+   "kenyon": false
+  },
+  {
+   "roll": "4-6-5",
+   "work": "Iliad",
+   "book": 16,
+   "line": 282,
+   "kenyon": true
+  },
+  {
+   "roll": "4-6-6",
+   "work": "Odyssey",
+   "book": 3,
+   "line": 196,
+   "kenyon": true
+  },
+  {
+   "roll": "5-1-1",
+   "work": "Odyssey",
+   "book": 5,
+   "line": 346,
+   "kenyon": true
+  },
+  {
+   "roll": "5-1-2",
+   "work": "Odyssey",
+   "book": 22,
+   "line": 412,
+   "kenyon": true
+  },
+  {
+   "roll": "5-1-3",
+   "work": "Iliad",
+   "book": 24,
+   "line": 363,
+   "kenyon": false
+  },
+  {
+   "roll": "5-1-4",
+   "work": "Odyssey",
+   "book": 1,
+   "line": 65,
+   "kenyon": false
+  },
+  {
+   "roll": "5-1-5",
+   "work": "Iliad",
+   "book": 5,
+   "line": 83,
+   "kenyon": true
+  },
+  {
+   "roll": "5-1-6",
+   "work": "Odyssey",
+   "book": 11,
+   "line": 427,
+   "kenyon": true
+  },
+  {
+   "roll": "5-2-1",
+   "work": "Iliad",
+   "book": 12,
+   "line": 216,
+   "kenyon": true
+  },
+  {
+   "roll": "5-2-2",
+   "work": "Iliad",
+   "book": 24,
+   "line": 369,
+   "kenyon": false
+  },
+  {
+   "roll": "5-2-3",
+   "work": "Iliad",
+   "book": 5,
+   "line": 408,
+   "kenyon": false
+  },
+  {
+   "roll": "5-2-4",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 207,
+   "kenyon": true
+  },
+  {
+   "roll": "5-2-5",
+   "work": "Iliad",
+   "book": 5,
+   "line": 218,
+   "kenyon": true
+  },
+  {
+   "roll": "5-2-6",
+   "work": "Iliad",
+   "book": 19,
+   "line": 189,
+   "kenyon": false
+  },
+  {
+   "roll": "5-3-1",
+   "work": "Iliad",
+   "book": 16,
+   "line": 91,
+   "kenyon": true
+  },
+  {
+   "roll": "5-3-2",
+   "work": "Iliad",
+   "book": 9,
+   "line": 133,
+   "kenyon": false
+  },
+  {
+   "roll": "5-3-3",
+   "work": "Iliad",
+   "book": 22,
+   "line": 495,
+   "kenyon": true
+  },
+  {
+   "roll": "5-3-4",
+   "work": "Iliad",
+   "book": 18,
+   "line": 463,
+   "kenyon": false
+  },
+  {
+   "roll": "5-3-5",
+   "work": "Iliad",
+   "book": 8,
+   "line": 299,
+   "kenyon": true
+  },
+  {
+   "roll": "5-3-6",
+   "work": "Iliad",
+   "book": 4,
+   "line": 412,
+   "kenyon": true
+  },
+  {
+   "roll": "5-4-1",
+   "work": "Odyssey",
+   "book": 8,
+   "line": 329,
+   "kenyon": true
+  },
+  {
+   "roll": "5-4-2",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 236,
+   "kenyon": true
+  },
+  {
+   "roll": "5-4-3",
+   "work": "Iliad",
+   "book": 17,
+   "line": 201,
+   "kenyon": true
+  },
+  {
+   "roll": "5-4-4",
+   "work": "Odyssey",
+   "book": 23,
+   "line": 7,
+   "kenyon": true
+  },
+  {
+   "roll": "5-4-5",
+   "work": "Iliad",
+   "book": 4,
+   "line": 161,
+   "kenyon": true
+  },
+  {
+   "roll": "5-4-6",
+   "work": "Iliad",
+   "book": 5,
+   "line": 740,
+   "kenyon": false
+  },
+  {
+   "roll": "5-5-1",
+   "work": "Odyssey",
+   "book": 12,
+   "line": 342,
+   "kenyon": true
+  },
+  {
+   "roll": "5-5-2",
+   "work": "Iliad",
+   "book": 18,
+   "line": 121,
+   "kenyon": false
+  },
+  {
+   "roll": "5-5-3",
+   "work": "Iliad",
+   "book": 4,
+   "line": 264,
+   "kenyon": true
+  },
+  {
+   "roll": "5-5-4",
+   "work": "Odyssey",
+   "book": 23,
+   "line": 26,
+   "kenyon": true
+  },
+  {
+   "roll": "5-5-5",
+   "work": "Iliad",
+   "book": 19,
+   "line": 119,
+   "kenyon": false
+  },
+  {
+   "roll": "5-5-6",
+   "work": "Iliad",
+   "book": 4,
+   "line": 362,
+   "kenyon": true
+  },
+  {
+   "roll": "5-6-1",
+   "work": "Iliad",
+   "book": 8,
+   "line": 413,
+   "kenyon": true
+  },
+  {
+   "roll": "5-6-2",
+   "work": "Odyssey",
+   "book": 13,
+   "line": 421,
+   "kenyon": true
+  },
+  {
+   "roll": "5-6-3",
+   "work": "Iliad",
+   "book": 4,
+   "line": 320,
+   "kenyon": true
+  },
+  {
+   "roll": "5-6-4",
+   "work": "Iliad",
+   "book": 5,
+   "line": 218,
+   "kenyon": true
+  },
+  {
+   "roll": "5-6-5",
+   "work": "Iliad",
+   "book": 12,
+   "line": 173,
+   "kenyon": true
+  },
+  {
+   "roll": "5-6-6",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 129,
+   "kenyon": true
+  },
+  {
+   "roll": "6-1-1",
+   "work": "Iliad",
+   "book": 24,
+   "line": 203,
+   "kenyon": true
+  },
+  {
+   "roll": "6-1-2",
+   "work": "Odyssey",
+   "book": 7,
+   "line": 65,
+   "kenyon": true
+  },
+  {
+   "roll": "6-1-3",
+   "work": "Iliad",
+   "book": 5,
+   "line": 127,
+   "kenyon": true
+  },
+  {
+   "roll": "6-1-4",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 180,
+   "kenyon": true
+  },
+  {
+   "roll": "6-1-5",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 209,
+   "kenyon": true
+  },
+  {
+   "roll": "6-1-6",
+   "work": "Odyssey",
+   "book": 16,
+   "line": 79,
+   "kenyon": false
+  },
+  {
+   "roll": "6-2-1",
+   "work": "Odyssey",
+   "book": 11,
+   "line": 278,
+   "kenyon": true
+  },
+  {
+   "roll": "6-2-2",
+   "work": "Odyssey",
+   "book": 8,
+   "line": 244,
+   "kenyon": true
+  },
+  {
+   "roll": "6-2-3",
+   "work": "Odyssey",
+   "book": 7,
+   "line": 35,
+   "kenyon": true
+  },
+  {
+   "roll": "6-2-4",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 369,
+   "kenyon": true
+  },
+  {
+   "roll": "6-2-5",
+   "work": "Iliad",
+   "book": 19,
+   "line": 139,
+   "kenyon": true
+  },
+  {
+   "roll": "6-2-6",
+   "work": "Iliad",
+   "book": 18,
+   "line": 117,
+   "kenyon": true
+  },
+  {
+   "roll": "6-3-1",
+   "work": "Iliad",
+   "book": 9,
+   "line": 120,
+   "kenyon": true
+  },
+  {
+   "roll": "6-3-2",
+   "work": "Iliad",
+   "book": 19,
+   "line": 175,
+   "kenyon": false
+  },
+  {
+   "roll": "6-3-3",
+   "work": "Iliad",
+   "book": 14,
+   "line": 110,
+   "kenyon": false
+  },
+  {
+   "roll": "6-3-4",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 196,
+   "kenyon": true
+  },
+  {
+   "roll": "6-3-5",
+   "work": "Iliad",
+   "book": 14,
+   "line": 53,
+   "kenyon": false
+  },
+  {
+   "roll": "6-3-6",
+   "work": "Iliad",
+   "book": 12,
+   "line": 412,
+   "kenyon": true
+  },
+  {
+   "roll": "6-4-1",
+   "work": "Iliad",
+   "book": 7,
+   "line": 360,
+   "kenyon": true
+  },
+  {
+   "roll": "6-4-2",
+   "work": "Iliad",
+   "book": 10,
+   "line": 383,
+   "kenyon": true
+  },
+  {
+   "roll": "6-4-3",
+   "work": "Iliad",
+   "book": 5,
+   "line": 413,
+   "kenyon": true
+  },
+  {
+   "roll": "6-4-4",
+   "work": "Odyssey",
+   "book": 7,
+   "line": 30,
+   "kenyon": true
+  },
+  {
+   "roll": "6-4-5",
+   "work": "Iliad",
+   "book": 15,
+   "line": 129,
+   "kenyon": true
+  },
+  {
+   "roll": "6-4-6",
+   "work": "Iliad",
+   "book": 17,
+   "line": 197,
+   "kenyon": true
+  },
+  {
+   "roll": "6-5-1",
+   "work": "Odyssey",
+   "book": 5,
+   "line": 220,
+   "kenyon": true
+  },
+  {
+   "roll": "6-5-2",
+   "work": "Odyssey",
+   "book": 7,
+   "line": 64,
+   "kenyon": true
+  },
+  {
+   "roll": "6-5-3",
+   "work": "Odyssey",
+   "book": 7,
+   "line": 76,
+   "kenyon": true
+  },
+  {
+   "roll": "6-5-4",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 212,
+   "kenyon": true
+  },
+  {
+   "roll": "6-5-5",
+   "work": "Iliad",
+   "book": 1,
+   "line": 212,
+   "kenyon": true
+  },
+  {
+   "roll": "6-5-6",
+   "work": "Odyssey",
+   "book": 16,
+   "line": 81,
+   "kenyon": false
+  },
+  {
+   "roll": "6-6-1",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 363,
+   "kenyon": true
+  },
+  {
+   "roll": "6-6-2",
+   "work": "Odyssey",
+   "book": 20,
+   "line": 237,
+   "kenyon": false
+  },
+  {
+   "roll": "6-6-3",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 322,
+   "kenyon": true
+  },
+  {
+   "roll": "6-6-4",
+   "work": "Odyssey",
+   "book": 21,
+   "line": 156,
+   "kenyon": true
+  },
+  {
+   "roll": "6-6-5",
+   "work": "Iliad",
+   "book": 1,
+   "line": 542,
+   "kenyon": true
+  },
+  {
+   "roll": "6-6-6",
+   "work": "Iliad",
+   "book": 10,
+   "line": 447,
+   "kenyon": true
+  }
+ ]
+}
