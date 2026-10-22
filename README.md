@@ -30,7 +30,7 @@ numbering of the damaged first columns (42 entries moved, 19 restored).
 
 ## Assets
 
-- Dice faces and knucklebone views: made by the owner (ChatGPT) for Roman Games.
+- Dice faces and knucklebone views: made by the owner (ChatGPT) for Roman Games. The Homer oracle uses the owner's "Zeus die" faces (`zeus-face1-6.webp`).
 - Dice sounds: Kenney, *Casino Audio* (kenney.nl), CC0. See `assets/sounds/KENNEY-LICENSE.txt`.
 
 ## Running it

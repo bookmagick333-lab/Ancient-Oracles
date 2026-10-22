@@ -51,6 +51,26 @@ h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;col
 .past{list-style:none;padding:0;margin:6px 0 0;font-size:14px;color:var(--muted);max-height:220px;overflow:auto}
 .past li{border-top:1px solid var(--line);padding:6px 0}.past li b{color:#d6dbea}
 .known{color:#9fe0a5}.guess{color:#ffd27a}
+/* the prayer to Apollo, said before the throws */
+.prayer{margin-bottom:12px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(#1f2742,#151a2e);padding:12px 16px}
+.prayer summary{cursor:pointer;font:700 15px Cinzel,Georgia,serif;letter-spacing:.08em;color:var(--gold)}
+.prayer .lines{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:6px 18px;margin-top:10px;align-items:baseline}
+@media (max-width:620px){.prayer .lines{grid-template-columns:1fr;gap:0}.prayer .en{margin-bottom:8px}}
+.prayer .gk{font:400 17px/1.45 "GFS Didot",Georgia,serif;color:#f4e3b8}
+.prayer .en{font:italic 15px/1.45 Georgia,serif;color:#d6dbea}
+.prayer .src{margin:10px 0 0;font-size:12.5px;color:var(--muted)}
+/* is today a good day? */
+.today .big{font:700 19px Cinzel,Georgia,serif;color:#f4e3b8;margin:4px 0 2px}
+.today .big.no{color:#ff9f8a}
+.today .sub{font-size:13.5px;color:var(--muted);margin:0}
+.today .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:8px 0 2px}
+.today .seg button{font:600 12.5px "Source Sans 3",system-ui;background:#141a30;color:var(--muted);border:0;padding:5px 10px;cursor:pointer}
+.today .seg button[aria-pressed="true"]{background:#3b4a86;color:#f6ecd2}
+.days{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+.days td{padding:2px 4px;border-top:1px solid var(--line);color:#d6dbea}
+.days td:first-child{width:2.2em;text-align:right;color:var(--muted)}
+.days tr.now td{background:rgba(224,180,90,.18)}
+.days td.no{color:#ff9f8a}
 @media (prefers-reduced-motion:reduce){.papyrus.reveal{animation:none}}
 </style>
 </head>
@@ -60,24 +80,40 @@ h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;col
  <p class="lede">Think of your question. Then throw the die three times: the three numbers point to one line of Homer, and that line is the gods' answer. This is how it was done with a magical papyrus from Roman Egypt, about 1,700 years ago.</p>
  <div class="layout">
   <div>
+   <details class="prayer" id="prayer" open><summary>First, pray to Apollo</summary>
+    <div class="lines">
+     <div class="gk" lang="grc">κλῦθι, ἄναξ, ὅς που Λυκίης ἐν πίονι δήμῳ</div><div class="en">Hear me, lord, wherever you are, in the rich land of Lycia</div><div class="gk" lang="grc">εἶς ἢ ἐνὶ Τροίῃ· δύνασαι δὲ σὺ πάντοσ’ ἀκούειν</div><div class="en">or in Troy: for you can hear from anywhere</div><div class="gk" lang="grc">ἀνέρι κηδομένῳ, ὡς νῦν ἐμὲ κῆδος ἱκάνει.</div><div class="en">a man in trouble, as trouble has come to me now.</div><div class="gk" lang="grc">καί μοι τοῦτ’ ἀγόρευσον ἐτήτυμον, ὄφρ’ ἐῢ εἰδῶ,</div><div class="en">So tell me this truly, so that I may know it well:</div><div class="gk" lang="grc">ὅττι μάλιστ’ ἐθέλω καί μοι φίλον ἔπλετο θυμῷ.</div><div class="en">the thing I most want, the thing dear to my heart.</div>
+    </div>
+    <p class="src">The prayer the Oxyrhynchus copy gives for this oracle. It is itself made of lines of Homer: the first three are Glaucus' prayer to Apollo (<i>Iliad</i> 16.514–516); the fourth is <i>Odyssey</i> 1.174; the fifth is <i>Odyssey</i> 18.113, changed to say "I" instead of "you". The papyrus is damaged here, so the wording is partly restored. English: our own translation.</p>
+   </details>
    <div class="ask"><input id="q" type="text" maxlength="140" placeholder="Your question (it stays on this device)" aria-label="Your question"><button class="btn" type="button" id="throw">🎲 Throw the die three times</button></div>
    <div class="altar" id="altar"><div class="slots"><div class="slot"><b id="n1">·</b>first</div><div class="slot"><b id="n2">·</b>second</div><div class="slot"><b id="n3">·</b>third</div></div></div>
    <div class="papyrus" id="answer"><p class="wait">The papyrus waits for your throw.</p></div>
   </div>
   <aside class="side">
+   <div class="card today" id="today"><h3>Is today a good day?</h3>
+    <div class="big" id="tdVerdict">…</div><p class="sub" id="tdSub"></p>
+    <div class="seg" role="group" aria-label="Count the days by"><button type="button" data-count="moon" aria-pressed="true">by the moon</button><button type="button" data-count="date" aria-pressed="false">by the date</button></div>
+    <details><summary style="font-size:14px;margin-top:6px">The papyrus's table of days</summary>
+     <table class="days" id="days"></table>
+     <p style="font-size:12.5px;color:var(--muted);margin:8px 0 0">Straight after the 216 lines, the London papyrus lists the 30 days of the month with the hours when the oracle may be used, under the heading <i lang="grc">ἡμερομαντίαι καὶ ὧραι</i>, "day-oracles and hours". <i lang="grc">μὴ χρῶ</i>, "do not use", marks the days when it must not be consulted. Greek months began with the new moon, so counting by the moon is closer to the ancient way; but Roman Egypt also used a calendar of 30-day months, so we cannot be sure which the papyrus meant. Words in [brackets] are torn and restored. Days 24–30 follow Kenyon's printed reading.</p>
+    </details></div>
    <div class="card"><h3>How to consult</h3>
-    <ol><li>The ancient instructions say: first call on <b>Apollo</b>, god of prophecy, and pray for what you want.</li><li>Think of one clear question, and keep it in mind.</li><li>Throw the die three times. Each throw gives a number from 1 to 6.</li>
+    <ol><li>Check that today is a day when the oracle may be used.</li><li>Call on <b>Apollo</b>, god of prophecy: say the prayer, aloud or in your head.</li><li>Think of one clear question, and keep it in mind.</li><li>Throw the die three times. Each throw gives a number from 1 to 6.</li>
      <li>The three numbers, in order, name one of 216 lines of Homer (6 × 6 × 6).</li><li>Read the line as the answer to your question. Its meaning is for you to work out, as it was for the ancients.</li></ol></div>
    <div class="card"><h3>Your answers</h3><ul class="past" id="past"></ul><button class="btn alt" type="button" id="clear" style="margin-top:8px">Clear</button></div>
    <div class="card"><details><summary>How do we know?</summary>
     <ul>
      <li class="known">✔ <b>A real oracle.</b> The list survives on a papyrus roll from Roman Egypt, now in the British Library (Papyrus 121, about the 4th century AD). It begins with 216 single lines from the Iliad and Odyssey, each numbered by three throws of a die. Two more copies survive in part, from Oxyrhynchus and Bologna, and they agree with it.</li>
-     <li class="known">✔ <b>How to use it.</b> The Oxyrhynchus copy gives the instructions: know the days when the oracle may be used, call on Apollo and pray for what you want, then throw the die three times and find the line. The papyrus calls itself <i>Homeromanteion</i>, "Homer oracle".</li>
+     <li class="known">✔ <b>How to use it.</b> The Oxyrhynchus copy gives the instructions: know the days when the oracle may be used, call on Apollo with the prayer and ask for what you want, then throw the die three times and find the line. The papyrus calls itself <i>Homeromanteion</i>, "Homer oracle".</li>
      <li class="known">✔ <b>Homer as scripture.</b> Greeks treated Homer's poems as a source of wisdom, and lines picked at random could be read as messages from the gods.</li>
      <li class="known">✔ <b>Pieced together.</b> The start of the London roll is torn into fragments. In 1995 Franco Maltomini fitted them back together, checked them on the original, and used the two other copies to fill gaps. Today 204 lines are known; 8 are lost completely and 4 survive only as scraps. If you throw one of those, the oracle is silent.</li>
-     <li class="guess">? <b>The ritual around it</b> (prayers, purification, which god was asked) is only partly known. Here you simply think of your question.</li>
+     <li class="known">✔ <b>A hidden word.</b> The first letters of the first five lines (throws 1-1-1 to 1-1-5) spell <span lang="grc">ΑΘΗΝΑ</span>, Athena: <span lang="grc">Ἄνδρ’, Θαρσῶν, Ἦ ῥα, Νίκην, Ἀλλ’</span>. This acrostic shows that the order Maltomini worked out for the torn first column is right.</li>
+     <li class="known">✔ <b>Another name.</b> The Oxyrhynchus copy says the oracle could also be called "the Scimitar" (a curved sword). No one is sure why; it may echo a spell called "the Sword of Dardanos".</li>
+     <li class="known">✔ <b>Good days and bad days.</b> The London papyrus says on which days of the month, and at which hours, the oracle may be used. See "Is today a good day?" above.</li>
+     <li class="guess">? <b>The ritual around it</b> beyond the prayer to Apollo (purification, offerings) is not known. Here you say the prayer, think of your question and throw.</li>
     </ul>
-    <p style="font-size:12.5px;color:var(--muted);margin:8px 0 0">Papyrus: F. G. Kenyon, <i>Greek Papyri in the British Museum</i> I (1893), papyrus CXXI; the list of lines follows F. Maltomini, "P. Lond. 121 (= PGM VII), 1–221: Homeromanteion", <i>ZPE</i> 106 (1995) 107–122. Greek of Homer: Monro and Allen (Iliad), Murray 1919 (Odyssey), via the Perseus Digital Library. English: our own translation. Dice faces: a Roman bone die. Sounds: Kenney (CC0).</p>
+    <p style="font-size:12.5px;color:var(--muted);margin:8px 0 0">Papyrus: F. G. Kenyon, <i>Greek Papyri in the British Museum</i> I (1893), papyrus CXXI; the list of lines follows F. Maltomini, "P. Lond. 121 (= PGM VII), 1–221: Homeromanteion", <i>ZPE</i> 106 (1995) 107–122. Greek of Homer: Monro and Allen (Iliad), Murray 1919 (Odyssey), via the Perseus Digital Library. English: our own translation. Die: the "Zeus die", drawn for this app. Sounds: Kenney (CC0).</p>
    </details></div>
   </aside>
  </div>
@@ -104,7 +140,7 @@ h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;col
   // one bone die, a 3D cube with photographed faces; it tumbles across the altar and lands on the chosen number
   const FACE_AT = {1: "rotateY(0deg)", 6: "rotateY(180deg)", 3: "rotateY(90deg)", 4: "rotateY(-90deg)", 2: "rotateX(90deg)", 5: "rotateX(-90deg)"};
   const SHOW = {1: [0, 0], 6: [0, 180], 3: [0, -90], 4: [0, 90], 2: [-90, 0], 5: [90, 0]};
-  [1, 2, 3, 4, 5, 6].forEach(v => { const im = new Image(); im.src = `./assets/pics/die-face${v}.webp`; });
+  [1, 2, 3, 4, 5, 6].forEach(v => { const im = new Image(); im.src = `./assets/pics/zeus-face${v}.webp`; });
   const calm = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
   function throwDie(v) {
     return new Promise(done => {
@@ -112,7 +148,7 @@ h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;col
       altar.querySelectorAll(".d3").forEach(d => d.remove());
       const d = document.createElement("div"); d.className = "d3"; d.style.setProperty("--ds", size + "px");
       d.innerHTML = `<div class="shadow"></div><div class="lift"><div class="cube">${[1, 2, 3, 4, 5, 6].map(f =>
-        `<div class="face" style="transform:${FACE_AT[f]} translateZ(${size / 2}px);background-image:url(./assets/pics/die-face${f}.webp)"></div>`).join("")}</div></div>`;
+        `<div class="face" style="transform:${FACE_AT[f]} translateZ(${size / 2}px);background-image:url(./assets/pics/zeus-face${f}.webp)"></div>`).join("")}</div></div>`;
       altar.append(d);
       const sx = w * (0.15 + Math.random() * 0.15), sy = 230, lx = w * (0.42 + Math.random() * 0.16), ly = 95 + Math.random() * 20, dur = calm() ? 200 : 1000;
       d.animate([{transform: `translate(${sx}px,${sy}px) scale(1.2)`}, {transform: `translate(${(sx + lx) / 2}px,${(sy + ly) / 2}px) scale(1.05)`, offset: .5},
@@ -162,7 +198,26 @@ h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;col
   $("throw").onclick = consult;
   $("q").addEventListener("keydown", e => { if (e.key === "Enter") consult(); });
   $("clear").onclick = () => { store.set("ao.homer.past", []); paintPast(); };
-  window.__homer = {consult, data: () => DATA};
+  // the papyrus's table of days (PGM VII 155-167): when in the month, and at what hour, the oracle may be used
+  const HOURS = {dawn: ["ἕωθεν", "at dawn"], mid: ["μεσημβρίας", "at midday"], late: ["δείλης", "in the late afternoon"], all: ["δι’ ὅλης ἡμέρας", "all day"], no: ["μὴ χρῶ", "do not use"],
+    dawnlate: ["ἕωθεν καὶ [δείλης]", "at dawn and [in the late afternoon]"]};
+  const DAYS = [null, "dawn", "mid", "no", "dawn", "dawn", "no", "mid", "all", "no", "all", "late", "all", "all", "dawn", "all", "no", "no", "dawnlate",
+    "dawn", "dawn", "late", "late", "dawn", "dawn", "no", "late", "all", "all", "all", "late"];
+  const LUNATION = 29.530588853, NEW_MOON = Date.UTC(2000, 0, 6, 18, 14);
+  const moonDay = t => { const age = (((t - NEW_MOON) / 864e5) % LUNATION + LUNATION) % LUNATION; return Math.min(30, Math.floor(age) + 1); };
+  function paintToday() {
+    const how = store.get("ao.homer.count", "moon"), now = new Date();
+    const day = how === "moon" ? moonDay(now.getTime()) : Math.min(30, now.getDate()), h = DAYS[day], [gk, en] = HOURS[h];
+    $("tdVerdict").className = "big" + (h === "no" ? " no" : "");
+    $("tdVerdict").textContent = h === "no" ? "No: do not use the oracle today" : "Yes: " + en.replace(/[\[\]]/g, "");
+    $("tdSub").innerHTML = (how === "moon" ? `Today is about day ${day} of the moon's month, counting from the new moon.` : `Today is day ${day} of the month${now.getDate() === 31 ? " (the papyrus stops at 30)" : ""}.`) +
+      ` The papyrus says: <i lang="grc">${gk}</i>.`;
+    document.querySelectorAll(".today .seg button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.count === how)));
+    $("days").innerHTML = DAYS.slice(1).map((k, i) => `<tr${i + 1 === day ? ' class="now"' : ""}><td>${i + 1}</td><td lang="grc">${HOURS[k][0]}</td><td${k === "no" ? ' class="no"' : ""}>${HOURS[k][1]}</td></tr>`).join("");
+  }
+  document.querySelectorAll(".today .seg button").forEach(b => b.onclick = () => { store.set("ao.homer.count", b.dataset.count); paintToday(); });
+  paintToday();
+  window.__homer = {consult, data: () => DATA, moonDay};
   paintPast();
 })();
 </script>
