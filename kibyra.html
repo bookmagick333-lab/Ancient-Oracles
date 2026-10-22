@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Marketplace Oracle | Ancient Oracles</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=GFS+Didot&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* The knucklebone oracle of Kibyra (astragalomanteion): throw five knucklebones, add up the sides, and read the god's answer
+   carved on a stone pillar in the marketplace. Text: the Kibyra stone (Kileci, Tuner Onen, Ozudogru, Gephyra 31, 2026,
+   CC BY-NC-SA 4.0); 45 of 56 answers survive, 11 are lost where the stone is broken. The English is our own translation. */
+:root{--ink:#eef0f6;--muted:#a9b2c8;--gold:#e0b45a;--line:#3a4466;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 50% -10%,#2a3458,#0d1020 70%);color:var(--ink);font:16px/1.5 "Source Sans 3",system-ui,sans-serif;min-height:100vh}
+.wrap{max-width:1080px;margin:0 auto;padding:calc(12px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(28px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+a.back{font:700 13px Cinzel,Georgia,serif;letter-spacing:.16em;color:var(--gold);text-transform:uppercase;text-decoration:none}
+h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;color:#f4e3b8;letter-spacing:.04em}
+.lede{color:var(--muted);margin:0 0 16px;max-width:44em}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:20px;align-items:start}
+@media (max-width:880px){.layout{grid-template-columns:1fr}}
+.ask{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.ask input{flex:1;min-width:220px;font:inherit;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:#141a30;color:var(--ink)}
+.btn{font:700 15px "Source Sans 3",system-ui;border-radius:10px;padding:10px 18px;cursor:pointer;border:2px solid var(--gold);background:linear-gradient(#3b4a86,#1f2852);color:#f6ecd2;box-shadow:0 3px 0 #0b0f22}
+.btn:disabled{filter:saturate(.4) brightness(.7);cursor:default}
+.btn.alt{background:#141a30;border:1px solid var(--gold);box-shadow:none;padding:7px 12px;font-size:14px}
+/* the paving of the marketplace, where the bones are thrown */
+.tray{position:relative;height:210px;border-radius:16px;overflow:hidden;border:1px solid #5a5f72;
+ background:repeating-linear-gradient(90deg,transparent 0 118px,rgba(0,0,0,.25) 118px 120px),repeating-linear-gradient(0deg,transparent 0 68px,rgba(0,0,0,.25) 68px 70px),radial-gradient(ellipse at 50% 30%,#6b6a6a,#4a4848 60%,#333236);
+ box-shadow:inset 0 0 50px rgba(0,0,0,.55),0 10px 26px rgba(0,0,0,.5)}
+.bones{position:absolute;left:0;right:0;top:34px;display:flex;justify-content:center;gap:clamp(6px,2vw,18px)}
+.bone{width:clamp(52px,12vw,78px);text-align:center}
+.bone img{display:block;width:100%;aspect-ratio:1;object-fit:contain;filter:drop-shadow(0 6px 4px rgba(0,0,0,.55))}
+.bone b{display:block;font:700 22px Cinzel,Georgia,serif;color:#f4e3b8;text-shadow:0 1px 3px #000;min-height:30px}
+.bone small{display:block;font:italic 13px "GFS Didot",Georgia,serif;color:#e9e2cf;text-shadow:0 1px 2px #000;min-height:18px}
+.bone.fly{animation:fly .8s cubic-bezier(.25,.7,.35,1) both}
+@keyframes fly{0%{transform:translate(var(--fx),150px) rotate(var(--fr)) scale(1.15);opacity:0}15%{opacity:1}60%{transform:translate(0,-14px) rotate(calc(var(--fr) / -3))}100%{transform:none}}
+.total{position:absolute;right:14px;bottom:10px;font:700 15px Cinzel,Georgia,serif;color:#f4e3b8;text-shadow:0 1px 3px #000}
+/* the answer, carved on the pillar */
+.stone{margin-top:16px;border-radius:4px;padding:20px 24px;color:#2b2a28;min-height:150px;
+ background:radial-gradient(circle at 20% 30%,rgba(255,255,255,.18),transparent 40%),repeating-linear-gradient(115deg,rgba(0,0,0,.03) 0 2px,transparent 2px 7px),linear-gradient(160deg,#d9d4c7,#c4bdad 60%,#d2ccbd);
+ box-shadow:0 10px 24px rgba(0,0,0,.45),inset 0 0 26px rgba(70,60,40,.35)}
+.stone .roll{font:700 13px system-ui;letter-spacing:.14em;text-transform:uppercase;color:#5e5544}
+.stone .god{font:700 clamp(19px,2.4vw,24px) Cinzel,Georgia,serif;color:#3a3020;margin:4px 0 0}
+.stone .godgk{font:400 17px "GFS Didot",Georgia,serif;color:#5e5544}
+.stone .cast{font:400 15px/1.4 "GFS Didot",Georgia,serif;color:#6b604c;margin-top:8px}
+.stone .greek{font:400 clamp(18px,2.3vw,22px)/1.45 "GFS Didot",Georgia,serif;margin:6px 0 8px;color:#1f1a10}
+.stone .eng{font:600 clamp(17px,2vw,19px)/1.5 Georgia,serif;margin:0}
+.stone .note{margin-top:8px;font-size:13.5px;color:#5e5544;font-style:italic}
+.stone .wait{color:#5e5544;font-style:italic}
+.mood{display:inline-block;margin-top:10px;font:700 12.5px system-ui;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:999px;color:#fff}
+.mood.yes{background:#3f6d3a}.mood.wait{background:#8a6a1c}.mood.no{background:#8a2f25}
+.stone.reveal{animation:carve .6s ease-out both}
+@keyframes carve{from{opacity:.2;filter:blur(3px)}to{opacity:1;filter:none}}
+.side .card{background:linear-gradient(#1f2742,#151a2e);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.side h3{font:700 15px Cinzel,Georgia,serif;letter-spacing:.08em;color:var(--gold);margin:0 0 6px}
+.side ol,.side ul{padding-left:20px;margin:6px 0 0}.side li{margin:3px 0;font-size:14.5px;color:#d6dbea}
+.side details summary{cursor:pointer;font-weight:700}
+.sides{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px;text-align:center;font-size:12.5px;color:var(--muted)}
+.sides img{width:100%;aspect-ratio:1;object-fit:contain}.sides b{display:block;color:#f4e3b8;font:700 16px Cinzel,Georgia,serif}
+.past{list-style:none;padding:0;margin:6px 0 0;font-size:14px;color:var(--muted);max-height:220px;overflow:auto}
+.past li{border-top:1px solid var(--line);padding:6px 0}.past li b{color:#d6dbea}
+.known{color:#9fe0a5}.guess{color:#ffd27a}
+@media (prefers-reduced-motion:reduce){.stone.reveal,.bone.fly{animation:none}}
+</style>
+</head>
+<body><div class="wrap">
+ <a class="back" href="./index.html">← Ancient Oracles</a>
+ <h1>The Marketplace Oracle</h1>
+ <p class="lede">In the market square of Kibyra stood a stone pillar with a statue of Hermes. You threw five knucklebones, added up the sides, and found your answer carved on the stone: 56 answers, each spoken by a god. Ask about a journey, a sale, an illness or a plan.</p>
+ <div class="layout">
+  <div>
+   <div class="ask"><input id="q" type="text" maxlength="140" placeholder="Your question (it stays on this device)" aria-label="Your question"><button class="btn" type="button" id="throw">🦴 Throw the five knucklebones</button></div>
+   <div class="tray" id="tray"><div class="bones" id="bones"></div><div class="total" id="total"></div></div>
+   <div class="stone" id="answer"><p class="wait">The stone waits for your throw.</p></div>
+  </div>
+  <aside class="side">
+   <div class="card"><h3>How to consult</h3>
+    <ol><li>Think of one clear question: the stone speaks most often of journeys, buying and selling, illness, lawsuits and plans.</li>
+     <li>Throw the five knucklebones together.</li><li>Each bone shows one of four sides, worth 1, 3, 4 or 6. Add them up.</li>
+     <li>Find your throw on the stone. It tells you which god answers, then gives the god's words.</li></ol>
+    <div class="sides"><div><img src="./assets/pics/talus-view1.webp" alt=""><b>1</b><i lang="grc">χῖον</i></div><div><img src="./assets/pics/talus-view4.webp" alt=""><b>3</b><i lang="grc">ὕπτιον</i></div><div><img src="./assets/pics/talus-view2.webp" alt=""><b>4</b><i lang="grc">πρανές</i></div><div><img src="./assets/pics/talus-view3.webp" alt=""><b>6</b><i lang="grc">κῷον</i></div></div></div>
+   <div class="card"><h3>Your answers</h3><ul class="past" id="past"></ul><button class="btn alt" type="button" id="clear" style="margin-top:8px">Clear</button></div>
+   <div class="card"><details><summary>How do we know?</summary>
+    <ul>
+     <li class="known">✔ <b>A real stone.</b> The pillar was found in 2024 in the agora of Kibyra, in south-west Türkiye, built into the wall of a later chapel. It is carved on all four sides and dates from the 2nd or 3rd century AD.</li>
+     <li class="known">✔ <b>One of many.</b> More than a dozen towns in the region set up the same oracle in their markets, with almost the same words. A rich citizen paid for the Kibyra one, with a statue of Hermes beside it.</li>
+     <li class="known">✔ <b>How it works.</b> Each answer begins with the numbers thrown, their total and the god's name; then a line describing the throw; then the god's answer in verse. Five sixes, the best throw, belongs to Hermes himself.</li>
+     <li class="known">✔ <b>Apollo and Hermes.</b> The oracle says its words come from Apollo of Delphi, but dice and lots were Hermes' gift, so Hermes "speaks" them from his pillar.</li>
+     <li class="known">✔ <b>Broken places.</b> The tops and bottoms of the stone's faces are lost, so 11 answers are missing or only scraps survive. If you throw one, the stone is silent.</li>
+     <li class="guess">? <b>How the bones fall.</b> Real knucklebones land on their broad sides (3 and 4) far more often than their narrow ones (1 and 6). We use roughly that balance; the exact odds varied from bone to bone.</li>
+    </ul>
+    <p style="font-size:12.5px;color:var(--muted);margin:8px 0 0">Greek text: Ş. Kileci, N. Tüner Önen, Ş. Özüdoğru, "A New Astragalos Oracle Text from Kibyra", <i>Gephyra</i> 31 (2026) 257–294, licensed CC BY-NC-SA 4.0; restored letters are shown as plain text. English: our own translation, shared under the same licence. Knucklebones: photographed views. Sounds: Kenney (CC0).</p>
+   </details></div>
+  </aside>
+ </div>
+</div>
+<script>
+(function () {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  let DATA = null, busy = false;
+  const store = {get(k, d) { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (_) { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (_) { /* private mode */ } }};
+  fetch("./data/kibyra-oracle.json").then(r => r.json()).then(d => { DATA = d; }).catch(() => { $("answer").innerHTML = '<p class="wait">The stone could not be read. Try reloading the page.</p>'; });
+
+  // sounds (Kenney, CC0)
+  let actx = null; const bufs = {};
+  function sfx(name, vol) {
+    try {
+      actx = actx || new (window.AudioContext || window.webkitAudioContext)(); if (actx.state === "suspended") actx.resume();
+      bufs[name] = bufs[name] || fetch("./assets/sounds/" + name).then(r => r.arrayBuffer()).then(a => actx.decodeAudioData(a));
+      bufs[name].then(b => { const s = actx.createBufferSource(), g = actx.createGain(); g.gain.value = vol || 0.7; s.buffer = b; s.connect(g).connect(actx.destination); s.start(); }).catch(() => {});
+    } catch (_) { /* no sound */ }
+  }
+
+  // a knucklebone lands on a broad side (3 or 4) far more often than on a narrow one (1 or 6)
+  const VIEW = {1: 1, 3: 4, 4: 2, 6: 3}, NAME = {1: "χῖον", 3: "ὕπτιον", 4: "πρανές", 6: "κῷον"};
+  [1, 2, 3, 4].forEach(n => { const im = new Image(); im.src = `./assets/pics/talus-view${n}.webp`; });
+  const bone = () => { const r = Math.random(); return r < 0.1 ? 1 : r < 0.5 ? 3 : r < 0.9 ? 4 : 6; };
+  const calm = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+  const MOOD = {yes: "Go ahead", wait: "Not yet: wait", no: "Do not"};
+
+  function throwBones(vals) {
+    return new Promise(done => {
+      const row = $("bones"); row.innerHTML = ""; $("total").textContent = "";
+      const dur = calm() ? 150 : 800;
+      vals.forEach((v, i) => {
+        const b = document.createElement("div"); b.className = "bone fly";
+        b.style.setProperty("--fx", `${(i - 2) * -40}px`); b.style.setProperty("--fr", `${Math.round(Math.random() * 720 - 360)}deg`);
+        b.style.animationDelay = `${i * 70}ms`;
+        b.innerHTML = `<img alt="" src="./assets/pics/talus-view${1 + Math.floor(Math.random() * 4)}.webp"><b></b><small lang="grc"></small>`;
+        row.append(b);
+        const img = b.querySelector("img"); let flips = 0;
+        const t = setInterval(() => { img.src = `./assets/pics/talus-view${1 + Math.floor(Math.random() * 4)}.webp`; if (++flips > 6) clearInterval(t); }, dur / 8);
+        setTimeout(() => { clearInterval(t); img.src = `./assets/pics/talus-view${VIEW[v]}.webp`; img.alt = `knucklebone showing ${v}`; b.querySelector("b").textContent = v; b.querySelector("small").textContent = NAME[v]; },
+          dur + i * 70);
+      });
+      setTimeout(done, dur + 5 * 70 + 200);
+    });
+  }
+
+  async function consult() {
+    if (busy || !DATA) return;
+    busy = true; $("throw").disabled = true;
+    $("answer").classList.remove("reveal"); $("answer").innerHTML = '<p class="wait">The bones are thrown…</p>';
+    sfx("dice-shake-1.ogg", 0.5);
+    await new Promise(r => setTimeout(r, calm() ? 50 : 350));
+    sfx("dice-throw-2.ogg", 0.8);
+    const vals = [bone(), bone(), bone(), bone(), bone()];
+    await throwBones(vals);
+    const sorted = vals.slice().sort((a, b) => a - b), sum = vals.reduce((a, b) => a + b, 0), key = sorted.join(",");
+    $("total").textContent = `Total ${sum}`;
+    const e = DATA.entries.find(x => x.throw.join(",") === key), q = $("q").value.trim();
+    const a = $("answer"); void a.offsetWidth; a.classList.add("reveal");
+    const head = `<div class="roll">Answer ${e.n} of 56 · ${sorted.join(" + ")} = ${sum}${q ? " · " + esc(q) : ""}</div>`;
+    if (!e.god) {
+      a.innerHTML = head + `<p class="eng" style="margin-top:8px">This answer is lost: the stone is broken here.</p><p class="note">The god is silent. Think of your question again, and throw again.</p>`;
+    } else if (!e.greek) {
+      a.innerHTML = head + `<div class="god">${esc(e.god)}</div><div class="godgk" lang="grc">${esc(e.god_greek)}</div>${e.cast_greek ? `<div class="cast" lang="grc">${esc(e.cast_greek)}</div>` : ""}
+        <p class="eng" style="margin-top:8px">The god's words are lost: the stone is broken here.</p><p class="note">${e.note ? esc(e.note) + " " : ""}${e.n === 55 ? "Harm is not a hopeful name to draw. " : ""}Think of your question again, and throw again.</p>`;
+    } else {
+      a.innerHTML = head + `<div class="god">${esc(e.god)}</div><div class="godgk" lang="grc">${esc(e.god_greek)}</div>${e.cast_greek ? `<div class="cast" lang="grc">${esc(e.cast_greek)}</div>` : ""}
+        <div class="greek" lang="grc">${esc(e.greek)}</div><p class="eng">“${esc(e.english)}”</p><span class="mood ${e.mood}">${MOOD[e.mood]}</span>
+        ${e.partial ? '<p class="note">Part of this answer is lost where the stone is broken (…).</p>' : ""}`;
+    }
+    const past = store.get("ao.kibyra.past", []);
+    past.unshift({key: `${sorted.join("+")}=${sum}`, q, god: e.god || null, line: e.english || null, when: Date.now()});
+    store.set("ao.kibyra.past", past.slice(0, 20)); paintPast();
+    busy = false; $("throw").disabled = false;
+  }
+  function paintPast() {
+    const past = store.get("ao.kibyra.past", []);
+    $("past").innerHTML = past.length ? past.map(p => `<li><b>${esc(p.key)}</b>${p.god ? " · " + esc(p.god) : ""}${p.q ? "<br>" + esc(p.q) : ""}<br>${p.line ? "“" + esc(p.line) + "”" : "<i>the stone is broken here</i>"}</li>`).join("") : "<li>None yet.</li>";
+  }
+  $("throw").onclick = consult;
+  $("q").addEventListener("keydown", e => { if (e.key === "Enter") consult(); });
+  $("clear").onclick = () => { store.set("ao.kibyra.past", []); paintPast(); };
+  window.__kibyra = {consult, data: () => DATA};
+  paintPast();
+})();
+</script>
+</body></html>

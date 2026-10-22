@@ -1,0 +1,929 @@
+{
+ "oracle": "The knucklebone oracle of Kibyra (astragalomanteion), Roman Asia Minor, 2nd-3rd century AD",
+ "how": "Throw five knucklebones together (or one bone five times). Each side has a value: the narrow chion 1, the hollow hyption 3, the rounded pranes 4, the knobbly koon 6. The five values, in any order, name one of 56 answers; each answer belongs to a god.",
+ "faces": {
+  "1": "χῖον",
+  "3": "ὕπτιον",
+  "4": "πρανές",
+  "6": "κῷον"
+ },
+ "sources": [
+  "Greek text: Ş. Kileci, N. Tüner Önen, Ş. Özüdoğru, 'A New Astragalos Oracle Text from Kibyra', Gephyra 31 (2026) 257-294, CC BY-NC-SA 4.0. Restorations in their edition are shown as plain text.",
+  "English: our own translation (CC BY-NC-SA 4.0, as an adaptation of that edition)."
+ ],
+ "entries": [
+  {
+   "throw": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "sum": 5,
+   "n": 1,
+   "god_greek": "Διὸς Ὀλυμπίου",
+   "god": "Zeus of Olympus",
+   "cast_greek": "χεῖοι δ’ εἰ πείπτωσιν ὁμοῦ πάντες, τάδε φράζει",
+   "greek": "Ζεὺς ἀγαθὴν βουλὴν σαῖσι φρεσίν, ὦ ξένε, δώσει· \u0001δώσει δ’ εὐφροσύνην ἔργοις, ἀνθ’ ὧν σὺ χαρήσῃ· \u0001ἀλλ’ Ἀφροδείτην εἱλάσκου καὶ Μαιάδος υἱόν.",
+   "mood": "yes",
+   "english": "Zeus will put good counsel in your mind, stranger, and give your work a happy end, so that you will rejoice in it. But win the favour of Aphrodite and of Maia's son, Hermes."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    1,
+    1,
+    3
+   ],
+   "sum": 7,
+   "n": 2,
+   "god_greek": "Ἀθηνᾶς Ἀρείας",
+   "god": "Athena the Warlike",
+   "cast_greek": "χεῖοι τέσσαρες ὄντες ὁμοῦ, τρεῖος δὲ εἷς, τάδε φράζει",
+   "greek": "ἔκχθραν καὶ κακότητα φυγὼν ἥξεις ποτ’ ἐς ἆθλα ἥξεις καὶ δώσει σοι θεὰ γλαυκῶπις Ἀθήνη \u0001βουλὴ δ’ ἔσται σοι καταθύμιος, ἣν ἐπιβάλλῃ.",
+   "mood": "yes",
+   "english": "Escaping hatred and trouble, you will come at last to your prize; the grey-eyed goddess Athena will grant it to you. The plan you are making will turn out as your heart wishes."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    1,
+    1,
+    4
+   ],
+   "sum": 8,
+   "n": 3,
+   "god_greek": "Μοιρῶν",
+   "god": "the Fates",
+   "cast_greek": "τέσσαρες εἷς πείπτων καὶ χεῖοι τέσσαρες ἑξῆς·",
+   "greek": "\u0001πρᾶξιν, ἣν πράσσεις, μὴ πρᾶσσε· οὐ γὰρ ἄμεινον \u0001ἀμφὶ δὲ κάμνοντος χαλεπὸν καὶ ἀμήχανον ἔσται· εἰ δ’ ἀπόδημον ἰδέσθαι χρόνῳ, οὐθὲν κακὸν ἔσται.",
+   "mood": "no",
+   "english": "Do not do the thing you are doing: it is not for the best. For someone who is ill, it will be hard and without remedy. But if you hope to see someone who is away, in time, no harm will come."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    1,
+    3,
+    3
+   ],
+   "sum": 9,
+   "n": 4,
+   "god_greek": "Ἀετοῦ Διός",
+   "god": "the Eagle of Zeus",
+   "cast_greek": "εἰ δέ κε πείπτωσιν δύο τρῖοι, τρεῖς δ’ ἅμα χεῖοι·",
+   "greek": "ἀετὸς ὑψιπέτης εἰς δεξιὰ χειρὸς ὁδείτης ὢν ἐπὶ μαντείαν ἀγαθὴν· σὺν Ζηνὶ Μεγίστῳ τεύξῃ, ἐφ’ ἣν ὁρμᾷς, πρᾶξιν· μηθὲν δὲ φοβηθῇς.",
+   "mood": "yes",
+   "english": "A high-flying eagle on your right hand: you are a traveller on the way to a good oracle. With Zeus the Greatest you will succeed in what you are setting out to do. Fear nothing."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    1,
+    1,
+    6
+   ],
+   "sum": 10,
+   "n": 5,
+   "god_greek": "Δαίμονος Μεγίστου",
+   "god": "the Greatest Spirit",
+   "cast_greek": "ἑξείτης μοῦνος καὶ χεῖοι τέσσαρες ὄντες·",
+   "greek": "Δαίμονι, ἥντιν’ ἔχεις εὐχὴν ἀποδόντι σοι ἔσται βέλτειον, εἰ μέλλεις πράσσειν κατὰ νοῦν ἃ μεριμνᾷς Δημήτηρ γάρ σοι καὶ Ζεὺς σωτῆρες ἔσονται.",
+   "mood": "yes",
+   "english": "Pay the Spirit the vow you owe, and it will go better for you, if you mean to carry out what you are planning as you wish. For Demeter and Zeus will be your saviours."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    1,
+    3,
+    4
+   ],
+   "sum": 10,
+   "n": 6,
+   "god_greek": "Τύχης Κηδεμόνος",
+   "god": "Fortune the Guardian",
+   "cast_greek": "εἰ δέ κε τρεῖς χεῖοι καὶ τέσσαρα καὶ τρί’ ὁ πέμπτος·",
+   "greek": "τὴν πρᾶξιν μὴ πράξῃς, ἣν νυνὶ ἐπιβάλλῃ· τόν τ’ ἐν νούσῳ ἐόντα θεοὶ κατέχουσιν ἔτ’ αὐτόν· \u0001τόν τε πόνον λύσουσι θεοὶ καὶ οὐθὲν κακὸν ἔσται.",
+   "mood": "no",
+   "english": "Do not do the thing you are now setting out to do. The gods still hold the sick person in their grip; but the gods will end the suffering, and no harm will come."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    3,
+    3,
+    3
+   ],
+   "sum": 11,
+   "n": 7,
+   "god_greek": "Νείκης",
+   "god": "Victory",
+   "cast_greek": "εἰ δέ κε τρεῖς τρία πείπτωσιν, χεῖοι δὲ δύο ἄλλοι·",
+   "greek": "νεικήσεις λήμψῃ δ’ ἃ θέλεις, τάδε πάντα σοι ἔσται· τειμητόν σε τιθεῖ Δαίμων, ἐκχθρῶν τε κρατήσεις, βουλὴ ἔσται σοι καταθύμιος, ἣν ἐπιβάλλῃ.",
+   "mood": "yes",
+   "english": "You will win, and get what you want; all this will be yours. The Spirit makes you honoured, you will overcome your enemies, and the plan you are making will turn out as your heart wishes."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    1,
+    4,
+    4
+   ],
+   "sum": 11,
+   "n": 8,
+   "god_greek": "Νείκης Ἱλαρᾶς",
+   "god": "Cheerful Victory",
+   "cast_greek": "εἰ δέ κε πείπτωσιν δύο τέσσαρα, τρεῖς δέ τε χεῖοι·",
+   "greek": "τὴν πρᾶξιν πᾶσαν πρᾶσσε, ἔσται γὰρ ἄμεινον· τόν τ’ ἐν νούσῳ ἐόντα θεοὶ σώζουσ’ ἀπὸ κλείνης καὶ τὸν ἐν ἄλλῳ δήμῳ ἐόντα ἥξειν θεὸς αὐδᾷ.",
+   "mood": "yes",
+   "english": "Go ahead with the whole thing, for it will turn out for the better. The gods are raising the sick from their bed, and the god says that the one who is among another people will come home."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    3,
+    3,
+    4
+   ],
+   "sum": 12,
+   "n": 9,
+   "god_greek": "Ἀσκληπιοῦ",
+   "god": "Asclepius, the healer",
+   "cast_greek": "τέσσαρα εἷς πείπτων, χεῖοι δύο καὶ δύο τρεῖοι·",
+   "greek": "πράξει μὲν χειμὼν ἐνκείσεται ἀλλὰ καλόν τοι· καὶ τὸν κάμνοντ’ ἐν νούσῳ σῴζειν θεὸς αὐδᾷ· τόν τ’ ἀπόδημον ἐόντα θεοὶ σώζουσιν ἐς οἴκους.",
+   "mood": "yes",
+   "english": "A storm will lie upon your work, but it is for your good. The god says he will save the one who is struggling with illness, and the gods are bringing the traveller safely home."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    1,
+    3,
+    6
+   ],
+   "sum": 12,
+   "n": 10,
+   "god_greek": "Τύχης Κυβερνώσης",
+   "god": "Fortune at the Helm",
+   "cast_greek": "τρεῖς χεῖοι καὶ ἑξείτης, πέμπτος τρία πείπτων·",
+   "lost": true
+  },
+  {
+   "throw": [
+    1,
+    1,
+    1,
+    4,
+    6
+   ],
+   "sum": 13,
+   "lost": true,
+   "n": 11
+  },
+  {
+   "throw": [
+    1,
+    3,
+    3,
+    3,
+    3
+   ],
+   "sum": 13,
+   "lost": true,
+   "n": 12
+  },
+  {
+   "throw": [
+    1,
+    1,
+    3,
+    4,
+    4
+   ],
+   "sum": 13,
+   "n": 13,
+   "god_greek": "Ὡρῶν",
+   "god": "the Seasons",
+   "cast_greek": "",
+   "partial": true,
+   "greek": "… θεὸς οὐκ ἐᾷ, ἀλλ’ ἐπίμεινον· δεινὸν δ’ εἰς ἔριν ἔρχεσθαι καὶ ἀγῶνα δίκην τε.",
+   "mood": "wait",
+   "english": "… the god does not allow it, but wait. It is dangerous to go into a quarrel, a contest or a lawsuit."
+  },
+  {
+   "throw": [
+    1,
+    3,
+    3,
+    3,
+    4
+   ],
+   "sum": 14,
+   "n": 14,
+   "god_greek": "Ποσειδῶνος",
+   "god": "Poseidon",
+   "cast_greek": "τρία τρεῖς καὶ τέσσαρα εἷς· θεὸς αὐδᾷ·",
+   "greek": "λακτίζεις πρὸς κέντρα, πρὸς ἀντία κύματα μοχθεῖς ἰχθὺν ἐν πελάγει ζητεῖς, μὴ σπεῦδ’ ἐπὶ πρᾶξιν· οὔ σοι χρήσιμόν ἐστι θεοὺς βιάσασθαι ἀκαίρως.",
+   "mood": "no",
+   "english": "You are kicking against the goad, toiling against the waves, looking for fish in the open sea. Do not rush into action: it does you no good to force the gods before the time is right."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    3,
+    3,
+    6
+   ],
+   "sum": 14,
+   "n": 15,
+   "god_greek": "Δαίμονος",
+   "god": "the Spirit",
+   "cast_greek": "μοῦνος δ’ ἑξείτης, χεῖοι δύο καὶ τρία δισσοί·",
+   "greek": "μηδὲ σὺ φρικτὰ νόει μηδ’ ἀντία Δαίμοσιν εὔχου· πάντα φρονεῖς· οὐθὲν γὰρ ὀνήσιμόν ἐστιν ἀπ’ αὐτοῦ οὐδ’ ὁδόν, ἣν στείχεις, κέρδος τί σοί ἐστιν ἀπ’ αὐτῆς.",
+   "mood": "no",
+   "english": "Do not think fearful thoughts, and do not pray against the spirits. You turn everything over in your mind, but nothing useful comes of it, and there is no gain for you on the road you are walking."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    4,
+    4,
+    4
+   ],
+   "sum": 14,
+   "n": 16,
+   "god_greek": "Ἀγαθοῦ Δαίμονος",
+   "god": "the Good Spirit",
+   "cast_greek": "εἰ δέ κε πείπτωσιν τρεῖς τέσσαρα, χεῖοι δὲ δύ’ ἄλλοι·",
+   "greek": "ἡγεμονεύσει σοι Δαίμων ὁδόν, ἣν ἐπιβάλλῃ· πέμψει δ’ εἰς ἀγαθόν σε φιλομειδὴς Ἀφροδείτη. σὺν καρποῖς ὕπαγε καὶ ἀπήμονι Μοίρῃ.",
+   "mood": "yes",
+   "english": "The Spirit will lead you on the road you are setting out on, and smiling Aphrodite will send you on to good fortune. Go, with your harvest and a fate that brings no harm."
+  },
+  {
+   "throw": [
+    1,
+    3,
+    3,
+    4,
+    4
+   ],
+   "sum": 15,
+   "n": 17,
+   "god_greek": "Διὸς Σωτῆρος",
+   "god": "Zeus the Saviour",
+   "cast_greek": "εἷς χεῖος, τρία πείπτοντες δύο, τέσσαρα δ’ οἱ ἄλλοι·",
+   "greek": "ἣν ἐπιβάλλῃ πρᾶξιν, θαρρῶν ἴθι, πρᾶσσε. ἐνχείρει· καλὰ μαντεῖα θεοὶ τάδ’ ἔφηναν· μήτ’ ἐπὶ νοῦν· ἀλέου· οὐθὲν γάρ σοι κακὸν ἔσται.",
+   "mood": "yes",
+   "english": "Whatever you are setting out to do, go boldly and do it. Set to work: the gods have shown these good signs. Do not brood on it, keep clear of worry: no harm will come to you."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    1,
+    6,
+    6
+   ],
+   "sum": 15,
+   "n": 18,
+   "god_greek": "Διὸς Ἄμμωνος",
+   "god": "Zeus Ammon",
+   "cast_greek": "χεῖοι τρεῖς, δύο δ’ ἑξεῖται· τάδε σοι θεὸς αὐδᾷ·",
+   "greek": "ἣν φρεσὶν ὁρμαίνεις ἰέναι, ταύτην ἴθι θαρρῶν. πάντα δέ σοι θεὸς εὖ δώσει, πράξεις δ’ ὅσα βούλει· Ζεὺς ὑψιβρεμέτης σωτὴρ καὶ ἅπαντά σοι ἔσται.",
+   "mood": "yes",
+   "english": "The road your heart is eager to take, take it boldly. The god will give you everything for good, and you will do whatever you wish. High-thundering Zeus will be your saviour, and everything will be yours."
+  },
+  {
+   "throw": [
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "sum": 15,
+   "n": 19,
+   "god_greek": "Τύχης Σωτείρης",
+   "god": "Fortune the Saviour",
+   "cast_greek": "εἰ δέ κε πάντες ὁμοῦ πείπτωσιν τρῖοι ὁμοῖοι·",
+   "greek": "ἥδε νέον τίκτουσα βρέφος ξηροὺς ἔχει μαστούς, ἀλλὰ πάλιν βλάστησε καὶ ἀπέρρευσε γάλακτος· καὶ τότε ἕξεις καρποὺς περὶ ὧν μ’ ἐπερωτᾷς.",
+   "mood": "wait",
+   "english": "This woman, newly a mother, has dry breasts; but she has flourished again and overflows with milk. Then you will have the fruits of what you are asking me about."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    3,
+    4,
+    6
+   ],
+   "sum": 15,
+   "n": 20,
+   "god_greek": "Διὸς Ξενίου",
+   "god": "Zeus, Protector of Strangers",
+   "cast_greek": "τέσσαρα εἷς καὶ τρία καὶ ἑξείτης καὶ χεῖοι δὲ δύ’ ἄλλοι·",
+   "greek": "πρᾶξιν, ἐφ’ ἣν μέλλεις ἰέναι, μὴ σπεῦδ’· οὔπω γὰρ ὁ καιρός· ἐν νούσῳ δέ τ’ ἐόντα θεοὶ σώσουσιν ἑτοίμως, καὶ τὸν ἐν ἄλλῃ χώρᾳ ἐόντα ἥξειν θεὸς αὐδᾷ.",
+   "mood": "wait",
+   "english": "Do not rush at the thing you mean to do, for the time has not yet come. But the gods will readily save someone who is ill, and the god says that the one in another land will come home."
+  },
+  {
+   "throw": [
+    1,
+    3,
+    3,
+    3,
+    6
+   ],
+   "sum": 16,
+   "n": 21,
+   "god_greek": "Ἡρακλέους",
+   "god": "Heracles",
+   "cast_greek": "ἑξείτης εἷς, τρεῖς δὲ τρία καὶ πέμπτος ὁ χεῖος·",
+   "greek": "οὔπω καιρὸν ὁρῶ, σπεύδεις δὲ σύ· μὴ κενὰ μόχθει, μηδ’ ὥς τίς τε λέων τυφλὴν ἐκύησε λοχείην· ἥσυχα βουλεύου· καί σοι θεὸς ἡγεμονεύσει.",
+   "mood": "wait",
+   "english": "I do not yet see the right time, though you are in a hurry. Do not toil for nothing, like the lion that gave birth to a blind litter. Think it over quietly, and the god will guide you."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    4,
+    4,
+    6
+   ],
+   "sum": 16,
+   "n": 22,
+   "god_greek": "Ἄρεως",
+   "god": "Ares",
+   "cast_greek": "ἑξείτης εἷς, δύο τέσσαρα καὶ δύο χεῖοι·",
+   "greek": "τί σπεύδεις; μέν’ ἐπ’ ἡσυχίης, οὔπω γὰρ ὁ καιρός· εἰ δὲ κενοσπουδεῖς ματαίως, ἀνέτοιμα διώκεις. ἐπιμείναντι δὲ καιρὸς καὶ κατὰ πάντ’ ἐπιτεύξῃ.",
+   "mood": "wait",
+   "english": "Why the hurry? Stay quiet, for the time has not yet come. If you rush about for nothing, you are chasing what is not ready. If you wait, the right time will come, and you will succeed in everything."
+  },
+  {
+   "throw": [
+    3,
+    3,
+    3,
+    3,
+    4
+   ],
+   "sum": 16,
+   "n": 23,
+   "god_greek": "Χρόνου",
+   "god": "Time",
+   "cast_greek": "τέσσαρα πείπτων εἷς, τρία τέσσαρες ἄλλοι·",
+   "greek": "σκορπίοι ἑστᾶσιν καθ’ ὁδόν· μὴ σπεῦδ’ ἐπὶ πρᾶξιν, ἣν μέλλεις· μεῖνον δέ· καὶ ὕστερον ἔσται, ἃ βούλει. οὔτε γὰρ ὠνεῖσθαι τό γε λώιον οὔτ’ ἀποδόσθαι.",
+   "mood": "wait",
+   "english": "Scorpions stand in the road. Do not rush into the thing you mean to do; wait, and later what you want will happen. It is no better now to buy, nor to sell."
+  },
+  {
+   "throw": [
+    1,
+    3,
+    4,
+    4,
+    4
+   ],
+   "sum": 16,
+   "n": 24,
+   "god_greek": "Ἀπόλλωνος Δελφικοῦ",
+   "god": "Apollo of Delphi",
+   "cast_greek": "τέσσαρα τρεῖς, μοῦνος χεῖος καὶ τρεῖος ὁ πέμπτος·",
+   "greek": "μὴ σπεῦδ’· οὔπω γὰρ καιρός· μετὰ ταῦτα δὲ πράξεις πάντα κατὰ γνώμην· καί σοι θεὸς ἡγεμονεύσει. μήτε γὰρ ὠνεῖσθαι σπεύσῃς τό γε μήτε ἀποδόσθαι.",
+   "mood": "wait",
+   "english": "Do not hurry, for it is not yet time. Afterwards you will do everything as you intend, and the god will guide you. Do not rush to buy, nor to sell."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    3,
+    6,
+    6
+   ],
+   "sum": 17,
+   "n": 25,
+   "god_greek": "Εἴσιδος Σωτείρης",
+   "god": "Isis the Saviour",
+   "cast_greek": "δισσοὶ δ’ ἑξῖται, χεῖοι δύο, τρεῖα δ’ ὁ πέμπτος·",
+   "lost": true
+  },
+  {
+   "throw": [
+    1,
+    3,
+    3,
+    4,
+    6
+   ],
+   "sum": 17,
+   "lost": true,
+   "n": 26
+  },
+  {
+   "throw": [
+    3,
+    3,
+    3,
+    4,
+    4
+   ],
+   "sum": 17,
+   "lost": true,
+   "n": 27
+  },
+  {
+   "throw": [
+    1,
+    4,
+    4,
+    4,
+    4
+   ],
+   "sum": 17,
+   "n": 28,
+   "god_greek": "Νεμέσεως",
+   "god": "Nemesis",
+   "cast_greek": "",
+   "partial": true,
+   "greek": "… καὶ μηκέτι τρῦχε σεαυτόν τεύξῃ γὰρ σύ γ’ ἀμέμπτως, πάντων ὧν ἐπιθυμεῖς.",
+   "mood": "yes",
+   "english": "… and wear yourself out no longer: for you will surely gain everything you desire."
+  },
+  {
+   "throw": [
+    1,
+    1,
+    4,
+    6,
+    6
+   ],
+   "sum": 18,
+   "n": 29,
+   "god_greek": "Ἀδραστείας",
+   "god": "Adrasteia, the Inescapable",
+   "cast_greek": "δισσοὶ δ’ ἑξεῖται, χεῖοι δύο καὶ τέσσαρ’ ὁ πέμπτος·",
+   "greek": "τὴν πρᾶξιν ταύτην πρᾶσσε, ἔσται γὰρ ὁ καιρὸς ἐν γενέσει χαλεπὸν καὶ ὁ κίνδυνος παράκειται· καὶ περὶ τῶν ἄλλων μαντείων ἐστὶ καλῶς σοι.",
+   "mood": "yes",
+   "english": "Do this thing, for the time is right. At its beginning it is hard, and danger lies close by; but in your other affairs, the signs are good for you."
+  },
+  {
+   "throw": [
+    1,
+    3,
+    4,
+    4,
+    6
+   ],
+   "sum": 18,
+   "n": 30,
+   "god_greek": "Διὸς Κεραυνίου",
+   "god": "Zeus of the Thunderbolt",
+   "cast_greek": "χεῖος καὶ ἑξείτης, δύο τέσσαρα καὶ τρί’ ὁ πέμπτος·",
+   "greek": "\u0001οὐκ ἔστιν πράσσοντα κατὰ γνώμην, ἃ μεριμνᾷς οὔτε γὰρ ἐν ἄλλῳ δήμῳ ἰέναι σύμφορόν ἐστιν οὔτ’ ὠνούμενος αἰσθήσῃ, ᾗ ὀνήσιμον ἔσται.",
+   "mood": "no",
+   "english": "You cannot carry out what you are planning as you wish. It is no use going to live among another people, and if you buy, you will not see where the profit lies."
+  },
+  {
+   "throw": [
+    3,
+    3,
+    4,
+    4,
+    4
+   ],
+   "sum": 18,
+   "n": 31,
+   "god_greek": "Δαίμονος Ἱκεσίου",
+   "god": "the Spirit of Suppliants",
+   "cast_greek": "τέσσαρα δ’ ἢν φαίνωνται τρεῖς καὶ δύο τρεῖοι, τάδε φράζει·",
+   "greek": "οὔ σοι ὁρῶ βουλὴν τήνδ’ ἀσφαλῆ ἀλλ’ ἀνάμεινον εὖ πράξεις, ἔσται σὲ τυχῖν μετὰ ταῦτα· τὸ νῦν δὲ ἥσυχος ἧσο, θεοῖς πείθου καὶ ἐφ’ ἑλπίδος ἴσθι.",
+   "mood": "wait",
+   "english": "I do not see that this plan of yours is safe: wait. You will do well, and success will come later; for now, sit still, obey the gods, and keep hoping."
+  },
+  {
+   "throw": [
+    3,
+    3,
+    3,
+    3,
+    6
+   ],
+   "sum": 18,
+   "n": 32,
+   "god_greek": "Ἀγαθοῦ Κρόνου",
+   "god": "Good Kronos",
+   "cast_greek": "ἑξείτης καὶ πάντες ὁμοῦ τρία· χρησμὸς ὅδ’ αὐδᾷ·",
+   "greek": "μὴ σπεύσῃς· Δαίμων γὰρ ἀνθίσταται, ἀλλ’ ὑπόμεινον μηδ’ ὥς τίς τε κύων τυφλὴν ἐκύησε λοχείην· ἥσυχα βουλεύου· καί σοι χαρίεντα τελεῖται.",
+   "mood": "wait",
+   "english": "Do not hurry: a spirit stands against you. Be patient, and do not be like the dog that gave birth to blind puppies. Think it over quietly, and good things will come to you."
+  },
+  {
+   "throw": [
+    1,
+    3,
+    3,
+    6,
+    6
+   ],
+   "sum": 19,
+   "n": 33,
+   "god_greek": "Ἐλπίδος Ἀγαθῆς",
+   "god": "Good Hope",
+   "cast_greek": "ἑξεῖται δύο καὶ χεῖος καὶ δύο τρεῖοι, τάδε φράζει·",
+   "greek": "εὔοδά σοι πάντ’ ἐστὶ καὶ ἀσφαλῆ περὶ ὧν μ’ ἐπερωτᾷς· μηδὲ φοβοῦ· Δαίμων γὰρ ὁδηγήσει πρὸς ἅπαντα. παύσει γὰρ λύπης χαλεπῆς, λύσει δ’ ὑπόνοιαν.",
+   "mood": "yes",
+   "english": "The road is clear and safe for you in all you ask me about. Do not be afraid: the Spirit will guide you in everything. He will end your bitter sorrow and clear away suspicion."
+  },
+  {
+   "throw": [
+    1,
+    4,
+    4,
+    4,
+    6
+   ],
+   "sum": 19,
+   "n": 34,
+   "god_greek": "Διὸς Κτησίου",
+   "god": "Zeus, Guardian of the Household",
+   "cast_greek": "τέσσαρα τρεῖς, μοῦνος δ’ ἑξείτης, χεῖος δὲ ὁ πέμπτος·",
+   "greek": "θαρσῶν ἐνχείρει· καὶ ἐφ’ ἑλπίδος ἐστὶν ὁ χρησμός· ὦ ξένε, μανύει καὶ τὸν νοσέοντα σεσῶσθαι· εἰ δέ τι μαντεύῃ χρέος, ὃ χρῄζεις, ἀπολήμψῃ.",
+   "mood": "yes",
+   "english": "Set to work boldly: this oracle is full of hope. Stranger, it tells you that the sick person is saved; and if you ask about something owed to you, you will get it back."
+  },
+  {
+   "throw": [
+    3,
+    4,
+    4,
+    4,
+    4
+   ],
+   "sum": 19,
+   "n": 35,
+   "god_greek": "Ἑρμοῦ Κερδεμπόρου",
+   "god": "Hermes, Bringer of Gain",
+   "cast_greek": "εἰ δέ κεν εἷς πείπτῃ τρία, τέσσαρα δ’ οἱ ἄλλοι·",
+   "greek": "Ζεὺς ἀγαθὴν βουλὴν σαῖσι φρεσίν, ὦ ξένε, δώσει· ὧν ἕνεκ’ ἔσται πάντα καλῶς, ἐπιτεύξῃ, ἃ βούλει, εὑρήσεις δ’, ὅσα μαντεύῃ, καὶ οὐθέν σοι κακὸν ἔσται.",
+   "mood": "yes",
+   "english": "Zeus will put good counsel in your mind, stranger. Because of it, all will go well: you will gain what you want, you will find what you ask about, and no harm will come to you."
+  },
+  {
+   "throw": [
+    3,
+    3,
+    3,
+    4,
+    6
+   ],
+   "sum": 19,
+   "n": 36,
+   "god_greek": "Νείκης",
+   "god": "Victory",
+   "cast_greek": "μοῦνος δ’ ἑξείτης, τρεῖοι τρεῖς, τέσσαρ’ ὁ πέμπτος·",
+   "greek": "μαντείαν ἀγαθὴν ἔπι εἶ, ξένε· τήνδε νοήσας πράξεις, ὅσσα θέλεις, καὶ συνλήμπτωρ θεὸς ἔστιν· νεικήσεις, καρποὺς λήμψῃ καὶ πάντ’ ἐπιτεύξῃ.",
+   "mood": "yes",
+   "english": "You have come to a good oracle, stranger. Understand it, and you will do whatever you wish, and the god will help you. You will win, you will gather your harvest, and you will succeed in everything."
+  },
+  {
+   "throw": [
+    4,
+    4,
+    4,
+    4,
+    4
+   ],
+   "sum": 20,
+   "n": 37,
+   "god_greek": "Μοιρῶν Ἀδυσωπήτων",
+   "god": "the Fates Who Cannot Be Moved",
+   "cast_greek": "εἰ δέ κε τέσσαρα πάντες ὁμοῦ πείπτωσιν ὁμοῖοι·",
+   "greek": "ἠέλιός τε δέδυκεν, ἐφέστηκεν δ’ ὀλοὴ νύξ. πάντα δ’ ἀμαυροῦται· παῦσαι, περὶ ὧν μ’ ἐπερωτᾷς· οὔτε γὰρ ὠνεῖσθαί τό γε λώιον οὔτε ἀποδόσθαι.",
+   "mood": "no",
+   "english": "The sun has set, and deadly night has come. Everything is dark. Stop asking about the things you ask me: it is no better to buy than to sell."
+  },
+  {
+   "throw": [
+    1,
+    3,
+    4,
+    6,
+    6
+   ],
+   "sum": 20,
+   "n": 38,
+   "god_greek": "Σελήνης",
+   "god": "Selene, the Moon",
+   "cast_greek": "τέσσαρα καὶ τρία δύο δ’ ἑξεῖται καὶ χεῖος ὁ πέμπτος·",
+   "greek": "τὴν πρᾶξιν ταύτην μὴ πράξῃς, ἣν νῦν ἐπιβάλλῃ· τὸν τ’ ἐν νούσῳ ἐόντα θεοὶ σώζουσιν ἑτοίμως· εἰ δὲ φόβος τις ἔνεστι, οὐκ ἔσται σοι κακὸν οὐθέν.",
+   "mood": "no",
+   "english": "Do not do the thing you are now setting out to do. The gods will readily save the sick person. If there is fear in you, no harm will come to you."
+  },
+  {
+   "throw": [
+    3,
+    3,
+    4,
+    4,
+    6
+   ],
+   "sum": 20,
+   "n": 39,
+   "god_greek": "Διοσκόρων Κηδεμόνων",
+   "god": "the Dioscuri, Guardians",
+   "cast_greek": "μοῦνος δ’ ἑξείτης, τρεῖοι δύο, τέσσαρα δ’ οἱ ἄλλοι·",
+   "partial": true,
+   "greek": "οὐκ ἔστιν σπεύδοντα τυχεῖν, ὅσα καιρὸς ἀνώγει· …",
+   "mood": "wait",
+   "english": "No one who hurries can gain what the right moment demands …"
+  },
+  {
+   "throw": [
+    1,
+    1,
+    6,
+    6,
+    6
+   ],
+   "sum": 20,
+   "lost": true,
+   "n": 40
+  },
+  {
+   "throw": [
+    1,
+    4,
+    4,
+    6,
+    6
+   ],
+   "sum": 21,
+   "lost": true,
+   "n": 41
+  },
+  {
+   "throw": [
+    3,
+    4,
+    4,
+    4,
+    6
+   ],
+   "sum": 21,
+   "lost": true,
+   "n": 42
+  },
+  {
+   "throw": [
+    3,
+    3,
+    3,
+    6,
+    6
+   ],
+   "sum": 21,
+   "n": 43,
+   "god_greek": "Τύχης ἐπὶ καλὰ προβιβαζούσης",
+   "god": "Fortune Who Leads to Good Things",
+   "cast_greek": "",
+   "partial": true,
+   "greek": "… ἐκφεύξῃ γὰρ νούσου χαλεπῆς, πάντων γε κρατήσεις, καὶ τὸν ἀλώμενον ἐν ξενίῃ χώρῃ ἥξειν θεὸς αὐδᾷ.",
+   "mood": "yes",
+   "english": "… for you will escape a hard illness and overcome everything, and the god says that the one wandering in a foreign land will come home."
+  },
+  {
+   "throw": [
+    1,
+    3,
+    6,
+    6,
+    6
+   ],
+   "sum": 22,
+   "n": 44,
+   "god_greek": "Μοιρῶν Ἐπιφανῶν",
+   "god": "the Fates Made Manifest",
+   "cast_greek": "εἷς χεῖος, τρεῖς δ’ ἑξεῖται, πέμπτος τρία πείπτων·",
+   "greek": "εἰς στόμα μὴ δοῖς χεῖρα λύκῳ, μή σοί τι γένηται· δυσχερές ἐστιν πρᾶγμα, περὶ οὗ κεύθῃ καὶ ἄπιστον· ἀλλ’ ἡσύχιος μένε λήξας ὁδοῦ καὶ ἀγορασμοῦ.",
+   "mood": "no",
+   "english": "Do not put your hand into a wolf's mouth, in case something happens to you. The matter you are keeping hidden is difficult and not to be trusted. Stay quiet, and give up travelling and trading."
+  },
+  {
+   "throw": [
+    4,
+    4,
+    4,
+    4,
+    6
+   ],
+   "sum": 22,
+   "n": 45,
+   "god_greek": "Ποσειδῶνος",
+   "god": "Poseidon",
+   "cast_greek": "τέσσαρα δ’ οἱ τέσσαρες ὁμοῦ, εἷς δ’ ἑξείτης, τάδε φράζει·",
+   "greek": "εἰς πέλαγος σπέρμα βαλεῖν καὶ γράμματα γράψαι ἀμφότερος μόχθος τε κενὸς καὶ πρᾶξις ἄπρακτος· μηδὲ βιάζου θνητὸς ἐὼν θεόν, ὅς σέ τι βλάψει.",
+   "mood": "no",
+   "english": "To sow seed in the sea, and to write letters on it: both are empty labour, and the deed comes to nothing. You are mortal: do not try to force the god, or he will do you harm."
+  },
+  {
+   "throw": [
+    3,
+    3,
+    4,
+    6,
+    6
+   ],
+   "sum": 22,
+   "n": 46,
+   "god_greek": "Ἄρεως Θουρίου",
+   "god": "Ares the Rushing",
+   "cast_greek": "τέσσαρα καὶ δύο τρεῖς, δύο δ’ ἑξεῖται, τάδε φράζει·",
+   "greek": "μὴ βαίνειν ἣν μέλλεις, ξένε, τήνδε γὰρ οὐθείς· αἴθων ἐσχωρήσει λέων μέγας, ὃν πεφύλαξο· δεινός, ἄπρακτος χρησμός· ἐπ’ ἡσυχίης δ’ ἀνάμεινον.",
+   "mood": "no",
+   "english": "Do not go the way you intend, stranger, for no one goes that way: a great tawny lion will come out onto it. Beware of him. A dreadful oracle, and nothing will come of it: stay quiet and wait."
+  },
+  {
+   "throw": [
+    1,
+    4,
+    6,
+    6,
+    6
+   ],
+   "sum": 23,
+   "n": 47,
+   "god_greek": "Ἀθηνᾶς",
+   "god": "Athena",
+   "cast_greek": "εἷς χεῖος, τρεῖς δ’ ἑξεῖται καὶ τέσσαρ’ ὁ πέμπτος·",
+   "greek": "Παλλάδ’ Ἀθηναίην τείμα καὶ πάντα σοι ἔσται, ὅσσα θέλεις, καί σοι τὰ δεδογμένα πάντα τελεῖται· λύσει δ’ ἐκ δεσμῶν καὶ τὸν νοσέοντα δὲ σώσει.",
+   "mood": "yes",
+   "english": "Honour Pallas Athena, and everything you wish will be yours, and all you have decided will be done. She will free you from chains, and save the one who is sick."
+  },
+  {
+   "throw": [
+    3,
+    4,
+    4,
+    6,
+    6
+   ],
+   "sum": 23,
+   "n": 48,
+   "god_greek": "Εὐφροσύνης",
+   "god": "Good Cheer",
+   "cast_greek": "εἰ δὲ δύο ἑξεῖται, δύο τέσσαρα καὶ τρί’ ὁ πέμπτος·",
+   "greek": "στέλλεο, ποῦ σοι θυμός, πάλι γὰρ δόμον ἥξεις εὑρὼν καὶ πράξας κατὰ νοῦν πάντων τε κρατήσεις· εὐφροσύνην ὠνεῖσθαι πωλεῖν τε καὶ οὕτως.",
+   "mood": "yes",
+   "english": "Set off wherever your heart wishes, for you will come home again, having found and done what you intended, and you will overcome everything. Buying and selling, too, will bring you joy."
+  },
+  {
+   "throw": [
+    3,
+    3,
+    6,
+    6,
+    6
+   ],
+   "sum": 24,
+   "n": 49,
+   "god_greek": "Ἀπόλλωνος Πυθίου",
+   "god": "Pythian Apollo",
+   "cast_greek": "ἑξεῖται τρεῖς πείπτοντες, τρεῖοι δὲ δύο, τάδε φράζει·",
+   "greek": "μίμνειν· μὴ πράξῃς, Φοίβου χρησμοῖσι δὲ πείθου· ἐν χρόνῳ καιρὸν τηρεῖν, νῦν δ’ ἥσυχος ἴσθι· μεικρὸν ἐπισχὼν τελέσεις πάνθ’, ὅσσα μεριμνᾷς.",
+   "mood": "wait",
+   "english": "Wait. Do not act; obey the oracles of Phoebus Apollo. In time, watch for the right moment; for now, keep quiet. Hold back a little, and you will finish everything you are anxious about."
+  },
+  {
+   "throw": [
+    4,
+    4,
+    4,
+    6,
+    6
+   ],
+   "sum": 24,
+   "n": 50,
+   "god_greek": "Κρόνου Τεκνοφάγου",
+   "god": "Kronos the Child-Eater",
+   "cast_greek": "τέσσαρα τρεῖς, δύο δ’ ἑξεῖται· τάδε σοι θεὸς αὐδᾷ·",
+   "greek": "μίμνε δόμων ἔπι σῶν, μηδ’ ἄλλοθι βαῖνε, μή σοι θὴρ ὀλοὸς καὶ ἀλάστωρ ἐνγύθεν ἔλθῃ· οὐ γὰρ ὁρῶ τὴν πρᾶξιν ἀσφαλῆ οὐδὲ βέβαιον.",
+   "mood": "no",
+   "english": "Stay at home and go nowhere else, or a deadly beast and an avenging spirit may come near you. For I do not see that the matter is safe or sure."
+  },
+  {
+   "throw": [
+    3,
+    4,
+    6,
+    6,
+    6
+   ],
+   "sum": 25,
+   "n": 51,
+   "god_greek": "Μηνὸς Φωσφόρου",
+   "god": "Men the Light-Bringer, god of the moon",
+   "cast_greek": "τέσσαρα πείπτων εἷς, τρεῖς δ’ ἑξεῖται καὶ τρεῖος ὁ πέμπτος·",
+   "greek": "θάρσει· καιρὸν ἔχεις· πράξεις, ἃ θέλεις, καιροῦ τ’ ἐπιτεύξῃ· εἰς ὁδὸν ὁρμηθῆναι· ἔχει καιρόν τιν’ ὁ μόχθος· ἔργον τ’ ἐνχειρεῖν ἀγαθὸν καὶ ἀγῶνα δίκην τε.",
+   "mood": "yes",
+   "english": "Take courage: the time is right. You will do what you wish and catch the right moment. Set out on your road: your labour has its season. It is good to start a task, a contest or a lawsuit."
+  },
+  {
+   "throw": [
+    1,
+    6,
+    6,
+    6,
+    6
+   ],
+   "sum": 25,
+   "n": 52,
+   "god_greek": "Μητρὸς Θεῶν",
+   "god": "the Mother of the Gods",
+   "cast_greek": "τέσσαρες ἑξεῖται, πέμπτος χεῖος, τάδε φράζει·",
+   "greek": "ὡς ἄρνας κατέχουσι λύκοι κρατεροί τε λέοντες βοῦς ἕλικας, τούτων πάντων καὶ σὺ κρατήσεις καὶ πάντ’ ἔσται σοι, ὅσσα ἐπερωτᾷς, σὺν Διὸς Ἑρμεῖ.",
+   "mood": "yes",
+   "english": "As wolves overpower lambs, and strong lions overpower curving-horned cattle, so you will overpower all these; and everything you ask will be yours, with Hermes, son of Zeus."
+  },
+  {
+   "throw": [
+    4,
+    4,
+    6,
+    6,
+    6
+   ],
+   "sum": 26,
+   "n": 53,
+   "god_greek": "Διὸς Καταχθονίου",
+   "god": "Zeus of the Underworld",
+   "cast_greek": "τρεῖς δ’ ὅταν ἑξεῖται, δύο τέσσαρα· χρησμὸς ὅδ’ αὐδᾷ·",
+   "greek": "ἡ πρᾶξις κωλύματ’ ἔχει· μὴ σπεῦδε, ἀλλ’ ἀνάμεινον· λυπηρά τις ὁδὸς καὶ ἀμήχανος οὐδὲ προσικτή· ὠνεῖσθαι χαλεπὸν καὶ πωλεῖν τι βλάβος ἔσται.",
+   "mood": "no",
+   "english": "The matter is blocked; do not rush, but wait. The road is painful, hopeless and hard to reach. Buying is difficult, and selling will bring some harm."
+  },
+  {
+   "throw": [
+    3,
+    6,
+    6,
+    6,
+    6
+   ],
+   "sum": 27,
+   "n": 54,
+   "god_greek": "Ἀφροδείτης Οὐρανίας",
+   "god": "Heavenly Aphrodite",
+   "cast_greek": "τέσσαρες ἑξεῖται, μοῦνος τρία, σοὶ τάδε φράζει·",
+   "greek": "οὐρανόπαις Ἀφροδείτη, Ἐρώτων πότνια ἄνασσα, πέμψει μαντείαν ἀγαθήν, δώσει τε ὁδόν σοι· ἐκφεύξῃ τε νόσου καὶ φροντίδος αἰνεσιθύμου. 55 ϛϛϛϛ δ κη Βλάβης· τέσσαρες ἑξεῖται καὶ τέσσαρα μοῦνος, τάδε φράζει· …",
+   "mood": "yes",
+   "english": "Heaven-born Aphrodite, queen and mistress of the Loves, will send you a good oracle and give you a road; you will escape illness and heart-eating worry."
+  },
+  {
+   "throw": [
+    4,
+    6,
+    6,
+    6,
+    6
+   ],
+   "sum": 28,
+   "n": 55,
+   "god_greek": "Βλάβης",
+   "god": "Harm",
+   "cast_greek": "τέσσαρες ἑξεῖται καὶ τέσσαρα μοῦνος, τάδε φράζει·",
+   "lost": true
+  },
+  {
+   "throw": [
+    6,
+    6,
+    6,
+    6,
+    6
+   ],
+   "sum": 30,
+   "n": 56,
+   "god_greek": "Ἑρμοῦ Τετραγώνου",
+   "god": "Hermes the Four-Square",
+   "lost": true,
+   "note": "The best throw of all, five sixes, called the throw of Hermes. On the Kibyra stone this last entry is lost, but other copies give it to Hermes Tetragonos, the four-square pillar-god who 'speaks' the oracle."
+  }
+ ]
+}

@@ -10,7 +10,7 @@ Each oracle is a self-contained page, so it can also go into a themed school kit
 | Oracle | From | Pieces | Status |
 |---|---|---|---|
 | **The Homer oracle** (*Homeromanteion*) | Greek text on papyrus, Roman Egypt, 3rd century AD | 1 die thrown 3 times: 216 lines of Homer | **playable**: `homer.html` (204 lines in Greek and English; 12 lost or scraps) |
-| The knucklebone oracle of the marketplace | Greek cities of Roman Asia Minor (Kibyra, Kremna, Termessos, Adada), 2nd century AD | 5 knucklebones: 56 answers, each with a god | planned |
+| The knucklebone oracle of the marketplace | Greek cities of Roman Asia Minor (Kibyra, Kremna, Termessos, Adada), 2nd century AD | 5 knucklebones: 56 answers, each with a god | **playable**: `kibyra.html` (the Kibyra stone: 45 answers; 11 lost or broken) |
 | The Egyptian 20-sided die | Ptolemaic and Roman Egypt | 1 icosahedron with gods' names or letters | planned |
 | The lots of Fortuna at Praeneste | Rome's own oracle | lots drawn by a boy | planned |
 
@@ -20,6 +20,14 @@ Each oracle is a self-contained page, so it can also go into a themed school kit
 and our English translation; `"lost": true` for the 8 unknown lines and 4 scraps; `"note"` where the identification is
 uncertain or the papyrus has its own wording. The list follows Maltomini's 1995 edition, which corrects the older
 numbering of the damaged first columns (42 entries moved, 19 restored).
+
+## The marketplace oracle data
+
+`data/kibyra-oracle.json`: one entry per throw (56, in the stone's order): the five values (sorted), the total, the god (Greek and
+English), the line describing the throw, the god's answer in Greek, our English, and a `mood` (`yes`, `wait`, `no`).
+`"lost": true` where the stone is broken; `"partial": true` where only some verses survive. Built from the article's edition
+by `oracle-work/kibyra/build.py` (outside this repo). The Greek and our English are CC BY-NC-SA 4.0: credit the authors,
+keep it non-commercial, and share changes under the same licence.
 
 ## Sources (in the Workbench library, collection history/religion/oracles)
 
