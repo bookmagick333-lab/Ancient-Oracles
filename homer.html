@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Homer Oracle | Ancient Oracles</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=GFS+Didot&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* The Homer oracle (Homeromanteion): think of a question, throw one die three times, and the three numbers name one of 216 lines
+   of Homer, from a magical papyrus of the 3rd century AD (P.Lond. 121 = PGM VII). Greek from public-domain editions of Homer;
+   the English is our own translation. 25 lines are lost where the papyrus is damaged. */
+:root{--ink:#eef0f6;--muted:#a9b2c8;--gold:#e0b45a;--line:#3a4466;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 50% -10%,#2a3458,#0d1020 70%);color:var(--ink);font:16px/1.5 "Source Sans 3",system-ui,sans-serif;min-height:100vh}
+.wrap{max-width:1080px;margin:0 auto;padding:calc(12px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(28px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+a.back{font:700 13px Cinzel,Georgia,serif;letter-spacing:.16em;color:var(--gold);text-transform:uppercase;text-decoration:none}
+h1{font:700 clamp(28px,4.5vw,42px)/1.1 Cinzel,Georgia,serif;margin:4px 0 6px;color:#f4e3b8;letter-spacing:.04em}
+.lede{color:var(--muted);margin:0 0 16px;max-width:44em}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:20px;align-items:start}
+@media (max-width:880px){.layout{grid-template-columns:1fr}}
+.ask{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.ask input{flex:1;min-width:220px;font:inherit;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:#141a30;color:var(--ink)}
+.btn{font:700 15px "Source Sans 3",system-ui;border-radius:10px;padding:10px 18px;cursor:pointer;border:2px solid var(--gold);background:linear-gradient(#3b4a86,#1f2852);color:#f6ecd2;box-shadow:0 3px 0 #0b0f22}
+.btn:disabled{filter:saturate(.4) brightness(.7);cursor:default}
+.btn.alt{background:#141a30;border:1px solid var(--gold);box-shadow:none;padding:7px 12px;font-size:14px}
+/* the altar: a dark stone slab lit by a lamp, where the die is thrown */
+.altar{position:relative;height:250px;border-radius:16px;overflow:hidden;border:1px solid #4c5680;perspective:900px;
+ background:radial-gradient(ellipse at 50% 30%,#3b3f55,#23263a 60%,#161827);box-shadow:inset 0 0 50px rgba(0,0,0,.6),0 10px 26px rgba(0,0,0,.5)}
+.altar::before{content:"";position:absolute;left:50%;top:-40%;width:70%;height:80%;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(255,200,120,.16),transparent 70%);pointer-events:none}
+.slots{position:absolute;left:0;right:0;bottom:16px;display:flex;justify-content:center;gap:34px}
+.slot{width:64px;text-align:center;color:var(--muted);font:600 12px system-ui;letter-spacing:.08em}
+.slot b{display:block;font:700 30px Cinzel,Georgia,serif;color:#f4e3b8;height:38px}
+.d3{position:absolute;left:0;top:0;width:var(--ds);height:var(--ds);margin:calc(var(--ds) / -2) 0 0 calc(var(--ds) / -2)}
+.d3 .shadow{position:absolute;left:8%;right:8%;bottom:-14%;height:30%;border-radius:50%;background:radial-gradient(ellipse,rgba(0,0,0,.6),transparent 70%)}
+.d3 .lift,.d3 .cube{position:absolute;inset:0;transform-style:preserve-3d}
+.d3 .face{position:absolute;inset:0;border-radius:16%;backface-visibility:hidden;background-size:cover;background-position:center;
+ box-shadow:inset 0 0 0 1px rgba(120,90,50,.6),inset 0 -3px 6px rgba(60,40,10,.35)}
+/* the answer, on a strip of papyrus */
+.papyrus{margin-top:16px;border-radius:6px;padding:20px 24px;color:#3a2a14;min-height:150px;
+ background:repeating-linear-gradient(90deg,rgba(120,90,40,.06) 0 3px,transparent 3px 9px),repeating-linear-gradient(0deg,rgba(120,90,40,.05) 0 2px,transparent 2px 11px),linear-gradient(135deg,#ecdcae,#dcc690 55%,#e8d6a6);
+ box-shadow:0 10px 24px rgba(0,0,0,.45),inset 0 0 30px rgba(120,80,30,.3)}
+.papyrus .roll{font:700 13px system-ui;letter-spacing:.14em;text-transform:uppercase;color:#7a5a28}
+.papyrus .greek{font:400 clamp(20px,2.6vw,26px)/1.4 "GFS Didot",Georgia,serif;margin:8px 0 6px;color:#2a1a08}
+.papyrus .eng{font:600 clamp(17px,2vw,20px)/1.45 Georgia,serif;margin:0}
+.papyrus .ref{margin-top:10px;font-size:13.5px;color:#6b4e22}
+.papyrus .wait{color:#6b4e22;font-style:italic}
+.papyrus.reveal{animation:unroll .7s ease-out both}
+@keyframes unroll{from{clip-path:inset(0 50% 0 50%);opacity:.3}to{clip-path:inset(0 0 0 0);opacity:1}}
+.side .card{background:linear-gradient(#1f2742,#151a2e);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.side h3{font:700 15px Cinzel,Georgia,serif;letter-spacing:.08em;color:var(--gold);margin:0 0 6px}
+.side ol,.side ul{padding-left:20px;margin:6px 0 0}.side li{margin:3px 0;font-size:14.5px;color:#d6dbea}
+.side details summary{cursor:pointer;font-weight:700}
+.past{list-style:none;padding:0;margin:6px 0 0;font-size:14px;color:var(--muted);max-height:220px;overflow:auto}
+.past li{border-top:1px solid var(--line);padding:6px 0}.past li b{color:#d6dbea}
+.known{color:#9fe0a5}.guess{color:#ffd27a}
+@media (prefers-reduced-motion:reduce){.papyrus.reveal{animation:none}}
+</style>
+</head>
+<body><div class="wrap">
+ <a class="back" href="./index.html">← Ancient Oracles</a>
+ <h1>The Homer Oracle</h1>
+ <p class="lede">Think of your question. Then throw the die three times: the three numbers point to one line of Homer, and that line is the gods' answer. This is how it was done with a magical papyrus from Roman Egypt, about 1,700 years ago.</p>
+ <div class="layout">
+  <div>
+   <div class="ask"><input id="q" type="text" maxlength="140" placeholder="Your question (it stays on this device)" aria-label="Your question"><button class="btn" type="button" id="throw">🎲 Throw the die three times</button></div>
+   <div class="altar" id="altar"><div class="slots"><div class="slot"><b id="n1">·</b>first</div><div class="slot"><b id="n2">·</b>second</div><div class="slot"><b id="n3">·</b>third</div></div></div>
+   <div class="papyrus" id="answer"><p class="wait">The papyrus waits for your throw.</p></div>
+  </div>
+  <aside class="side">
+   <div class="card"><h3>How to consult</h3>
+    <ol><li>Think of one clear question, and keep it in mind.</li><li>Throw the die three times. Each throw gives a number from 1 to 6.</li>
+     <li>The three numbers, in order, name one of 216 lines of Homer (6 × 6 × 6).</li><li>Read the line as the answer to your question. Its meaning is for you to work out, as it was for the ancients.</li></ol></div>
+   <div class="card"><h3>Your answers</h3><ul class="past" id="past"></ul><button class="btn alt" type="button" id="clear" style="margin-top:8px">Clear</button></div>
+   <div class="card"><details><summary>How do we know?</summary>
+    <ul>
+     <li class="known">✔ <b>A real oracle.</b> The list survives on a papyrus roll from Roman Egypt, written in the 3rd century AD and now in the British Museum (Papyrus 121). It begins with 216 single lines from the Iliad and Odyssey, each numbered by three throws of a die. Two other copies survive, from Oxyrhynchus and Bologna.</li>
+     <li class="known">✔ <b>Three throws of one die.</b> The instructions survive in the Oxyrhynchus copy. The papyrus calls itself <i>Homeromanteion</i>, "Homer oracle".</li>
+     <li class="known">✔ <b>Homer as scripture.</b> Greeks treated Homer's poems as a source of wisdom, and lines picked at random could be read as messages from the gods.</li>
+     <li class="known">✔ <b>Lost lines.</b> The beginning of the roll is damaged, so 25 of the 216 lines are missing. If you throw one, the oracle is silent.</li>
+     <li class="guess">? <b>The ritual around it</b> (prayers, purification, which god was asked) is only partly known. Here you simply think of your question.</li>
+    </ul>
+    <p style="font-size:12.5px;color:var(--muted);margin:8px 0 0">Papyrus: F. G. Kenyon, <i>Greek Papyri in the British Museum</i> I (1893), papyrus CXXI. Greek of Homer: Monro and Allen (Iliad), Murray 1919 (Odyssey), via the Perseus Digital Library. English: our own translation. Dice faces: a Roman bone die. Sounds: Kenney (CC0).</p>
+   </details></div>
+  </aside>
+ </div>
+</div>
+<script>
+(function () {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  let DATA = null, busy = false;
+  const store = {get(k, d) { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (_) { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (_) { /* private mode */ } }};
+  fetch("./data/homer-oracle.json").then(r => r.json()).then(d => { DATA = d; }).catch(() => { $("answer").innerHTML = '<p class="wait">The papyrus could not be read. Try reloading the page.</p>'; });
+
+  // sounds (Kenney, CC0)
+  let actx = null; const bufs = {};
+  function sfx(name, vol) {
+    try {
+      actx = actx || new (window.AudioContext || window.webkitAudioContext)(); if (actx.state === "suspended") actx.resume();
+      bufs[name] = bufs[name] || fetch("./assets/sounds/" + name).then(r => r.arrayBuffer()).then(a => actx.decodeAudioData(a));
+      bufs[name].then(b => { const s = actx.createBufferSource(), g = actx.createGain(); g.gain.value = vol || 0.7; s.buffer = b; s.connect(g).connect(actx.destination); s.start(); }).catch(() => {});
+    } catch (_) { /* no sound */ }
+  }
+
+  // one bone die, a 3D cube with photographed faces; it tumbles across the altar and lands on the chosen number
+  const FACE_AT = {1: "rotateY(0deg)", 6: "rotateY(180deg)", 3: "rotateY(90deg)", 4: "rotateY(-90deg)", 2: "rotateX(90deg)", 5: "rotateX(-90deg)"};
+  const SHOW = {1: [0, 0], 6: [0, 180], 3: [0, -90], 4: [0, 90], 2: [-90, 0], 5: [90, 0]};
+  [1, 2, 3, 4, 5, 6].forEach(v => { const im = new Image(); im.src = `./assets/pics/die-face${v}.webp`; });
+  const calm = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function throwDie(v) {
+    return new Promise(done => {
+      const altar = $("altar"), size = innerWidth < 560 ? 46 : 58, w = altar.clientWidth;
+      altar.querySelectorAll(".d3").forEach(d => d.remove());
+      const d = document.createElement("div"); d.className = "d3"; d.style.setProperty("--ds", size + "px");
+      d.innerHTML = `<div class="shadow"></div><div class="lift"><div class="cube">${[1, 2, 3, 4, 5, 6].map(f =>
+        `<div class="face" style="transform:${FACE_AT[f]} translateZ(${size / 2}px);background-image:url(./assets/pics/die-face${f}.webp)"></div>`).join("")}</div></div>`;
+      altar.append(d);
+      const sx = w * (0.15 + Math.random() * 0.15), sy = 230, lx = w * (0.42 + Math.random() * 0.16), ly = 95 + Math.random() * 20, dur = calm() ? 200 : 1000;
+      d.animate([{transform: `translate(${sx}px,${sy}px) scale(1.2)`}, {transform: `translate(${(sx + lx) / 2}px,${(sy + ly) / 2}px) scale(1.05)`, offset: .5},
+        {transform: `translate(${lx}px,${ly}px) scale(1)`}], {duration: dur, easing: "cubic-bezier(.25,.6,.35,1)", fill: "both"});
+      d.querySelector(".lift").animate([{transform: `translateY(-70px)`}, {transform: "translateY(0)", offset: .5}, {transform: "translateY(-18px)", offset: .68}, {transform: "translateY(0)"}],
+        {duration: dur, easing: "ease-in-out", fill: "both"});
+      const [fx, fy] = SHOW[v], tz = Math.round(Math.random() * 50 - 25);
+      d.querySelector(".cube").animate([{transform: `rotateZ(${tz - 200}deg) rotateX(${fx + 720}deg) rotateY(${fy + 360}deg)`},
+        {transform: `rotateZ(${tz}deg) rotateX(${fx}deg) rotateY(${fy}deg)`}], {duration: dur, easing: "cubic-bezier(.2,.7,.3,1)", fill: "both"});
+      setTimeout(done, dur + 250);
+    });
+  }
+  const roll = () => 1 + Math.floor(Math.random() * 6);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+
+  async function consult() {
+    if (busy || !DATA) return;
+    busy = true; $("throw").disabled = true;
+    ["n1", "n2", "n3"].forEach(id => $(id).textContent = "·");
+    $("answer").classList.remove("reveal"); $("answer").innerHTML = '<p class="wait">The die is thrown…</p>';
+    const nums = [];
+    for (let i = 0; i < 3; i++) {
+      const v = roll(); nums.push(v);
+      sfx("dice-shake-1.ogg", 0.5);
+      await new Promise(r => setTimeout(r, calm() ? 50 : 350));
+      sfx(["dice-throw-1.ogg", "dice-throw-2.ogg", "dice-throw-3.ogg"][i], 0.8);
+      await throwDie(v);
+      $("n" + (i + 1)).textContent = v;
+    }
+    const key = nums.join("-"), e = DATA.entries.find(x => x.roll === key), q = $("q").value.trim();
+    const a = $("answer"); void a.offsetWidth; a.classList.add("reveal");
+    if (!e || e.lost) {
+      a.innerHTML = `<div class="roll">Throw ${key}</div><p class="eng" style="margin-top:8px">This line is lost: the papyrus is torn here.</p><p class="ref">The gods are silent. Think of your question again, and throw again.</p>`;
+    } else {
+      a.innerHTML = `<div class="roll">Throw ${key}${q ? " · " + esc(q) : ""}</div><div class="greek" lang="grc">${esc(e.greek)}</div>
+        <p class="eng">“${esc(e.english)}”</p><div class="ref">Homer, <i>${e.work}</i> book ${e.book}, line ${e.line}</div>`;
+    }
+    const past = store.get("ao.homer.past", []);
+    past.unshift({key, q, line: e && !e.lost ? e.english : null, when: Date.now()});
+    store.set("ao.homer.past", past.slice(0, 20)); paintPast();
+    busy = false; $("throw").disabled = false;
+  }
+  function paintPast() {
+    const past = store.get("ao.homer.past", []);
+    $("past").innerHTML = past.length ? past.map(p => `<li><b>${p.key}</b>${p.q ? " · " + esc(p.q) : ""}<br>${p.line ? "“" + esc(p.line) + "”" : "<i>the line is lost</i>"}</li>`).join("") : "<li>None yet.</li>";
+  }
+  $("throw").onclick = consult;
+  $("q").addEventListener("keydown", e => { if (e.key === "Enter") consult(); });
+  $("clear").onclick = () => { store.set("ao.homer.past", []); paintPast(); };
+  window.__homer = {consult, data: () => DATA};
+  paintPast();
+})();
+</script>
+</body></html>

@@ -9,7 +9,7 @@ Each oracle is a self-contained page, so it can also go into a themed school kit
 
 | Oracle | From | Pieces | Status |
 |---|---|---|---|
-| **The Homer oracle** (*Homeromanteion*) | Greek text on papyrus, Roman Egypt, 3rd century AD | 3 six-sided dice: 216 lines of Homer | in progress: the dice table is in `data/homer-oracle.json` |
+| **The Homer oracle** (*Homeromanteion*) | Greek text on papyrus, Roman Egypt, 3rd century AD | 1 die thrown 3 times: 216 lines of Homer | **playable**: `homer.html` (191 lines in Greek and English, 25 lost) |
 | The knucklebone oracle of the marketplace | Greek cities of Roman Asia Minor (Kibyra, Kremna, Termessos, Adada), 2nd century AD | 5 knucklebones: 56 answers, each with a god | planned |
 | The Egyptian 20-sided die | Ptolemaic and Roman Egypt | 1 icosahedron with gods' names or letters | planned |
 | The lots of Fortuna at Praeneste | Rome's own oracle | lots drawn by a boy | planned |
@@ -18,7 +18,8 @@ Each oracle is a self-contained page, so it can also go into a themed school kit
 
 `data/homer-oracle.json`: one entry per throw (`1-1-1` to `6-6-6`): the work (Iliad or Odyssey), book and line, or
 `"lost": true` where the papyrus is damaged (25 of 216). `"kenyon": true` marks references confirmed in Kenyon's 1893
-edition. The Greek lines will come from a public-domain text of Homer; the English is our own translation.
+edition. Each surviving entry has the Greek line (Monro and Allen's Iliad, Murray's 1919 Odyssey Greek text, both public domain, via the
+Perseus Digital Library) and our own English translation.
 
 ## Sources (in the Workbench library, collection history/religion/oracles)
 

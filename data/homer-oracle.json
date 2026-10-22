@@ -5,7 +5,8 @@
   "Papyrus London 121 (PGM VII 1-148), 3rd century AD, ed. F. G. Kenyon, Greek Papyri in the British Museum vol. 1 (1893), public domain",
   "Roll-to-line references as listed in Wikipedia, 'Sortes Homericae' (after the Oxford and Betz editions); the line references are ancient facts",
   "Cross-checked: 'kenyon': true where Kenyon's 1893 text gives the same reference (OCR, so a false is not necessarily a disagreement)",
-  "Five references garbled in the Wikipedia table (3-5-3, 3-5-6, 4-2-1, 5-4-5, 6-4-3) corrected from Kenyon's text: all Iliad"
+  "Five references garbled in the Wikipedia table (3-5-3, 3-5-6, 4-2-1, 5-4-5, 6-4-3) corrected from Kenyon's text: all Iliad",
+  "Three throws mislabelled in the Wikipedia table were relabelled by their position in the sequence: 1-6-1 -> 2-6-1; 3-1-1 -> 3-3-1; 3-4-4 -> 3-3-4"
  ],
  "lost_rolls_note": "Lines lost where the papyrus is damaged; two other copies (P.Oxy. 3831, P.Bon. 3) may fill some.",
  "entries": [
@@ -14,21 +15,27 @@
    "work": "Odyssey",
    "book": 15,
    "line": 344,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἀλλʼ ἕνεκʼ οὐλομένης γαστρὸς κακὰ κήδεʼ ἔχουσιν",
+   "english": "For the sake of their cursed bellies, men suffer bitter sorrows."
   },
   {
    "roll": "1-1-2",
    "work": "Odyssey",
    "book": 9,
    "line": 137,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "οὔτʼ εὐνὰς βαλέειν οὔτε πρυμνήσιʼ ἀνάψαι,",
+   "english": "No need to drop the anchor stones, or tie the stern ropes fast."
   },
   {
    "roll": "1-1-3",
    "work": "Iliad",
    "book": 21,
    "line": 21,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἄορι θεινομένων, ἐρυθαίνετο δʼ αἵματι ὕδωρ.",
+   "english": "as men were struck down by the sword, and the water ran red with blood."
   },
   {
    "roll": "1-1-4",
@@ -39,7 +46,9 @@
    "work": "Iliad",
    "book": 2,
    "line": 101,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἔστη σκῆπτρον ἔχων τὸ μὲν Ἥφαιστος κάμε τεύχων.",
+   "english": "He stood up holding the sceptre that Hephaestus had laboured to make."
   },
   {
    "roll": "1-1-6",
@@ -50,14 +59,18 @@
    "work": "Iliad",
    "book": 9,
    "line": 120,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἂψ ἐθέλω ἀρέσαι δόμεναί τʼ ἀπερείσιʼ ἄποινα.",
+   "english": "I am willing to make amends, and to pay a ransom beyond counting."
   },
   {
    "roll": "1-2-2",
    "work": "Iliad",
    "book": 7,
    "line": 360,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἐξ ἄρα δή τοι ἔπειτα θεοὶ φρένας ὤλεσαν αὐτοί.",
+   "english": "Then the gods themselves have surely robbed you of your wits."
   },
   {
    "roll": "1-2-3",
@@ -72,7 +85,9 @@
    "work": "Odyssey",
    "book": 15,
    "line": 128,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "κείσθω ἐνὶ μεγάρῳ. σὺ δέ μοι χαίρων ἀφίκοιο",
+   "english": "Let it lie in the hall. And may you reach your home rejoicing."
   },
   {
    "roll": "1-2-6",
@@ -91,28 +106,36 @@
    "work": "Iliad",
    "book": 18,
    "line": 328,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἀλλʼ οὐ Ζεὺς ἄνδρεσσι νοήματα πάντα τελευτᾷ·",
+   "english": "But Zeus does not bring every plan of men to fulfilment."
   },
   {
    "roll": "1-3-4",
    "work": "Iliad",
    "book": 3,
    "line": 41,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "καί κε τὸ βουλοίμην, καί κεν πολὺ κέρδιον ἦεν",
+   "english": "That is what I would wish, and it would have been far better."
   },
   {
    "roll": "1-3-5",
    "work": "Odyssey",
    "book": 17,
    "line": 244,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "τῷ κέ τοι ἀγλαΐας γε διασκεδάσειεν ἁπάσας,",
+   "english": "Then he would scatter all your fine show to the winds."
   },
   {
    "roll": "1-3-6",
    "work": "Iliad",
    "book": 6,
    "line": 441,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἦ καὶ ἐμοὶ τάδε πάντα μέλει γύναι· ἀλλὰ μάλʼ αἰνῶς",
+   "english": "Truly, all this weighs on me too, wife. But terribly"
   },
   {
    "roll": "1-4-1",
@@ -123,14 +146,18 @@
    "work": "Odyssey",
    "book": 17,
    "line": 66,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἔσθλʼ ἀγορεύοντες, κακὰ δὲ φρεσὶ βυσσοδόμευον.",
+   "english": "speaking kind words, but plotting evil deep in their hearts."
   },
   {
    "roll": "1-4-3",
    "work": "Iliad",
    "book": 3,
    "line": 65,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "οὔ τοι ἀπόβλητʼ ἐστὶ θεῶν ἐρικυδέα δῶρα",
+   "english": "The glorious gifts of the gods are not to be thrown away."
   },
   {
    "roll": "1-4-4",
@@ -145,70 +172,90 @@
    "work": "Iliad",
    "book": 21,
    "line": 223,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἔσται ταῦτα Σκάμανδρε διοτρεφές, ὡς σὺ κελεύεις.",
+   "english": "It shall be so, Scamander, nursling of Zeus, just as you command."
   },
   {
    "roll": "1-5-1",
    "work": "Iliad",
    "book": 3,
    "line": 51,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "δυσμενέσιν μὲν χάρμα, κατηφείην δὲ σοὶ αὐτῷ;",
+   "english": "a joy to your enemies, and a shame to yourself?"
   },
   {
    "roll": "1-5-2",
    "work": "Odyssey",
    "book": 14,
    "line": 161,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "τοῦδʼ αὐτοῦ λυκάβαντος ἐλεύσεται ἐνθάδʼ Ὀδυσσεύς.",
+   "english": "Within this very year, Odysseus will come home."
   },
   {
    "roll": "1-5-3",
    "work": "Iliad",
    "book": 22,
    "line": 513,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "οὐδὲν σοί γʼ ὄφελος, ἐπεὶ οὐκ ἐγκείσεαι αὐτοῖς,",
+   "english": "They are no use to you, since you will not lie wrapped in them."
   },
   {
    "roll": "1-5-4",
    "work": "Iliad",
    "book": 3,
    "line": 255,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "τῷ δέ κε νικήσαντι γυνὴ καὶ κτήμαθʼ ἕποιτο·",
+   "english": "Let the woman and the treasure go to the one who wins."
   },
   {
    "roll": "1-5-5",
    "work": "Iliad",
    "book": 2,
    "line": 204,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "οὐκ ἀγαθὸν πολυκοιρανίη· εἷς κοίρανος ἔστω,",
+   "english": "Rule by many is no good thing: let there be one ruler."
   },
   {
    "roll": "1-5-6",
    "work": "Odyssey",
    "book": 20,
    "line": 355,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "εἰδώλων δὲ πλέον πρόθυρον, πλείη δὲ καὶ αὐλή,",
+   "english": "The porch is full of ghosts, and the courtyard full of them too,"
   },
   {
    "roll": "1-6-1",
    "work": "Iliad",
    "book": 22,
    "line": 393,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἠράμεθα μέγα κῦδος· ἐπέφνομεν Ἕκτορα δῖον,",
+   "english": "We have won great glory: we have killed the noble Hector."
   },
   {
    "roll": "1-6-2",
    "work": "Iliad",
    "book": 10,
    "line": 303,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "τίς κέν μοι τόδε ἔργον ὑποσχόμενος τελέσειε",
+   "english": "Who will promise me this deed and carry it through?"
   },
   {
    "roll": "1-6-3",
    "work": "Iliad",
    "book": 9,
    "line": 385,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "οὐδʼ εἴ μοι τόσα δοίη ὅσα ψάμαθός τε κόνις τε,",
+   "english": "not even if he gave me gifts as many as the grains of sand and dust."
   },
   {
    "roll": "1-6-4",
@@ -227,14 +274,18 @@
    "work": "Odyssey",
    "book": 4,
    "line": 607,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "οὐ γάρ τις νήσων ἱππήλατος οὐδʼ ἐυλείμων,",
+   "english": "For none of the islands is good for driving horses, or rich in meadows."
   },
   {
    "roll": "2-1-2",
    "work": "Odyssey",
    "book": 4,
    "line": 688,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ὑμετέρων τὸ πρόσθεν ἀκούετε, παῖδες ἐόντες,",
+   "english": "Have you not heard from your fathers, long ago, when you were children,"
   },
   {
    "roll": "2-1-3",
@@ -253,14 +304,18 @@
    "work": "Iliad",
    "book": 9,
    "line": 378,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἐχθρὰ δέ μοι τοῦ δῶρα, τίω δέ μιν ἐν καρὸς αἴσῃ.",
+   "english": "His gifts are hateful to me: I value him no more than a splinter."
   },
   {
    "roll": "2-2-1",
    "work": "Iliad",
    "book": 9,
    "line": 482,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "μοῦνον τηλύγετον πολλοῖσιν ἐπὶ κτεάτεσσι,",
+   "english": "an only son, born late, heir to great wealth."
   },
   {
    "roll": "2-2-2",
@@ -279,119 +334,153 @@
    "work": "Odyssey",
    "book": 24,
    "line": 19,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ὣς οἱ μὲν περὶ κεῖνον ὁμίλεον· ἀγχίμολον δὲ",
+   "english": "So they gathered round him. And close at hand"
   },
   {
    "roll": "2-2-6",
    "work": "Odyssey",
    "book": 11,
    "line": 366,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ψεύδεά τʼ ἀρτύνοντας ὅθεν κέ τις οὐδὲ ἴδοιτο·",
+   "english": "making up lies about things no one could ever see."
   },
   {
    "roll": "2-3-1",
    "work": "Odyssey",
    "book": 1,
    "line": 302,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἄλκιμος ἔσσʼ, ἵνα τίς σε καὶ ὀψιγόνων ἐὺ εἴπῃ.",
+   "english": "Be brave, so that those born in years to come may speak well of you."
   },
   {
    "roll": "2-3-2",
    "work": "Iliad",
    "book": 11,
    "line": 171,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἔνθʼ ἄρα δὴ ἵσταντο καὶ ἀλλήλους ἀνέμιμνον.",
+   "english": "Then they stood their ground, and waited for one another."
   },
   {
    "roll": "2-3-3",
    "work": "Iliad",
    "book": 9,
    "line": 43,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἔρχεο· πάρ τοι ὁδός, νῆες δέ τοι ἄγχι θαλάσσης",
+   "english": "Go: the road lies open before you, and your ships are close to the sea."
   },
   {
    "roll": "2-3-4",
    "work": "Iliad",
    "book": 19,
    "line": 107,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ψευστήσεις, οὐδʼ αὖτε τέλος μύθῳ ἐπιθήσεις.",
+   "english": "You will be proved a liar, and you will not bring your words to pass."
   },
   {
    "roll": "2-3-5",
    "work": "Iliad",
    "book": 22,
    "line": 79,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "μήτηρ δʼ αὖθʼ ἑτέρωθεν ὀδύρετο δάκρυ χέουσα",
+   "english": "And on the other side his mother wept and wailed, shedding tears."
   },
   {
    "roll": "2-3-6",
    "work": "Odyssey",
    "book": 3,
    "line": 115,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "οὐδʼ εἰ πεντάετές γε καὶ ἑξάετες παραμίμνων",
+   "english": "not even if you stayed here five years, or six, to ask"
   },
   {
    "roll": "2-4-1",
    "work": "Iliad",
    "book": 5,
    "line": 899,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ὣς φάτο, καὶ Παιήονʼ ἀνώγειν ἰήσασθαι.",
+   "english": "So he spoke, and ordered Paeon the healer to heal him."
   },
   {
    "roll": "2-4-2",
    "work": "Odyssey",
    "book": 11,
    "line": 80,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ταῦτά τοι, ὦ δύστηνε, τελευτήσω τε καὶ ἔρξω.",
+   "english": "All this, unhappy one, I will carry out and do for you."
   },
   {
    "roll": "2-4-3",
    "work": "Iliad",
    "book": 4,
    "line": 26,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "πῶς ἐθέλεις ἅλιον θεῖναι πόνον ἠδʼ ἀτέλεστον,",
+   "english": "How can you wish to make my labour vain and come to nothing?"
   },
   {
    "roll": "2-4-4",
    "work": "Iliad",
    "book": 2,
    "line": 325,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ὄψιμον ὀψιτέλεστον, ὅου κλέος οὔ ποτʼ ὀλεῖται.",
+   "english": "Late it comes, and late it is fulfilled, but its fame will never die."
   },
   {
    "roll": "2-4-5",
    "work": "Odyssey",
    "book": 3,
    "line": 117,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "πρίν κεν ἀνιηθεὶς σὴν πατρίδα γαῖαν ἵκοιο.",
+   "english": "You would grow weary and go home to your own country first."
   },
   {
    "roll": "2-4-6",
    "work": "Odyssey",
    "book": 2,
    "line": 329,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἐλθεῖν, ὄφρʼ ἔνθεν θυμοφθόρα φάρμακʼ ἐνείκῃ,",
+   "english": "to go there, and bring back poisons that destroy the life,"
   },
   {
    "roll": "2-5-1",
    "work": "Iliad",
    "book": 24,
    "line": 725,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἆνερ ἀπʼ αἰῶνος νέος ὤλεο, κὰδ δέ με χήρην",
+   "english": "Husband, you have died young and left me a widow"
   },
   {
    "roll": "2-5-2",
    "work": "Iliad",
    "book": 9,
    "line": 310,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ᾗ περ δὴ φρονέω τε καὶ ὡς τετελεσμένον ἔσται,",
+   "english": "as I truly think, and as it will surely come to pass."
   },
   {
    "roll": "2-5-3",
    "work": "Iliad",
    "book": 6,
    "line": 264,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "μή μοι οἶνον ἄειρε μελίφρονα πότνια μῆτερ,",
+   "english": "Do not bring me honey-sweet wine, my lady mother,"
   },
   {
    "roll": "2-5-4",
@@ -406,84 +495,108 @@
    "work": "Iliad",
    "book": 6,
    "line": 432,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "μὴ παῖδʼ ὀρφανικὸν θήῃς χήρην τε γυναῖκα·",
+   "english": "Do not make your child an orphan, and your wife a widow."
   },
   {
-   "roll": "1-6-1",
+   "roll": "2-6-1",
    "work": "Odyssey",
    "book": 4,
    "line": 685,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ὕστατα καὶ πύματα νῦν ἐνθάδε δειπνήσειαν·",
+   "english": "Let this be the last time, the very last, that they dine here."
   },
   {
    "roll": "2-6-2",
    "work": "Iliad",
    "book": 2,
    "line": 24,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οὐ χρὴ παννύχιον εὕδειν βουληφόρον ἄνδρα",
+   "english": "A man who must give counsel should not sleep the whole night through."
   },
   {
    "roll": "2-6-3",
    "work": "Iliad",
    "book": 6,
    "line": 326,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "δαιμόνιʼ οὐ μὲν καλὰ χόλον τόνδʼ ἔνθεο θυμῷ,",
+   "english": "Strange man, it is not right to nurse this anger in your heart."
   },
   {
    "roll": "2-6-4",
    "work": "Odyssey",
    "book": 3,
    "line": 216,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "τίς δʼ οἶδʼ εἴ κέ ποτέ σφι βίας ἀποτίσεται ἐλθών,",
+   "english": "Who knows whether he may come one day and repay their violence?"
   },
   {
    "roll": "2-6-5",
    "work": "Odyssey",
    "book": 21,
    "line": 214,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἄξομαι ἀμφοτέροις ἀλόχους καὶ κτήματʼ ὀπάσσω",
+   "english": "I will find wives for them both, and give them possessions."
   },
   {
    "roll": "2-6-6",
    "work": "Odyssey",
    "book": 21,
    "line": 180,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "τόξου πειρώμεσθα καὶ ἐκτελέωμεν ἄεθλον.",
+   "english": "Let us try the bow, and see the contest through."
   },
   {
    "roll": "3-1-1",
    "work": "Iliad",
    "book": 14,
    "line": 80,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οὐ γάρ τις νέμεσις φυγέειν κακόν, οὐδʼ ἀνὰ νύκτα.",
+   "english": "There is no shame in running from ruin, even by night."
   },
   {
    "roll": "3-1-2",
    "work": "Iliad",
    "book": 22,
    "line": 268,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "παντοίης ἀρετῆς μιμνήσκεο· νῦν σε μάλα χρὴ",
+   "english": "Remember all your courage. Now, above all, you must"
   },
   {
    "roll": "3-1-3",
    "work": "Iliad",
    "book": 22,
    "line": 484,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "χήρην ἐν μεγάροισι· πάϊς δʼ ἔτι νήπιος αὔτως,",
+   "english": "a widow in the halls; and the child is still only a baby."
   },
   {
    "roll": "3-1-4",
    "work": "Iliad",
    "book": 18,
    "line": 134,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἀλλὰ σὺ μὲν μή πω καταδύσεο μῶλον Ἄρηος",
+   "english": "But do not go into the struggle of war just yet."
   },
   {
    "roll": "3-1-5",
    "work": "Odyssey",
    "book": 19,
    "line": 360,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "αἶψα γὰρ ἐν κακότητι βροτοὶ καταγηράσκουσιν.",
+   "english": "For in hardship, mortals grow old before their time."
   },
   {
    "roll": "3-1-6",
@@ -498,259 +611,333 @@
    "work": "Odyssey",
    "book": 6,
    "line": 201,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οὐκ ἔσθʼ οὗτος ἀνὴρ διερὸς βροτὸς οὐδὲ γένηται,",
+   "english": "That man is not alive, and never will be born,"
   },
   {
    "roll": "3-2-3",
    "work": "Iliad",
    "book": 18,
    "line": 128,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ναὶ δὴ ταῦτά γε τέκνον ἐτήτυμον οὐ κακόν ἐστι",
+   "english": "Yes, my child, this is true; it is no bad thing"
   },
   {
    "roll": "3-2-4",
    "work": "Iliad",
    "book": 22,
    "line": 219,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "οὔ οἱ νῦν ἔτι γʼ ἔστι πεφυγμένον ἄμμε γενέσθαι,",
+   "english": "Now there is no way left for him to escape us,"
   },
   {
    "roll": "3-2-5",
    "work": "Iliad",
    "book": 22,
    "line": 50,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "χαλκοῦ τε χρυσοῦ τʼ ἀπολυσόμεθʼ, ἔστι γὰρ ἔνδον·",
+   "english": "We will ransom them with bronze and gold, for there is plenty inside."
   },
   {
    "roll": "3-2-6",
    "work": "Odyssey",
    "book": 21,
    "line": 310,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "πῖνέ τε, μηδʼ ἐρίδαινε μετʼ ἀνδράσι κουροτέροισιν.",
+   "english": "Drink, and do not quarrel with men younger than yourself."
   },
   {
-   "roll": "3-1-1",
+   "roll": "3-3-1",
    "work": "Iliad",
    "book": 8,
    "line": 94,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "πῇ φεύγεις μετὰ νῶτα βαλὼν κακὸς ὣς ἐν ὁμίλῳ;",
+   "english": "Where are you running, turning your back like a coward in the crowd?"
   },
   {
    "roll": "3-3-2",
    "work": "Odyssey",
    "book": 6,
    "line": 244,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "αἲ γὰρ ἐμοὶ τοιόσδε πόσις κεκλημένος εἴη",
+   "english": "If only such a man might be called my husband,"
   },
   {
    "roll": "3-3-3",
    "work": "Iliad",
    "book": 4,
    "line": 443,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "οὐρανῷ ἐστήριξε κάρη καὶ ἐπὶ χθονὶ βαίνει·",
+   "english": "Her head strikes the heavens while she walks upon the earth."
   },
   {
-   "roll": "3-4-4",
+   "roll": "3-3-4",
    "work": "Iliad",
    "book": 18,
    "line": 328,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἀλλʼ οὐ Ζεὺς ἄνδρεσσι νοήματα πάντα τελευτᾷ·",
+   "english": "But Zeus does not bring every plan of men to fulfilment."
   },
   {
    "roll": "3-3-5",
    "work": "Iliad",
    "book": 8,
    "line": 246,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "νεῦσε δέ οἱ λαὸν σόον ἔμμεναι οὐδʼ ἀπολέσθαι.",
+   "english": "He nodded his promise that the people would be safe and would not perish."
   },
   {
    "roll": "3-3-6",
    "work": "Iliad",
    "book": 9,
    "line": 698,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "μὴ ὄφελες λίσσεσθαι ἀμύμονα Πηλεΐωνα",
+   "english": "You should never have pleaded with the noble son of Peleus,"
   },
   {
    "roll": "3-4-1",
    "work": "Odyssey",
    "book": 21,
    "line": 293,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οἶνός σε τρώει μελιηδής, ὅς τε καὶ ἄλλους",
+   "english": "The honey-sweet wine has gone to your head, as it does to others,"
   },
   {
    "roll": "3-4-2",
    "work": "Iliad",
    "book": 22,
    "line": 185,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἔρξον ὅπῃ δή τοι νόος ἔπλετο, μὴ δʼ ἔτʼ ἐρώει.",
+   "english": "Do as your mind is set on doing, and hold back no longer."
   },
   {
    "roll": "3-4-3",
    "work": "Iliad",
    "book": 18,
    "line": 329,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἄμφω γὰρ πέπρωται ὁμοίην γαῖαν ἐρεῦσαι",
+   "english": "For both of us are fated to redden the same earth."
   },
   {
    "roll": "3-4-4",
    "work": "Iliad",
    "book": 8,
    "line": 282,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "βάλλʼ οὕτως, αἴ κέν τι φόως Δαναοῖσι γένηαι",
+   "english": "Keep shooting like this, and you may become a light to the Greeks."
   },
   {
    "roll": "3-4-5",
    "work": "Iliad",
    "book": 22,
    "line": 348,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ὡς οὐκ ἔσθʼ ὃς σῆς γε κύνας κεφαλῆς ἀπαλάλκοι,",
+   "english": "So there is no one who could keep the dogs from your head,"
   },
   {
    "roll": "3-4-6",
    "work": "Iliad",
    "book": 22,
    "line": 13,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οὐ μέν με κτενέεις, ἐπεὶ οὔ τοι μόρσιμός εἰμι.",
+   "english": "You will not kill me, for I am not fated to die by you."
   },
   {
    "roll": "3-5-1",
    "work": "Odyssey",
    "book": 5,
    "line": 208,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἐνθάδε κʼ αὖθι μένων σὺν ἐμοὶ τόδε δῶμα φυλάσσοις",
+   "english": "Stay here with me instead, and guard this house,"
   },
   {
    "roll": "3-5-2",
    "work": "Odyssey",
    "book": 18,
    "line": 10,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "εἶκε, γέρον, προθύρου, μὴ δὴ τάχα καὶ ποδὸς ἕλκῃ.",
+   "english": "Get away from the doorway, old man, before you are dragged off by the foot."
   },
   {
    "roll": "3-5-3",
    "work": "Iliad",
    "book": 14,
    "line": 81,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "βέλτερον ὃς φεύγων προφύγῃ κακὸν ἠὲ ἁλώῃ.",
+   "english": "Better to run and escape from trouble than to be caught."
   },
   {
    "roll": "3-5-4",
    "work": "Odyssey",
    "book": 13,
    "line": 308,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "μηδέ τῳ ἐκφάσθαι μήτʼ ἀνδρῶν μήτε γυναικῶν,",
+   "english": "and tell no one, neither man nor woman,"
   },
   {
    "roll": "3-5-5",
    "work": "Iliad",
    "book": 11,
    "line": 69,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "πυρῶν ἢ κριθῶν· τὰ δὲ δράγματα ταρφέα πίπτει·",
+   "english": "of wheat or barley, and the cut handfuls fall thick and fast."
   },
   {
    "roll": "3-5-6",
    "work": "Iliad",
    "book": 20,
    "line": 250,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ὁπποῖόν κʼ εἴπῃσθα ἔπος, τοῖόν κʼ ἐπακούσαις.",
+   "english": "Whatever word you speak, that word will you hear in return."
   },
   {
    "roll": "3-6-1",
    "work": "Iliad",
    "book": 11,
    "line": 125,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "οὐκ εἴασχʼ Ἑλένην δόμεναι ξανθῷ Μενελάῳ,",
+   "english": "would not let Helen be given back to fair-haired Menelaus."
   },
   {
    "roll": "3-6-2",
    "work": "Iliad",
    "book": 15,
    "line": 203,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἦ τι μεταστρέψεις; στρεπταὶ μέν τε φρένες ἐσθλῶν.",
+   "english": "Will you change your mind a little? The hearts of good men can be turned."
   },
   {
    "roll": "3-6-3",
    "work": "Odyssey",
    "book": 13,
    "line": 339,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "αὐτὰρ ἐγὼ τὸ μὲν οὔ ποτʼ ἀπίστεον, ἀλλʼ ἐνὶ θυμῷ",
+   "english": "But I never doubted it; in my heart I knew"
   },
   {
    "roll": "3-6-4",
    "work": "Odyssey",
    "book": 21,
    "line": 257,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "Εὐρύμαχʼ, οὐχ οὕτως ἔσται· νοέεις δὲ καὶ αὐτός.",
+   "english": "Eurymachus, it will not be so; and you know it yourself."
   },
   {
    "roll": "3-6-5",
    "work": "Odyssey",
    "book": 21,
    "line": 288,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἆ δειλὲ ξείνων, ἔνι τοι φρένες οὐδʼ ἠβαιαί·",
+   "english": "Wretched stranger, you have not a scrap of sense in you."
   },
   {
    "roll": "3-6-6",
    "work": "Iliad",
    "book": 16,
    "line": 250,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "τῷ δʼ ἕτερον μὲν ἔδωκε πατήρ, ἕτερον δʼ ἀνένευσε·",
+   "english": "The father granted him one thing, and refused him the other."
   },
   {
    "roll": "4-1-1",
    "work": "Odyssey",
    "book": 1,
    "line": 356,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἀλλʼ εἰς οἶκον ἰοῦσα τὰ σʼ αὐτῆς ἔργα κόμιζε,",
+   "english": "But go to your room, and see to your own work,"
   },
   {
    "roll": "4-1-2",
    "work": "Odyssey",
    "book": 11,
    "line": 224,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἴσθʼ, ἵνα καὶ μετόπισθε τεῇ εἴπῃσθα γυναικί.",
+   "english": "Learn this, so that afterwards you may tell it to your wife."
   },
   {
    "roll": "4-1-3",
    "work": "Iliad",
    "book": 3,
    "line": 57,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "λάϊνον ἕσσο χιτῶνα κακῶν ἕνεχʼ ὅσσα ἔοργας.",
+   "english": "you would be wearing a tunic of stone, for all the harm you have done."
   },
   {
    "roll": "4-1-4",
    "work": "Odyssey",
    "book": 18,
    "line": 176,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἠρῶ ἀθανάτοισι γενειήσαντα ἰδέσθαι.",
+   "english": "I prayed to the immortals to see him grown, with a beard on his chin."
   },
   {
    "roll": "4-1-5",
    "work": "Iliad",
    "book": 4,
    "line": 101,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "εὔχεο δʼ Ἀπόλλωνι Λυκηγενέϊ κλυτοτόξῳ",
+   "english": "And pray to Apollo, the wolf-born, famed for his bow,"
   },
   {
    "roll": "4-1-6",
    "work": "Iliad",
    "book": 22,
    "line": 263,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οὐδὲ λύκοι τε καὶ ἄρνες ὁμόφρονα θυμὸν ἔχουσιν,",
+   "english": "Wolves and lambs are never of one mind,"
   },
   {
    "roll": "4-2-1",
    "work": "Iliad",
    "book": 4,
    "line": 62,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἀλλʼ ἤτοι μὲν ταῦθʼ ὑποείξομεν ἀλλήλοισι,",
+   "english": "But in this, let us give way to one another,"
   },
   {
    "roll": "4-2-2",
    "work": "Iliad",
    "book": 18,
    "line": 535,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἐν δʼ Ἔρις ἐν δὲ Κυδοιμὸς ὁμίλεον, ἐν δʼ ὀλοὴ Κήρ,",
+   "english": "Strife and Uproar were in the thick of it, and deadly Doom,"
   },
   {
    "roll": "4-2-3",
@@ -761,7 +948,9 @@
    "work": "Iliad",
    "book": 4,
    "line": 264,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἀλλʼ ὄρσευ πόλεμον δʼ οἷος πάρος εὔχεαι εἶναι.",
+   "english": "Rise up and go to war, as brave as you always boast you are."
   },
   {
    "roll": "4-2-5",
@@ -772,679 +961,874 @@
    "work": "Iliad",
    "book": 21,
    "line": 474,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "νηπύτιε τί νυ τόξον ἔχεις ἀνεμώλιον αὔτως;",
+   "english": "Little fool, why carry a bow when it is as useless as the wind?"
   },
   {
    "roll": "4-3-1",
    "work": "Iliad",
    "book": 24,
    "line": 602,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "καὶ γάρ τʼ ἠΰκομος Νιόβη ἐμνήσατο σίτου,",
+   "english": "For even lovely-haired Niobe remembered to eat,"
   },
   {
    "roll": "4-3-2",
    "work": "Odyssey",
    "book": 5,
    "line": 38,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "χαλκόν τε χρυσόν τε ἅλις ἐσθῆτά τε δόντες,",
+   "english": "giving him bronze and gold in plenty, and fine clothes,"
   },
   {
    "roll": "4-3-3",
    "work": "Odyssey",
    "book": 2,
    "line": 273,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οὔ τοι ἔπειθʼ ἁλίη ὁδὸς ἔσσεται οὐδʼ ἀτέλεστος.",
+   "english": "your journey will not be in vain, nor go unfinished."
   },
   {
    "roll": "4-3-4",
    "work": "Iliad",
    "book": 12,
    "line": 243,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "εἷς οἰωνὸς ἄριστος ἀμύνεσθαι περὶ πάτρης.",
+   "english": "One omen is best: to fight for your country."
   },
   {
    "roll": "4-3-5",
    "work": "Iliad",
    "book": 10,
    "line": 294,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "τήν τοι ἐγὼ ῥέξω χρυσὸν κέρασιν περιχεύας.",
+   "english": "I will sacrifice her to you, with her horns covered in gold."
   },
   {
    "roll": "4-3-6",
    "work": "Iliad",
    "book": 4,
    "line": 95,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "πᾶσι δέ κε Τρώεσσι χάριν καὶ κῦδος ἄροιο,",
+   "english": "and you would win thanks and glory from all the Trojans,"
   },
   {
    "roll": "4-4-1",
    "work": "Odyssey",
    "book": 11,
    "line": 456,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "νῆα κατισχέμεναι· ἐπεὶ οὐκέτι πιστὰ γυναιξίν.",
+   "english": "bring your ship in secretly; for women can no longer be trusted."
   },
   {
    "roll": "4-4-2",
    "work": "Iliad",
    "book": 14,
    "line": 212,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "οὐκ ἔστʼ οὐδὲ ἔοικε τεὸν ἔπος ἀρνήσασθαι·",
+   "english": "It is not possible, nor would it be right, to refuse what you ask."
   },
   {
    "roll": "4-4-3",
    "work": "Iliad",
    "book": 15,
    "line": 52,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "αἶψα μεταστρέψειε νόον μετὰ σὸν καὶ ἐμὸν κῆρ.",
+   "english": "He would quickly turn his mind to suit your heart and mine."
   },
   {
    "roll": "4-4-4",
    "work": "Iliad",
    "book": 11,
    "line": 7,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἠμὲν ἐπʼ Αἴαντος κλισίας Τελαμωνιάδαο",
+   "english": "both to the huts of Ajax, son of Telamon,"
   },
   {
    "roll": "4-4-5",
    "work": "Iliad",
    "book": 5,
    "line": 654,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "εὖχος ἐμοὶ δώσειν, ψυχὴν δʼ Ἄϊδι κλυτοπώλῳ.",
+   "english": "giving glory to me, and your soul to Hades of the famous horses."
   },
   {
    "roll": "4-4-6",
    "work": "Iliad",
    "book": 9,
    "line": 137,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "νῆα ἅλις χρυσοῦ καὶ χαλκοῦ νηησάσθω",
+   "english": "let him load his ship with gold and bronze in plenty"
   },
   {
    "roll": "4-5-1",
    "work": "Odyssey",
    "book": 11,
    "line": 443,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἀλλὰ τὸ μὲν φάσθαι, τὸ δὲ καὶ κεκρυμμένον εἶναι.",
+   "english": "Tell some things, but keep others hidden."
   },
   {
    "roll": "4-5-2",
    "work": "Iliad",
    "book": 10,
    "line": 71,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "Ζεὺς ἐπὶ γιγνομένοισιν ἵει κακότητα βαρεῖαν.",
+   "english": "Zeus has sent heavy trouble on us from the day we were born."
   },
   {
    "roll": "4-5-3",
    "work": "Odyssey",
    "book": 10,
    "line": 495,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οἴῳ πεπνῦσθαι, τοὶ δὲ σκιαὶ ἀίσσουσιν.",
+   "english": "He alone has wisdom; the others flit about like shadows."
   },
   {
    "roll": "4-5-4",
    "work": "Iliad",
    "book": 9,
    "line": 598,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "εἴξας ᾧ θυμῷ· τῷ δʼ οὐκέτι δῶρα τέλεσσαν",
+   "english": "yielding to his own heart; but they did not give him the gifts."
   },
   {
    "roll": "4-5-5",
    "work": "Iliad",
    "book": 19,
    "line": 185,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "χαίρω σεῦ Λαερτιάδη τὸν μῦθον ἀκούσας·",
+   "english": "I am glad, son of Laertes, to hear what you have said."
   },
   {
    "roll": "4-5-6",
    "work": "Iliad",
    "book": 20,
    "line": 242,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "Ζεὺς δʼ ἀρετὴν ἄνδρεσσιν ὀφέλλει τε μινύθει τε",
+   "english": "Zeus makes men's courage greater or less, as he pleases."
   },
   {
    "roll": "4-6-1",
    "work": "Iliad",
    "book": 11,
    "line": 654,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "δεινὸς ἀνήρ· τάχα κεν καὶ ἀναίτιον αἰτιόῳτο.",
+   "english": "a hard man: he would soon blame even someone who is innocent."
   },
   {
    "roll": "4-6-2",
    "work": "Iliad",
    "book": 2,
    "line": 66,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "πανσυδίῃ· νῦν γάρ κεν ἕλοις πόλιν εὐρυάγυιαν",
+   "english": "in full force. For now you could take the city of wide streets."
   },
   {
    "roll": "4-6-3",
    "work": "Odyssey",
    "book": 20,
    "line": 18,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "τέτλαθι δή, κραδίη· καὶ κύντερον ἄλλο ποτʼ ἔτλης.",
+   "english": "Endure, my heart: you have endured worse than this before."
   },
   {
    "roll": "4-6-4",
    "work": "Iliad",
    "book": 2,
    "line": 200,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "δαιμόνιʼ ἀτρέμας ἧσο καὶ ἄλλων μῦθον ἄκουε,",
+   "english": "Sit still, my friend, and listen to what others say."
   },
   {
    "roll": "4-6-5",
    "work": "Iliad",
    "book": 16,
    "line": 282,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "μηνιθμὸν μὲν ἀπορρῖψαι, φιλότητα δʼ ἑλέσθαι·",
+   "english": "to throw away his anger and choose friendship instead."
   },
   {
    "roll": "4-6-6",
    "work": "Odyssey",
    "book": 3,
    "line": 196,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ὡς ἀγαθὸν καὶ παῖδα καταφθιμένοιο λιπέσθαι",
+   "english": "How good it is, when a man dies, that he leaves a son behind."
   },
   {
    "roll": "5-1-1",
    "work": "Odyssey",
    "book": 5,
    "line": 346,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "τῆ δέ, τόδε κρήδεμνον ὑπὸ στέρνοιο τανύσσαι",
+   "english": "Here, take this veil and wrap it beneath your chest,"
   },
   {
    "roll": "5-1-2",
    "work": "Odyssey",
    "book": 22,
    "line": 412,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οὐχ ὁσίη κταμένοισιν ἐπʼ ἀνδράσιν εὐχετάασθαι.",
+   "english": "It is not right to boast over men who have been killed."
   },
   {
    "roll": "5-1-3",
    "work": "Iliad",
    "book": 24,
    "line": 363,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "νύκτα διʼ ἀμβροσίην, ὅτε θʼ εὕδουσι βροτοὶ ἄλλοι;",
+   "english": "through the immortal night, when all other mortals are asleep?"
   },
   {
    "roll": "5-1-4",
    "work": "Odyssey",
    "book": 1,
    "line": 65,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "πῶς ἂν ἔπειτʼ Ὀδυσῆος ἐγὼ θείοιο λαθοίμην,",
+   "english": "How could I ever forget godlike Odysseus?"
   },
   {
    "roll": "5-1-5",
    "work": "Iliad",
    "book": 5,
    "line": 83,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἔλλαβε πορφύρεος θάνατος καὶ μοῖρα κραταιή.",
+   "english": "dark death and mighty fate seized him."
   },
   {
    "roll": "5-1-6",
    "work": "Odyssey",
    "book": 11,
    "line": 427,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ὣς οὐκ αἰνότερον καὶ κύντερον ἄλλο γυναικός,",
+   "english": "So nothing is more terrible or shameless than a woman"
   },
   {
    "roll": "5-2-1",
    "work": "Iliad",
    "book": 12,
    "line": 216,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "μὴ ἴομεν Δαναοῖσι μαχησόμενοι περὶ νηῶν.",
+   "english": "Let us not go and fight the Greeks beside the ships."
   },
   {
    "roll": "5-2-2",
    "work": "Iliad",
    "book": 24,
    "line": 369,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἄνδρʼ ἀπαμύνασθαι, ὅτε τις πρότερος χαλεπήνῃ.",
+   "english": "to defend yourself, when someone else starts the quarrel."
   },
   {
    "roll": "5-2-3",
    "work": "Iliad",
    "book": 5,
    "line": 408,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "οὐδέ τί μιν παῖδες ποτὶ γούνασι παππάζουσιν",
+   "english": "No children will climb on his knees and call him 'Papa'."
   },
   {
    "roll": "5-2-4",
    "work": "Odyssey",
    "book": 21,
    "line": 207,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἔνδον μὲν δὴ ὅδʼ αὐτὸς ἐγώ, κακὰ πολλὰ μογήσας",
+   "english": "Here I am, I myself, home at last after many hardships,"
   },
   {
    "roll": "5-2-5",
    "work": "Iliad",
    "book": 5,
    "line": 218,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "μὴ δʼ οὕτως ἀγόρευε· πάρος δʼ οὐκ ἔσσεται ἄλλως,",
+   "english": "Do not talk like that. Things will not change before"
   },
   {
    "roll": "5-2-6",
    "work": "Iliad",
    "book": 19,
    "line": 189,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "μιμνέτω αὐτόθι τεῖος ἐπειγόμενός περ Ἄρηος·",
+   "english": "Let him wait here for now, however eager he is for war."
   },
   {
    "roll": "5-3-1",
    "work": "Iliad",
    "book": 16,
    "line": 91,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "μὴ δʼ ἐπαγαλλόμενος πολέμῳ καὶ δηϊοτῆτι",
+   "english": "And do not, glorying in war and battle,"
   },
   {
    "roll": "5-3-2",
    "work": "Iliad",
    "book": 9,
    "line": 133,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "μή ποτε τῆς εὐνῆς ἐπιβήμεναι ἠδὲ μιγῆναι,",
+   "english": "that I never went up to her bed or lay with her,"
   },
   {
    "roll": "5-3-3",
    "work": "Iliad",
    "book": 22,
    "line": 495,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "χείλεα μέν τʼ ἐδίηνʼ, ὑπερῴην δʼ οὐκ ἐδίηνε.",
+   "english": "He wets his lips, but never wets the roof of his mouth."
   },
   {
    "roll": "5-3-4",
    "work": "Iliad",
    "book": 18,
    "line": 463,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "θάρσει· μή τοι ταῦτα μετὰ φρεσὶ σῇσι μελόντων.",
+   "english": "Take heart: do not let these things trouble your mind."
   },
   {
    "roll": "5-3-5",
    "work": "Iliad",
    "book": 8,
    "line": 299,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "τοῦτον δʼ οὐ δύναμαι βαλέειν κύνα λυσσητῆρα.",
+   "english": "But this mad dog I cannot hit."
   },
   {
    "roll": "5-3-6",
    "work": "Iliad",
    "book": 4,
    "line": 412,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "τέττα, σιωπῇ ἧσο, ἐμῷ δʼ ἐπιπείθεο μύθῳ·",
+   "english": "Sit quietly, friend, and do as I say."
   },
   {
    "roll": "5-4-1",
    "work": "Odyssey",
    "book": 8,
    "line": 329,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οὐκ ἀρετᾷ κακὰ ἔργα· κιχάνει τοι βραδὺς ὠκύν,",
+   "english": "Wicked deeds do not prosper: the slow catch up with the swift,"
   },
   {
    "roll": "5-4-2",
    "work": "Odyssey",
    "book": 21,
    "line": 236,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "κληῗσαι μεγάροιο θύρας πυκινῶς ἀραρυίας,",
+   "english": "to lock the tight-fitting doors of the hall,"
   },
   {
    "roll": "5-4-3",
    "work": "Iliad",
    "book": 17,
    "line": 201,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἆ δείλʼ οὐδέ τί τοι θάνατος καταθύμιός ἐστιν",
+   "english": "Poor wretch, you give no thought to death,"
   },
   {
    "roll": "5-4-4",
    "work": "Odyssey",
    "book": 23,
    "line": 7,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἦλθʼ Ὀδυσεὺς καὶ οἶκον ἱκάνεται, ὀψέ περ ἐλθών.",
+   "english": "Odysseus has come, he is home, though he has come late."
   },
   {
    "roll": "5-4-5",
    "work": "Iliad",
    "book": 4,
    "line": 161,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἔκ τε καὶ ὀψὲ τελεῖ, σύν τε μεγάλῳ ἀπέτισαν",
+   "english": "he fulfils it in the end, even if late, and they pay a heavy price,"
   },
   {
    "roll": "5-4-6",
    "work": "Iliad",
    "book": 5,
    "line": 740,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἐν δʼ Ἔρις, ἐν δʼ Ἀλκή, ἐν δὲ κρυόεσσα Ἰωκή,",
+   "english": "In it were Strife, and Courage, and chilling Pursuit,"
   },
   {
    "roll": "5-5-1",
    "work": "Odyssey",
    "book": 12,
    "line": 342,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "λιμῷ δʼ οἴκτιστον θανέειν καὶ πότμον ἐπισπεῖν.",
+   "english": "But to die of hunger is the most pitiful way to meet one's fate."
   },
   {
    "roll": "5-5-2",
    "work": "Iliad",
    "book": 18,
    "line": 121,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "κείσομʼ ἐπεί κε θάνω· νῦν δὲ κλέος ἐσθλὸν ἀροίμην,",
+   "english": "I shall lie still when I die. But now let me win great glory."
   },
   {
    "roll": "5-5-3",
    "work": "Iliad",
    "book": 4,
    "line": 264,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἀλλʼ ὄρσευ πόλεμον δʼ οἷος πάρος εὔχεαι εἶναι.",
+   "english": "Rise up and go to war, as brave as you always boast you are."
   },
   {
    "roll": "5-5-4",
    "work": "Odyssey",
    "book": 23,
    "line": 26,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οὔ τί σε λωβεύω, τέκνον φίλον, ἀλλʼ ἔτυμόν τοι",
+   "english": "I am not mocking you, dear child; it is true,"
   },
   {
    "roll": "5-5-5",
    "work": "Iliad",
    "book": 19,
    "line": 119,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "Ἀλκμήνης δʼ ἀπέπαυσε τόκον, σχέθε δʼ Εἰλειθυίας.",
+   "english": "She held back Alcmene's labour, and stopped the birth-goddesses."
   },
   {
    "roll": "5-5-6",
    "work": "Iliad",
    "book": 4,
    "line": 362,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἀλλʼ ἴθι ταῦτα δʼ ὄπισθεν ἀρεσσόμεθʼ εἴ τι κακὸν νῦν",
+   "english": "Go now; we will make amends later if any harm has been said."
   },
   {
    "roll": "5-6-1",
    "work": "Iliad",
    "book": 8,
    "line": 413,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "πῇ μέματον; τί σφῶϊν ἐνὶ φρεσὶ μαίνεται ἦτορ;",
+   "english": "Where are you rushing? Why is your heart raging with madness?"
   },
   {
    "roll": "5-6-2",
    "work": "Odyssey",
    "book": 13,
    "line": 421,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "μὴ δή τοι κεῖνός γε λίην ἐνθύμιος ἔστω.",
+   "english": "Do not let him weigh too heavily on your heart."
   },
   {
    "roll": "5-6-3",
    "work": "Iliad",
    "book": 4,
    "line": 320,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἀλλʼ οὔ πως ἅμα πάντα θεοὶ δόσαν ἀνθρώποισιν·",
+   "english": "But the gods do not give men every gift at once."
   },
   {
    "roll": "5-6-4",
    "work": "Iliad",
    "book": 5,
    "line": 218,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "μὴ δʼ οὕτως ἀγόρευε· πάρος δʼ οὐκ ἔσσεται ἄλλως,",
+   "english": "Do not talk like that. Things will not change before"
   },
   {
    "roll": "5-6-5",
    "work": "Iliad",
    "book": 12,
    "line": 173,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ὣς ἔφατʼ, οὐδὲ Διὸς πεῖθε φρένα ταῦτʼ ἀγορεύων·",
+   "english": "So he spoke, but his words did not move the mind of Zeus."
   },
   {
    "roll": "5-6-6",
    "work": "Odyssey",
    "book": 21,
    "line": 129,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἀλλʼ Ὀδυσεὺς ἀνένευε καὶ ἔσχεθεν ἱέμενόν περ.",
+   "english": "But Odysseus shook his head and held him back, eager as he was."
   },
   {
    "roll": "6-1-1",
    "work": "Iliad",
    "book": 24,
    "line": 203,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "πῶς ἐθέλεις ἐπὶ νῆας Ἀχαιῶν ἐλθέμεν οἶος",
+   "english": "How can you wish to go alone to the ships of the Greeks?"
   },
   {
    "roll": "6-1-2",
    "work": "Odyssey",
    "book": 7,
    "line": 65,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "νυμφίον ἐν μεγάρῳ, μίαν οἴην παῖδα λιπόντα",
+   "english": "a bridegroom in his hall, leaving behind one daughter only,"
   },
   {
    "roll": "6-1-3",
    "work": "Iliad",
    "book": 5,
    "line": 127,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἀχλὺν δʼ αὖ τοι ἀπʼ ὀφθαλμῶν ἕλον ἣ πρὶν ἐπῆεν,",
+   "english": "I have taken away the mist that covered your eyes before,"
   },
   {
    "roll": "6-1-4",
    "work": "Odyssey",
    "book": 21,
    "line": 180,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "τόξου πειρώμεσθα καὶ ἐκτελέωμεν ἄεθλον.",
+   "english": "Let us try the bow, and see the contest through."
   },
   {
    "roll": "6-1-5",
    "work": "Odyssey",
    "book": 21,
    "line": 209,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "γιγνώσκω δʼ ὡς σφῶϊν ἐελδομένοισιν ἱκάνω",
+   "english": "I know that you two alone longed for my coming,"
   },
   {
    "roll": "6-1-6",
    "work": "Odyssey",
    "book": 16,
    "line": 79,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἕσσω μιν χλαῖνάν τε χιτῶνά τε, εἵματα καλά,",
+   "english": "I will dress him in a cloak and tunic, fine clothes,"
   },
   {
    "roll": "6-2-1",
    "work": "Odyssey",
    "book": 11,
    "line": 278,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἁψαμένη βρόχον αἰπὺν ἀφʼ ὑψηλοῖο μελάθρου,",
+   "english": "tying a noose high from the roof-beam above,"
   },
   {
    "roll": "6-2-2",
    "work": "Odyssey",
    "book": 8,
    "line": 244,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἡμετέρης ἀρετῆς μεμνημένος, οἷα καὶ ἡμῖν",
+   "english": "remembering our excellence, the kind of skill that Zeus"
   },
   {
    "roll": "6-2-3",
    "work": "Odyssey",
    "book": 7,
    "line": 35,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "λαῖτμα μέγʼ ἐκπερόωσιν, ἐπεί σφισι δῶκʼ ἐνοσίχθων·",
+   "english": "they cross the great gulf of the sea, a gift from the Earth-shaker."
   },
   {
    "roll": "6-2-4",
    "work": "Odyssey",
    "book": 21,
    "line": 369,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἄττα, πρόσω φέρε τόξα· τάχʼ οὐκ εὖ πᾶσι πιθήσεις",
+   "english": "Old man, bring the bow forward; you will soon be sorry if you obey them all."
   },
   {
    "roll": "6-2-5",
    "work": "Iliad",
    "book": 19,
    "line": 139,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἀλλʼ ὄρσευ πόλεμον δὲ καὶ ἄλλους ὄρνυθι λαούς.",
+   "english": "Rise up and go to war, and rouse the rest of the army too."
   },
   {
    "roll": "6-2-6",
    "work": "Iliad",
    "book": 18,
    "line": 117,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οὐδὲ γὰρ οὐδὲ βίη Ἡρακλῆος φύγε κῆρα,",
+   "english": "For not even mighty Heracles escaped his doom,"
   },
   {
    "roll": "6-3-1",
    "work": "Iliad",
    "book": 9,
    "line": 120,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἂψ ἐθέλω ἀρέσαι δόμεναί τʼ ἀπερείσιʼ ἄποινα.",
+   "english": "I am willing to make amends, and to pay a ransom beyond counting."
   },
   {
    "roll": "6-3-2",
    "work": "Iliad",
    "book": 19,
    "line": 175,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ὀμνυέτω δέ τοι ὅρκον ἐν Ἀργείοισιν ἀναστὰς",
+   "english": "Let him stand up among the Greeks and swear you an oath,"
   },
   {
    "roll": "6-3-3",
    "work": "Iliad",
    "book": 14,
    "line": 110,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἐγγὺς ἀνήρ· οὐ δηθὰ ματεύσομεν· αἴ κʼ ἐθέλητε",
+   "english": "The man is close at hand; we will not look for long, if you are willing"
   },
   {
    "roll": "6-3-4",
    "work": "Odyssey",
    "book": 21,
    "line": 196,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ὧδε μάλʼ ἐξαπίνης καί τις θεὸς αὐτὸν ἐνείκαι;",
+   "english": "if he came suddenly, as if some god had brought him home?"
   },
   {
    "roll": "6-3-5",
    "work": "Iliad",
    "book": 14,
    "line": 53,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "ἦ δὴ ταῦτά γʼ ἑτοῖμα τετεύχαται, οὐδέ κεν ἄλλως",
+   "english": "Truly, these things are made ready, and not even"
   },
   {
    "roll": "6-3-6",
    "work": "Iliad",
    "book": 12,
    "line": 412,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἀλλʼ ἐφομαρτεῖτε· πλεόνων δέ τι ἔργον ἄμεινον.",
+   "english": "Follow me: the work of many is better."
   },
   {
    "roll": "6-4-1",
    "work": "Iliad",
    "book": 7,
    "line": 360,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἐξ ἄρα δή τοι ἔπειτα θεοὶ φρένας ὤλεσαν αὐτοί.",
+   "english": "Then the gods themselves have surely robbed you of your wits."
   },
   {
    "roll": "6-4-2",
    "work": "Iliad",
    "book": 10,
    "line": 383,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "θάρσει, μηδέ τί τοι θάνατος καταθύμιος ἔστω.",
+   "english": "Take heart, and do not let death be on your mind at all."
   },
   {
    "roll": "6-4-3",
    "work": "Iliad",
    "book": 5,
    "line": 413,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἐξ ὕπνου γοόωσα φίλους οἰκῆας ἐγείρῃ",
+   "english": "wakes her household from sleep with her weeping,"
   },
   {
    "roll": "6-4-4",
    "work": "Odyssey",
    "book": 7,
    "line": 30,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἀλλʼ ἴθι σιγῇ τοῖον, ἐγὼ δʼ ὁδὸν ἡγεμονεύσω,",
+   "english": "Come, go quietly, and I will lead the way."
   },
   {
    "roll": "6-4-5",
    "work": "Iliad",
    "book": 15,
    "line": 129,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οὔατʼ ἀκουέμεν ἐστί, νόος δʼ ἀπόλωλε καὶ αἰδώς.",
+   "english": "You have ears to hear, but your sense and your shame have gone."
   },
   {
    "roll": "6-4-6",
    "work": "Iliad",
    "book": 17,
    "line": 197,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "γηράς· ἀλλʼ οὐχ υἱὸς ἐν ἔντεσι πατρὸς ἐγήρα.",
+   "english": "grew old; but the son did not grow old in his father's armour."
   },
   {
    "roll": "6-5-1",
    "work": "Odyssey",
    "book": 5,
    "line": 220,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οἴκαδέ τʼ ἐλθέμεναι καὶ νόστιμον ἦμαρ ἰδέσθαι.",
+   "english": "to reach my home and see the day of my return."
   },
   {
    "roll": "6-5-2",
    "work": "Odyssey",
    "book": 7,
    "line": 64,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "τὸν μὲν ἄκουρον ἐόντα βάλʼ ἀργυρότοξος Ἀπόλλων",
+   "english": "Silver-bowed Apollo struck him down, still with no son,"
   },
   {
    "roll": "6-5-3",
    "work": "Odyssey",
    "book": 7,
    "line": 76,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἐλπωρή τοι ἔπειτα φίλους τʼ ἰδέειν καὶ ἱκέσθαι",
+   "english": "then there is hope that you will see your friends and reach"
   },
   {
    "roll": "6-5-4",
    "work": "Odyssey",
    "book": 21,
    "line": 212,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "σφῶϊν δʼ, ὡς ἔσεταί περ, ἀληθείην καταλέξω.",
+   "english": "To you two I will tell the truth, as it will be."
   },
   {
    "roll": "6-5-5",
    "work": "Iliad",
    "book": 1,
    "line": 212,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ὧδε γὰρ ἐξερέω, τὸ δὲ καὶ τετελεσμένον ἔσται·",
+   "english": "For I will tell you this, and it will surely come to pass."
   },
   {
    "roll": "6-5-6",
    "work": "Odyssey",
    "book": 16,
    "line": 81,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "πέμψω δʼ ὅππη μιν κραδίη θυμός τε κελεύει.",
+   "english": "and I will send him wherever his heart and spirit tell him to go."
   },
   {
    "roll": "6-6-1",
    "work": "Odyssey",
    "book": 21,
    "line": 363,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "πλαγκτέ; τάχʼ αὖ σʼ ἐφʼ ὕεσσι κύνες ταχέες κατέδονται",
+   "english": "you wanderer? Soon the swift dogs will eat you among the pigs,"
   },
   {
    "roll": "6-6-2",
    "work": "Odyssey",
    "book": 20,
    "line": 237,
-   "kenyon": false
+   "kenyon": false,
+   "greek": "γνοίης χʼ οἵη ἐμὴ δύναμις καὶ χεῖρες ἕπονται.",
+   "english": "you would learn how great my strength is, and how my hands obey me."
   },
   {
    "roll": "6-6-3",
    "work": "Odyssey",
    "book": 21,
    "line": 322,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "οὔ τί σε τόνδʼ ἄξεσθαι ὀϊόμεθʼ· οὐδὲ ἔοικεν·",
+   "english": "We do not think he will marry you; that would not be right."
   },
   {
    "roll": "6-6-4",
    "work": "Odyssey",
    "book": 21,
    "line": 156,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "ἐνθάδʼ ὁμιλέομεν, ποτιδέγμενοι ἤματα πάντα.",
+   "english": "We gather here, waiting day after day."
   },
   {
    "roll": "6-6-5",
    "work": "Iliad",
    "book": 1,
    "line": 542,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "κρυπτάδια φρονέοντα δικαζέμεν· οὐδέ τί πώ μοι",
+   "english": "to make your judgements in secret; and never yet"
   },
   {
    "roll": "6-6-6",
    "work": "Iliad",
    "book": 10,
    "line": 447,
-   "kenyon": true
+   "kenyon": true,
+   "greek": "μὴ δή μοι φύξίν γε Δόλων ἐμβάλλεο θυμῷ·",
+   "english": "Do not think of escape, Dolon, at all."
   }
- ]
+ ],
+ "translation": "English translations made for this app from the Greek (Monro and Allen's Iliad, Murray's 1919 Odyssey Greek text); free to use with the app."
 }
